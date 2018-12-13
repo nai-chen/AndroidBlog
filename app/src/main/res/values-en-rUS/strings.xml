@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">demo</string>
+	<string name="language">language</string>
+	<string name="language_title">Fragment/Language_US</string>
+
+    <string name="ellipsize_text">清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。</string>
+    <string name="spinner_prompt">Student</string>
+</resources>

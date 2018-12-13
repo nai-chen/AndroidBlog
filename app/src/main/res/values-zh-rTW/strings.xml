@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">演示</string>
+
+    <string name="language">語言</string>
+    <string name="language_title">Fragment/Language_TW</string>
+    <string name="ellipsize_text">清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。</string>
+    <string name="spinner_prompt">学生</string>
+</resources>

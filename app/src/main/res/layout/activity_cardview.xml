@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blue"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardBackgroundColor="@color/red"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp" >
+<!--        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="左上角"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="右下角"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue" />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_card_elevation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cardElevation"/>
+        <RadioButton
+            android:id="@+id/rb_card_corner_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cardCornerRadius"/>
+        <RadioButton
+            android:id="@+id/rb_content_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contentPadding"/>
+        <RadioButton
+            android:id="@+id/rb_compat_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="compatPadding"/>
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="100"/>
+</LinearLayout>

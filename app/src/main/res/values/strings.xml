@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">示例</string>
+
+    <string name="language">语言</string>
+    <string name="language_title">Fragment/Language</string>
+
+
+    <string name="ellipsize_text">清明时节雨纷纷，路上行人欲断魂。借问酒家何处有？牧童遥指杏花村。</string>
+    <string name="spinner_prompt">Student</string>
+<!--
+    <string name="btn_open">打开</string>
+    <string name="btn_close">关闭</string>
+    <string name="btn_click">点击</string> -->
+</resources>

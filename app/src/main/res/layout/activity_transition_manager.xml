@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <include
+            layout="@layout/activity_transition1" />
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_change_bound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change_Bound"/>
+        <Button
+            android:id="@+id/btn_fade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fade"/>
+        <Button
+            android:id="@+id/btn_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slide"/>
+        <Button
+            android:id="@+id/btn_explode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="explode"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_transition_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TransitionSet"/>
+</LinearLayout>

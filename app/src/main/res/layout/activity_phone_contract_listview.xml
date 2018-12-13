@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blog.demo.custom.control.PhoneContractListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_phone_contract"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+		<LinearLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:weightSum="3"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:id="@+id/tv_value_animator"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="ValueAnimator"
+	            android:gravity="center" />
+	        <TextView
+	            android:id="@+id/tv_object_animator"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="ObjectAnimator"
+	            android:gravity="center" />
+	        <TextView
+	            android:id="@+id/tv_animator_set1"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="AnimatorSet1"
+	            android:gravity="center" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:weightSum="3"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:id="@+id/tv_animator_set2"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="AnimatorSet2"
+	            android:gravity="center" />
+	        <TextView
+	            android:id="@+id/tv_animator_set3"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="AnimatorSet3"
+	            android:gravity="center" />
+	        <TextView
+	            android:id="@+id/tv_property_value_holder"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="PropertyValueHolder"
+	            android:gravity="center" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:weightSum="3"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:id="@+id/tv_key_frame"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="KeyFrame"
+	            android:gravity="center" />
+	        <TextView
+	            android:id="@+id/tv_type_evaluator"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="50dp"
+	            android:text="TypeEvaluator"
+	            android:gravity="center" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/iv"
+        android:layout_width="256dp"
+    	android:layout_height="170dp"
+    	android:scaleType="fitCenter"
+        android:src="@drawable/tweened"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

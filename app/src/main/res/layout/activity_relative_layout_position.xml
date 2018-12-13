@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 居中显示，作为坐标元素 -->
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="center"
+        android:textSize="32dp"
+        android:background="#ffffcc00"/>
+    <!-- 显示在左上角 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_center"
+        android:layout_above="@id/tv_center"
+        android:text="above|toLeftOf"
+        android:background="#ffa6a5aa"/>
+    <!-- 显示在右下角 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_center"
+        android:layout_below="@id/tv_center"
+        android:text="below|toRightOf"
+        android:background="#ffa6a5aa"/>
+</RelativeLayout>

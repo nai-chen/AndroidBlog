@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 居中显示，作为坐标元素 -->
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="center"
+        android:textSize="32dp"
+        android:background="#ffffcc00"/>
+    <!-- 左对齐 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_center"
+        android:layout_above="@id/tv_center"
+        android:text="alignLeft"
+        android:background="#ffa6a5aa"/>
+    <!-- 右对齐 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_center"
+        android:layout_below="@id/tv_center"
+        android:text="alignRight"
+        android:background="#ffa6a5aa"/>
+    <!-- 上对齐 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_center"
+        android:layout_toLeftOf="@id/tv_center"
+        android:text="alignTop"
+        android:background="#ffa6a5aa"/>
+    <!-- 下对齐 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_center"
+        android:layout_toRightOf="@id/tv_center"
+        android:text="alignBottom"
+        android:background="#ffa6a5aa"/>
+    <!-- 基准线对齐 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_center"
+        android:text="alignBaseline"
+        android:layout_toLeftOf="@id/tv_center"
+        android:background="#ffa6a5aa"/>
+</RelativeLayout>

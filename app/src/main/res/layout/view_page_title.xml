@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:textSize="16sp"
+    android:textColor="@color/view_pager_title_selector"
+    android:gravity="center"
+    android:background="@color/product_bg" />

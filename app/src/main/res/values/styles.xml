@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Holo.Dialog">
+
+    </style>
+
+    <style name="popupwindow_animation_style">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_to_bottom</item>
+    </style>
+
+    <style name="ActivityOptionsTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomRatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rate_star</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_rate_star</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="ParamAssignStyle">
+        <item name="attr1">Value From Style</item>
+        <item name="attr2">Value From Style</item>
+    </style>
+
+    <style name="ParamAssignAttrStyle">
+        <item name="attr1">Value From Attr Style</item>
+        <item name="attr2">Value From Attr Style</item>
+        <item name="attr3">Value From Attr Style</item>
+    </style>
+
+    <style name="DefaultParamAssignStyle">
+        <item name="attr1">Value From Default Style</item>
+        <item name="attr2">Value From Default Style</item>
+        <item name="attr3">Value From Default Style</item>
+        <item name="attr4">Value From Default Style</item>
+        <item name="attr5">Value From Default Style</item>
+    </style>
+
+    <style name="ParamAssignTheme" parent="AppTheme">
+        <item name="attr1">Value From Theme Style</item>
+        <item name="attr2">Value From Theme Style</item>
+        <item name="attr3">Value From Theme Style</item>
+        <item name="attr4">Value From Theme Style</item>
+        <item name="attrAssignStyle">@style/ParamAssignAttrStyle</item>
+    </style>
+
+    <style name="titleTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff222222</item>
+    </style>
+
+    <style name="subtitleTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ff757575</item>
+    </style>
+
+</resources>

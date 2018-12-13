@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+        android:scrollbarTrackVertical="@drawable/scrollbar_track_vertical"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+        
+        <LinearLayout
+            android:id="@+id/container" 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical">
+            
+    		<TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="故" />
+    		<include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="人" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="西" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="辞" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="黄" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="鹤" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="楼" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="，" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+           
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="烟" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="花" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="三" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="月" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="下" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="扬" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+			<TextView
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="州" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+            <TextView
+                android:id="@+id/tv_bottom"
+        		android:layout_width="match_parent"
+    			android:layout_height="49dp"
+    			android:gravity="center"
+    			android:text="。" />
+            <include 
+    		    layout="@layout/horizontal_sep_line"/>
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <TextView
+        android:id="@+id/tv_next_step"
+        android:layout_width="match_parent"
+    	android:layout_height="49dp"
+    	android:gravity="center"
+    	android:text="下一步" />
+
+</LinearLayout>

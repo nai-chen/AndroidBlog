@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btn_cn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="China"/>
+		<Button
+			android:id="@+id/btn_tw"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="TaiWan"/>
+		<Button
+			android:id="@+id/btn_us"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="American"/>
+		<Button
+			android:id="@+id/btn_new"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="New"/>
+	</LinearLayout>
+
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/language"/>
+</LinearLayout>

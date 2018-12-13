@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_dialog" />
+    <Button
+        android:id="@+id/btn_alert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_button" />
+    <Button
+        android:id="@+id/btn_alert_custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_custom_title" />
+    <Button
+        android:id="@+id/btn_alert_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_view" />
+    <Button
+        android:id="@+id/btn_alert_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_item" />
+    <Button
+        android:id="@+id/btn_alert_single_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_single_item" />
+    <Button
+        android:id="@+id/btn_alert_multi_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_alert_multi_item" />
+</LinearLayout>

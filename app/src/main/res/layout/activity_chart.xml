@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blog.demo.custom.control.chart.CMinuteChart
+            android:id="@+id/minute_chart"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <com.blog.demo.custom.control.chart.CMinuteVolumeChart
+            android:id="@+id/minute_volume_chart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <com.blog.demo.custom.control.chart.CKLineChart
+            android:id="@+id/kline_chart"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <com.blog.demo.custom.control.chart.CKLineVolumeChart
+            android:id="@+id/kline_volume_chart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+</ScrollView>
