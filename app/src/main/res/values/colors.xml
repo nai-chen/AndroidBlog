@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="line_color">#ffd1d6de</color>
-    <color name="translucent">#88ffffff</color>
-
-    <color name="white">#ffffffff</color>
-    <color name="black">#ff000000</color>
-    <color name="red">#ffff0000</color>
-    <color name="green">#ff00ff00</color>
-    <color name="blue">#ff0000ff</color>
-
-    <color name="color_eed400">#ffeed400</color>
-    <color name="color_ff7088">#ffff7088</color>
-    <color name="color_3179ff">#ff3179ff</color>
-
-    <color name="product_bg">#ffe7e5dc</color>
-
-    <color name="chart_bg">#ff2b2b2b</color>
-    <color name="chart_line_bg">#ff4d4d4d</color>
-
-    <color name="btn_normal">#ff508cee</color>
-    <color name="btn_pressed">#ff4b81d9</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>

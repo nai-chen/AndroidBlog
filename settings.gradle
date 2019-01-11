@@ -1,1 +1,1 @@
-include ':app', ':DemoLib'
+include ':app'

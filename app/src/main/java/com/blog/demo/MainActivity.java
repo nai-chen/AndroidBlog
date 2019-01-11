@@ -1,119 +1,96 @@
 package com.blog.demo;
 
-import java.util.List;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Paint.FontMetrics;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.io.Serializable;
+import java.util.List;
+
 public class MainActivity extends Activity {
-	private final static String LOGTAG = "Main";
-	private final static String APKTEST_ACTION = "com.blog.demo.action.content";
-	private final static String EXTRA_DATA = "data";
 
-	private ListView mListView;
-	private Layer mLayer;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.activity_main);
-		
-		mListView = (ListView) findViewById(R.id.listview);
+    private static final String ACTION = "com.blog.demo.content";
+    private final static String EXTRA_DATA = "data";
 
-		if (getIntent() != null) {
-			mLayer = getIntent().getParcelableExtra(EXTRA_DATA);
-		}
+    @Override
+    @SuppressLint("WrongConstant")
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		if (mLayer == null) {
-			mLayer = new Layer();
-			
-			Intent intent = new Intent(APKTEST_ACTION);
-			List<ResolveInfo> infoList = getPackageManager().queryIntentActivities(intent,
-					PackageManager.GET_INTENT_FILTERS);
-			if (infoList != null) {
-				for (ResolveInfo info : infoList) {
-					mLayer.addValue(info.loadLabel(getPackageManager()).toString(), info.activityInfo.name);
-				}
-			}
-		}
-		
-		mListView.setAdapter(new ActivityInfoAdapter());
-		mListView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int position, long id) {
-				startActivity(position);
-			}
-			@Override
-			public void onNothingSelected(AdapterView<?> parent) {
-			}
-		});
-		
-		mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				startActivity(position);
-			}
-		});
-	}
-	
-	private void startActivity(int position) {
-		Layer child = mLayer.getChild(position);
-		if (child.hasChild()) {
-			Intent intent = new Intent(this, MainActivity.class);
-			intent.putExtra(EXTRA_DATA, child);
-			startActivity(intent);
-		} else {
-			try {
-				Class<?> c = Class.forName(child.getClassName());
-				startActivity(new Intent(this, c));
-			} catch (ClassNotFoundException e) {
-				LogUtil.log(LOGTAG, e.getMessage());
-			}
-		}
-	}
-	
-	private class ActivityInfoAdapter extends BaseAdapter {
+        setContentView(R.layout.activity_main);
 
-		@Override
-		public int getCount() {
-			return mLayer.size();
-		}
+        Layer layer = (Layer) getIntent().getSerializableExtra(EXTRA_DATA);
+        if (layer == null) {
+            Intent intent = new Intent(ACTION);
+            List<ResolveInfo> infoList = getPackageManager().queryIntentActivities(intent,
+                    PackageManager.GET_INTENT_FILTERS);
 
-		@Override
-		public Object getItem(int position) {
-			return mLayer.getChild(position);
-		}
+            if (infoList != null) {
+                for (ResolveInfo info : infoList) {
+                    layer.addItem(info.loadLabel(getPackageManager()), info.activityInfo.name);
+                }
+            }
+        }
 
-		@Override
-		public long getItemId(int position) {
-			return position;
-		}
+        ListView listView = findViewById(R.id.list_view);
+        listView.setAdapter(new MainAdapter(layer));
+    }
 
-		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			if (convertView == null) {
-				convertView = getLayoutInflater().inflate(R.layout.listview_main_item, parent, false);
-			}
-			Layer layer = mLayer.getChild(position);
-			((TextView) convertView.findViewById(R.id.title)).setText(layer.getName());
-			
-			return convertView;
-		}
-	}
-	
+    private class Layer implements Serializable {
+        public void addItem(CharSequence path, String name) {
+
+        }
+
+        public String getValue(int position) {
+            return null;
+        }
+
+        public int getCount() {
+            return 0;
+        }
+    }
+
+    private class MainAdapter extends BaseAdapter {
+        Layer mLayer;
+
+        MainAdapter(Layer layer) {
+            this.mLayer = layer;
+        }
+
+        @Override
+        public int getCount() {
+            return mLayer == null ? 0 : mLayer.getCount();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return position;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null) {
+                convertView = getLayoutInflater().inflate(R.layout.list_item_main, parent);
+            }
+            TextView tv = convertView.findViewById(R.id.tv_item_title);
+            tv.setText(mLayer.getValue(position));
+
+            return convertView;
+        }
+    }
+
 }

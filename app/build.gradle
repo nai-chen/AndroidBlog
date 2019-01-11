@@ -1,99 +1,24 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-
-def releaseTime() {
-    return new Date().format("yyyyMMdd-HHmm")
-}
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.blog.demo"
-        minSdkVersion 19
-        targetSdkVersion 25
-        versionCode 2
-        versionName "1.0.1"
-        flavorDimensions "2"
-        /**ndk {
-            moduleName "calcLibs"
-        }*/
-    }
-    signingConfigs {
-        commonConfigs {
-            storeFile file('demo.keystore')
-            keyAlias 'demo'
-            keyPassword '123456'
-            storePassword '123456'
-        }
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        debug {
-            zipAlignEnabled true
-            manifestPlaceholders=[app_label_name:"demo_debug"]
-            resValue 'string', 'welcome', 'welcome to app'
-            buildConfigField 'boolean', 'Log', 'true'
-        }
         release {
-            zipAlignEnabled true  // 是否支持zip
-            shrinkResources true  // 移除无用的resource文件
-            minifyEnabled true // 是否启动混淆
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
-            manifestPlaceholders=[app_label_name:"@string/app_name"]
-            resValue 'string', 'welcome', 'hello world'
-            buildConfigField 'boolean', 'Log', 'false'
-
-            signingConfig signingConfigs.commonConfigs
         }
     }
-    productFlavors {
-        TX {
-            manifestPlaceholders.put("channel_name", "Tencent")
-        }
-        WDJ {
-            manifestPlaceholders.put("channel_name", "WanDouJia")
-        }
-    }
-
-    android.applicationVariants.all { variant ->
-//        variant.outputs.each { output ->
-//            def outputFile = output.outputFile
-//            if (outputFile != null && outputFile.name.endsWith(".apk")) {
-//                def fileName = outputFile.name.replace(".apk",
-//                        "-${releaseTime()}.apk");
-//                output.outputFile = new File(outputFile.parent, fileName)
-//            }
-//        }
-    }
-
-    useLibrary 'org.apache.http.legacy'
-
-    /**sourceSets {
-        main {
-            jni.srcDir "src/main/jni"
-            jniLibs.srcDir "src/main/libs"
-        }
-    }*/
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
-    api 'com.android.support:support-v4:25.1.0'
-    api 'com.android.support:appcompat-v7:25.1.0'
-    api 'com.android.support.test:runner:0.5'
-    api 'com.umeng.analytics:umeng-analytics:5.4.1'
-    api 'com.android.support:design:25.1.0'
-    api 'com.android.support:cardview-v7:25.1.0'
-    api 'io.reactivex:rxjava:1.1.5'
-    api 'io.reactivex:rxandroid:1.2.0'
-    api project(':DemoLib')
-    api 'com.mcxiaoke.volley:library:1.0.19'
-    api 'com.squareup.retrofit2:retrofit:2.1.0'
-    api 'com.squareup.retrofit2:converter-gson:2.1.0'
-    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    api 'com.alipay.euler:andfix:0.5.0@aar'
-}
-repositories {
-    mavenCentral()
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
