@@ -1,6 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blog.demo">
 
+    <!-- 定义读取权限 -->
+    <permission android:name="com.blog.demo.READ_PEOPLE" />
+    <!-- 定义修改权限 -->
+    <permission android:name="com.blog.demo.WRITE_PEOPLE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
+    <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 
+        <!-- authorities是标识，访问时需要 -->
+        <!-- 设置export为true，对其他apk开放 -->
+        <provider
+            android:authorities="com.blog.demo.people"
+            android:name=".component.provider.PeopleContentProvider"
+            android:readPermission="com.blog.demo.READ_PEOPLE"
+            android:writePermission="com.blog.demo.WRITE_PEOPLE" />
+
+        <service android:name=".component.service.DemoService" />
+        <service android:name=".component.service.AidlService" android:process=":remote" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,5 +37,93 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".component.activity.IntentFlagActivity"
+            android:label="component/activity/flag">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.activity.IntentFlagOtherActivity" />
+        <activity android:name=".component.activity.LifeActivity"
+            android:label="component/activity/life">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.activity.LifeComplexActivity"
+            android:label="component/activity/complex">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.activity.LifeComplexOtherActivity" />
+        <activity android:name=".component.activity.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".component.activity.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".component.activity.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".component.activity.StandardActivity"
+            android:label="component/activity/launchMode">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.fragment.LifeFragmentActivity"
+            android:label="component/fragment">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.intent.IntentActivity"
+            android:label="component/intent">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.intent.IntentCategoryActivity">
+            <intent-filter>
+                <action android:name="com.blog.demo.action.sample" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.blog.demo.MY_CATREORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.intent.IntentSampleActivity">
+            <intent-filter>
+                <action android:name="com.blog.demo.action.intent" />
+                <action android:name="com.blog.demo.action.sample" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.notification.NotificationActivity"
+            android:label="component/notification">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.provider.ProviderContractActivity"
+            android:label="component/provider/contract">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.provider.ProviderCustomActivity"
+            android:label="component/provider/custom">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.service.AidlActivity"
+            android:label="component/service/aidl">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.service.ServiceActivity"
+            android:label="component/service/service">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

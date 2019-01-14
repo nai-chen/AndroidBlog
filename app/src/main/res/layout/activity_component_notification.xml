@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_send_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send notification"/>
+
+    <Button
+        android:id="@+id/btn_send_notification_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send notification large"/>
+
+    <Button
+        android:id="@+id/btn_cancel_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel notification"/>
+
+    <Button
+        android:id="@+id/btn_cancel_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel all"/>
+
+    <Button
+        android:id="@+id/btn_pending_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pending intent"/>
+
+    <RadioGroup
+        android:id="@+id/rg_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_cancel_current">
+        <RadioButton
+            android:id="@+id/rb_cancel_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel current"/>
+        <RadioButton
+            android:id="@+id/rb_no_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no create"/>
+        <RadioButton
+            android:id="@+id/rb_one_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="one shot"/>
+        <RadioButton
+            android:id="@+id/rb_update_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update current"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_remote_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remote view"/>
+</LinearLayout>

@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class MainActivity extends Activity {
@@ -28,34 +28,45 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        Layer layer = (Layer) getIntent().getSerializableExtra(EXTRA_DATA);
+        Layer layer = getIntent().getParcelableExtra(EXTRA_DATA);
         if (layer == null) {
+            layer = new Layer("");
+
             Intent intent = new Intent(ACTION);
             List<ResolveInfo> infoList = getPackageManager().queryIntentActivities(intent,
                     PackageManager.GET_INTENT_FILTERS);
 
             if (infoList != null) {
                 for (ResolveInfo info : infoList) {
-                    layer.addItem(info.loadLabel(getPackageManager()), info.activityInfo.name);
+                    layer.addItem(info.loadLabel(getPackageManager()).toString(), info.activityInfo.name);
                 }
             }
         }
 
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(new MainAdapter(layer));
+
+        final Layer content = layer;
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(content.getValue(position));
+            }
+        });
     }
 
-    private class Layer implements Serializable {
-        public void addItem(CharSequence path, String name) {
-
-        }
-
-        public String getValue(int position) {
-            return null;
-        }
-
-        public int getCount() {
-            return 0;
+    private void startActivity(Layer layer) {
+        if (layer.isEmpty()) {
+            try {
+                Class<?> c = Class.forName(layer.getClassName());
+                startActivity(new Intent(this, c));
+            } catch (ClassNotFoundException e) {
+                LogTool.loge("MainActivity", e);
+            }
+        } else {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra(EXTRA_DATA, layer);
+            startActivity(intent);
         }
     }
 
@@ -84,10 +95,10 @@ public class MainActivity extends Activity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getLayoutInflater().inflate(R.layout.list_item_main, parent);
+                convertView = getLayoutInflater().inflate(R.layout.list_item_main, parent, false);
             }
             TextView tv = convertView.findViewById(R.id.tv_item_title);
-            tv.setText(mLayer.getValue(position));
+            tv.setText(mLayer.getValue(position).getName());
 
             return convertView;
         }
