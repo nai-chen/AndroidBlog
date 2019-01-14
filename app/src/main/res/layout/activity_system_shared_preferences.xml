@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_write_shared_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write shared preferences" />
+
+    <Button
+        android:id="@+id/btn_read_shared_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read shared preferences" />
+
+</LinearLayout>

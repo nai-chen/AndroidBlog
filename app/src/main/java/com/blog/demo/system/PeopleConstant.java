@@ -1,4 +1,4 @@
-package com.blog.demo.component.provider;
+package com.blog.demo.system;
 
 import android.net.Uri;
 

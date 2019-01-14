@@ -12,7 +12,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.blog.demo.R;
-import com.blog.demo.component.provider.PeopleConstant.PeopleColumns;
+import com.blog.demo.People;
+import com.blog.demo.system.PeopleConstant;
+import com.blog.demo.system.PeopleConstant.PeopleColumns;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,10 +38,10 @@ public class ProviderCustomActivity extends Activity implements View.OnClickList
         mEtAddr = findViewById(R.id.et_addr);
         mEtAge = findViewById(R.id.et_age);
 
-        findViewById(R.id.btn_add).setOnClickListener(this);
+        findViewById(R.id.btn_insert).setOnClickListener(this);
         findViewById(R.id.btn_query).setOnClickListener(this);
         findViewById(R.id.btn_delete).setOnClickListener(this);
-        findViewById(R.id.btn_modify).setOnClickListener(this);
+        findViewById(R.id.btn_update).setOnClickListener(this);
         findViewById(R.id.btn_clear).setOnClickListener(this);
 
         mListView = findViewById(R.id.list_view);
@@ -99,7 +101,7 @@ public class ProviderCustomActivity extends Activity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_add:
+            case R.id.btn_insert:
                 insert(mEtName.getText().toString(),
                         mEtAddr.getText().toString(),
                         Integer.parseInt(mEtAge.getText().toString()));
@@ -115,7 +117,7 @@ public class ProviderCustomActivity extends Activity implements View.OnClickList
                     mId = -1;
                 }
                 break;
-            case R.id.btn_modify:
+            case R.id.btn_update:
                 if (mId != -1) {
                     update(mId, mEtName.getText().toString(),
                             mEtAddr.getText().toString(),
@@ -164,24 +166,6 @@ public class ProviderCustomActivity extends Activity implements View.OnClickList
             cursor.close();
         }
         return list;
-    }
-
-    private class People {
-        int id;
-        String name;
-        String addr;
-        int age;
-
-        People(int id, String name, String addr, int age) {
-            this.id = id;
-            this.name = name;
-            this.addr = addr;
-            this.age = age;
-        }
-
-        String description() {
-            return id + ":" + name + ":" + addr + ":" + age;
-        }
     }
 
 }

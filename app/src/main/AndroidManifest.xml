@@ -125,5 +125,66 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".system.json.FastJsonActivity"
+            android:label="system/json/fastjson">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.json.JsonActivity"
+            android:label="system/json/json">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.json.GsonActivity"
+            android:label="system/json/gson">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.BatteryManagerActivity"
+            android:label="system/battery manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.DisplayMetricsActivity"
+            android:label="system/display metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.FileActivity"
+            android:label="system/file">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.MemoryInfoActivity"
+            android:label="system/memory info">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.SharedPreferencesActivity"
+            android:label="system/shared preferences">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.SQLiteActivity"
+            android:label="system/sqlite">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.XmlActivity"
+            android:label="system/xml">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

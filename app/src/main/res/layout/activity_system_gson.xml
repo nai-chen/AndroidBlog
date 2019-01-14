@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_write_gson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write gson"/>
+
+    <Button
+        android:id="@+id/btn_read_gson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read gson"/>
+
+    <Button
+        android:id="@+id/btn_write_gson_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="write gson bean"/>
+
+    <Button
+        android:id="@+id/btn_read_gson_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read gson bean"/>
+
+</LinearLayout>
