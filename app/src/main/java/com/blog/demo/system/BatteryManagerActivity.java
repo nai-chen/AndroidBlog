@@ -8,30 +8,25 @@ import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.widget.TextView;
 
-import com.blog.demo.LogTool;
+import com.blog.demo.R;
 
 public class BatteryManagerActivity extends Activity {
-    private static final String LOG_TAG = "BatteryManagerActivity";
+    private TextView textView;
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            LogTool.logi(LOG_TAG, "Status = " + getStatus(intent));
-            LogTool.logi(LOG_TAG, "Health = " + getHealth(intent));
-            LogTool.logi(LOG_TAG, "Present = " +
-                    intent.getBooleanExtra(BatteryManager.EXTRA_PRESENT, false));
-            LogTool.logi(LOG_TAG, "Level = " +
-                    intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0));
-            LogTool.logi(LOG_TAG, "Scale = " +
-                    intent.getIntExtra(BatteryManager.EXTRA_SCALE, 0));
-            LogTool.logi(LOG_TAG, "Plugged = " + getPlug(intent));
-            LogTool.logi(LOG_TAG, "Voltage = " +
-                    intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0));
-            LogTool.logi(LOG_TAG, "Temperature = " +
-                    intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0));
-            LogTool.logi(LOG_TAG, "Technology = " +
-                    intent.getStringExtra(BatteryManager.EXTRA_TECHNOLOGY));
+            textView.setText("Status = " + getStatus(intent) + "\n"
+                    + "Health = " + getHealth(intent) + "\n"
+                    + "Present = " + intent.getBooleanExtra(BatteryManager.EXTRA_PRESENT, false) + "\n"
+                    + "Level = " +intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0) + "\n"
+                    + "Scale = " + intent.getIntExtra(BatteryManager.EXTRA_SCALE, 0) + "\n"
+                    + "Plugged = " + getPlug(intent) + "\n"
+                    + "Voltage = " + intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE, 0) + "\n"
+                    + "Temperature = " + intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0) + "\n"
+                    + "Technology = " + intent.getStringExtra(BatteryManager.EXTRA_TECHNOLOGY));
         }
     };
 
@@ -39,8 +34,17 @@ public class BatteryManagerActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.activity_text);
+        textView = findViewById(R.id.text_view);
+
         IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         registerReceiver(mReceiver, filter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(mReceiver);
     }
 
     private String getStatus(Intent intent) {
