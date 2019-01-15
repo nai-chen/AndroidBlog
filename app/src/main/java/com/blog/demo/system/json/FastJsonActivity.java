@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -14,6 +15,7 @@ import com.blog.demo.R;
 
 public class FastJsonActivity extends Activity implements View.OnClickListener {
 
+    private TextView textView;
     private String json;
 
     @Override
@@ -26,20 +28,26 @@ public class FastJsonActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_read_fast_json).setOnClickListener(this);
         findViewById(R.id.btn_write_fast_json_bean).setOnClickListener(this);
         findViewById(R.id.btn_read_fast_json_bean).setOnClickListener(this);
+
+        textView = findViewById(R.id.text_view);
     }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_write_fast_json) {
             json = writeObject();
+            textView.setText(json);
         } else if (v.getId() == R.id.btn_read_fast_json) {
             JsonData data = readObject(json);
             LogTool.logi("FastJsonActivity", data.toString());
+            textView.setText(data.toString());
         } else if (v.getId() == R.id.btn_write_fast_json_bean) {
             json = writeJavaBeen();
+            textView.setText(json);
         } else if (v.getId() == R.id.btn_read_fast_json_bean) {
             JsonData data = readJavaBeen(json);
             LogTool.logi("FastJsonActivity", data.toString());
+            textView.setText(data.toString());
         }
     }
 

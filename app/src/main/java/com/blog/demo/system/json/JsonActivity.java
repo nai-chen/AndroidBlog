@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.People;
@@ -16,6 +17,7 @@ import org.json.JSONObject;
 public class JsonActivity extends Activity implements View.OnClickListener {
 
     private String json;
+    private TextView textView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class JsonActivity extends Activity implements View.OnClickListener {
 
         findViewById(R.id.btn_write_json).setOnClickListener(this);
         findViewById(R.id.btn_read_json).setOnClickListener(this);
+
+        textView = findViewById(R.id.text_view);
     }
 
     @Override
@@ -32,12 +36,14 @@ public class JsonActivity extends Activity implements View.OnClickListener {
         if (v.getId() == R.id.btn_write_json) {
             try {
                 json = writeObject();
+                textView.setText(json);
             } catch (JSONException e) {
             }
         } else if (v.getId() == R.id.btn_read_json) {
             try {
                 JsonData data = readObject(json);
                 LogTool.logi("JsonActivity", data.toString());
+                textView.setText(data.toString());
             } catch (JSONException e) {
 
             }

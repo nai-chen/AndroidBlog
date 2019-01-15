@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
+import android.widget.TextView;
 
 import com.blog.demo.LogTool;
+import com.blog.demo.R;
 
 public class DisplayMetricsActivity extends Activity {
 
@@ -13,12 +15,16 @@ public class DisplayMetricsActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.activity_text);
+
+        TextView textView = findViewById(R.id.text_view);
+
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
-        LogTool.logi("DisplayMetricsActivity", "widthPixels = " + dm.widthPixels);
-        LogTool.logi("DisplayMetricsActivity", "heightPixels = " + dm.heightPixels);
-        LogTool.logi("DisplayMetricsActivity", "densityDpi = " + dm.densityDpi);
-        LogTool.logi("DisplayMetricsActivity", "density = " + dm.density);
+        textView.setText("widthPixels = " + dm.widthPixels + "\n"
+                    + "heightPixels = " + dm.heightPixels + "\n"
+                    + "densityDpi = " + dm.densityDpi + "\n"
+                    + "density = " + dm.density);
     }
 }

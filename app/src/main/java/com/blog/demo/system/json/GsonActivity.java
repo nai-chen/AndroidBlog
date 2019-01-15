@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.People;
@@ -15,6 +16,7 @@ import com.google.gson.JsonParser;
 
 public class GsonActivity extends Activity implements View.OnClickListener {
 
+    private TextView textView;
     private String json;
 
     @Override
@@ -27,20 +29,26 @@ public class GsonActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_read_gson).setOnClickListener(this);
         findViewById(R.id.btn_write_gson_bean).setOnClickListener(this);
         findViewById(R.id.btn_read_gson_bean).setOnClickListener(this);
+
+        textView = findViewById(R.id.text_view);
     }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_write_gson) {
             json = writeObject();
+            textView.setText(json);
         } else if (v.getId() == R.id.btn_read_gson) {
             JsonData data = readObject(json);
             LogTool.logi("GsonActivity", data.toString());
+            textView.setText(data.toString());
         } else if (v.getId() == R.id.btn_write_gson_bean) {
             json = writeJavaBeen();
+            textView.setText(json);
         } else if (v.getId() == R.id.btn_read_gson_bean) {
             JsonData data = readJavaBeen(json);
             LogTool.logi("GsonActivity", data.toString());
+            textView.setText(data.toString());
         }
     }
 

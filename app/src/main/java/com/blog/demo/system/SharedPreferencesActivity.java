@@ -5,12 +5,15 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;
 
 public class SharedPreferencesActivity extends Activity implements View.OnClickListener {
     private static final String LOG_TAG = "SharedPreferencesActivity";
+
+    private TextView textView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -19,6 +22,8 @@ public class SharedPreferencesActivity extends Activity implements View.OnClickL
 
         findViewById(R.id.btn_write_shared_preferences).setOnClickListener(this);
         findViewById(R.id.btn_read_shared_preferences).setOnClickListener(this);
+
+        textView = findViewById(R.id.text_view);
     }
 
     @Override
@@ -34,11 +39,11 @@ public class SharedPreferencesActivity extends Activity implements View.OnClickL
             editor.commit();
         } else if (v.getId() == R.id.btn_read_shared_preferences) {
             SharedPreferences preference = getSharedPreferences("people", MODE_PRIVATE);
-            LogTool.logi(LOG_TAG, "iValue = " + preference.getInt("iValue", 0));
-            LogTool.logi(LOG_TAG, "fValue = " + preference.getFloat("fValue", 0));
-            LogTool.logi(LOG_TAG, "bValue = " + preference.getBoolean("bValue", false));
-            LogTool.logi(LOG_TAG, "lValue = " + preference.getLong("lValue", 0));
-            LogTool.logi(LOG_TAG, "strValue = " + preference.getString("strValue", ""));
+            textView.setText("iValue = " + preference.getInt("iValue", 0) + "\n"
+                    + "fValue = " + preference.getFloat("fValue", 0) + "\n"
+                    + "bValue = " + preference.getBoolean("bValue", false) + "\n"
+                    + "lValue = " + preference.getLong("lValue", 0) + "\n"
+                    + "strValue = " + preference.getString("strValue", ""));
         }
     }
 
