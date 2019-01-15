@@ -3,6 +3,7 @@ package com.blog.demo.system.json;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,6 +30,7 @@ public class JsonActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_read_json).setOnClickListener(this);
 
         textView = findViewById(R.id.text_view);
+        textView.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
 
     @Override
