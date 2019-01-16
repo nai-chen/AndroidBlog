@@ -8,6 +8,9 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
     <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
 
@@ -36,6 +39,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".application.SoftInputManagerActivity"
+            android:label="application/soft input manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.SpannableActivity"
+            android:label="application/spannable">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.SystemUiVisibilityActivity"
+            android:label="application/system ui visibility">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.SystemUiVisibilitySampleActivity" />
 
         <activity android:name=".component.activity.IntentFlagActivity"
             android:label="component/activity/flag">
@@ -126,6 +149,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".custom.FlowLayoutActivity"
+            android:label="custom/flow layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".system.json.FastJsonActivity"
             android:label="system/json/fastjson">
             <intent-filter>
@@ -150,8 +179,26 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".system.BuildActivity"
+            android:label="system/build">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.ConnectivityManagerActivity"
+            android:label="system/connectivity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".system.DisplayMetricsActivity"
             android:label="system/display metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.EnvironmentActivity"
+            android:label="system/environment">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -176,6 +223,18 @@
         </activity>
         <activity android:name=".system.SQLiteActivity"
             android:label="system/sqlite">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.TelephonyManagerActivity"
+            android:label="system/telephony manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.VibratorActivity"
+            android:label="system/vibrator">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cb_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profile"/>
+
+    <CheckBox
+        android:id="@+id/cb_hide_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hide navigation"/>
+
+    <CheckBox
+        android:id="@+id/cb_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fullscreen"/>
+
+    <CheckBox
+        android:id="@+id/cb_layout_hide_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="layout hide navigation"/>
+
+    <CheckBox
+        android:id="@+id/cb_layout_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="layout fullscreen"/>
+
+    <CheckBox
+        android:id="@+id/cb_layout_stable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="layout stable"/>
+
+    <CheckBox
+        android:id="@+id/cb_immersive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="immersive"/>
+
+    <CheckBox
+        android:id="@+id/cb_immersive_sticky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="immersive sticky"/>
+
+    <CheckBox
+        android:id="@+id/cb_light_status_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="light status bar"/>
+
+    <CheckBox
+        android:id="@+id/cb_fits_system_windows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fits system window"/>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"/>
+
+</LinearLayout>

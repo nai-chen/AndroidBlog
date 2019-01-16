@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_vibrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vibrator"/>
+
+    <Button
+        android:id="@+id/btn_vibrator_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vibrator wave"/>
+
+    <Button
+        android:id="@+id/btn_cancel_vibrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel vibrator"/>
+
+    <Button
+        android:id="@+id/btn_vibrator_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vibrator effect"/>
+
+    <Button
+        android:id="@+id/btn_vibrator_effect_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vibrator effect wave"/>
+
+</LinearLayout>

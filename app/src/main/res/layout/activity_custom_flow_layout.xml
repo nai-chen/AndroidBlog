@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.blog.demo.custom.widget.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flow_1"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_2"
+            android:scaleType="fitXY"
+            app:gravity="middle"/>
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_3"
+            android:scaleType="fitXY"
+            app:gravity="bottom"/>
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_4"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flow_1"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_2"
+            android:scaleType="fitXY"
+            app:gravity="middle"/>
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_3"
+            android:scaleType="fitXY"
+            app:gravity="bottom"/>
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="75dp"
+            android:src="@drawable/flow_4"
+            android:scaleType="fitXY" />
+    </com.blog.demo.custom.widget.FlowLayout>
+
+</LinearLayout>
