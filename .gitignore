@@ -10,3 +10,6 @@
 .externalNativeBuild
 .idea/assetWizardSettings.xml
 .idea/caches/build_file_checksums.ser
+.idea/qaplug_profiles.xml
+.idea/misc.xml
+.idea/encodings.xml
