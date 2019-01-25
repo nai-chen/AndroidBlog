@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_visibility_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visibility code"/>
+
+    <Button
+        android:id="@+id/btn_visibility_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visibility xml"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp">
+        <include
+            layout="@layout/layout_scene_init" />
+    </RelativeLayout>
+</LinearLayout>
