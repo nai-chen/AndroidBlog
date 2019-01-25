@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.blog.demo.LogTool;
 import com.blog.demo.R;
 
 import java.io.ByteArrayOutputStream;
@@ -31,9 +32,12 @@ public class AsyncTaskActivity extends Activity {
         findViewById(R.id.btn_download).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                new BitmapAsyncTask().execute("");
+                new BitmapAsyncTask().execute("http://img.netbian.com/file/2019/0115/cc7cf9dad4e841b58a76a1d8ad594209.jpg");
             }
         });
+
+        mProgressBar = findViewById(R.id.progress_bar_download);
+        mImageView = findViewById(R.id.iv_down_load);
     }
 
     private class BitmapAsyncTask extends AsyncTask<String, Integer, Bitmap> {
@@ -44,7 +48,7 @@ public class AsyncTaskActivity extends Activity {
                 URL uri = new URL(url[0]);
                 URLConnection connection = uri.openConnection();
                 InputStream input = connection.getInputStream();
-                int size = connection.getContentLength();
+                int contentLength = connection.getContentLength();
 
                 ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
@@ -54,12 +58,14 @@ public class AsyncTaskActivity extends Activity {
                 while ((length = input.read(buffer)) != -1) {
                     outputStream.write(buffer, 0, length);
                     sum += length;
-                    publishProgress(sum * 100 / size);
+                    publishProgress(sum * 100 / contentLength);
+                    LogTool.logi("AsyncTaskActivity", "sum = " + sum + ", contentLength = " + contentLength);
                 }
                 input.close();
 
                 return BitmapFactory.decodeByteArray(outputStream.toByteArray(), 0, outputStream.size());
             } catch (IOException e) {
+                e.printStackTrace();
             }
 
             return null;

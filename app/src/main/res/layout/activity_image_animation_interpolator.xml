@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_accelerate_decelerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AccelerateDecelerate"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_accelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerate"/>
+        <Button
+            android:id="@+id/btn_decelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decelerate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_anticipate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anticipate"/>
+        <Button
+            android:id="@+id/btn_anticipate_overshoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnticipateOvershoot"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_bounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bounce"/>
+        <Button
+            android:id="@+id/btn_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cycle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear"/>
+        <Button
+            android:id="@+id/btn_overshoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overshoot"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/animation"/>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_translate_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="translate xml"/>
+        <Button
+            android:id="@+id/btn_translate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="translate code"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_scale_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scale xml"/>
+        <Button
+            android:id="@+id/btn_scale_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scale code"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_rotate_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate xml"/>
+        <Button
+            android:id="@+id/btn_rotate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rotate code"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_alpha_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alpha xml"/>
+        <Button
+            android:id="@+id/btn_alpha_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alpha code"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_set_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set xml"/>
+        <Button
+            android:id="@+id/btn_set_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set code"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel animation"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/animation"/>
+
+</LinearLayout>

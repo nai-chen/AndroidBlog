@@ -10,10 +10,9 @@
         android:layout_height="wrap_content"
         android:text="download"/>
 
-
     <ProgressBar
         android:id="@+id/progress_bar_download"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="10dp"
         style="?android:attr/progressBarStyleHorizontal"
         android:max="100"/>
@@ -21,6 +20,5 @@
     <ImageView
         android:id="@+id/iv_down_load"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitCenter"/>
+        android:layout_height="200dp" />
 </LinearLayout>

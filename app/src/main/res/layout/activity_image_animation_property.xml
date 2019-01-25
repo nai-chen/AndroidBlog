@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_value_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value Animator"/>
+        <Button
+            android:id="@+id/btn_object_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Object Animator"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_property_values_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Values Holder"/>
+
+        <Button
+            android:id="@+id/btn_animator_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animator Set"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_play_sequentially"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Sequentially"/>
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_key_frames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Key frames"/>
+
+        <Button
+            android:id="@+id/btn_type_evaluator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type Evaluator"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/animation"/>
+</LinearLayout>

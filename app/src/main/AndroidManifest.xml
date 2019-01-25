@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
     <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
@@ -40,6 +41,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".application.AsyncTaskActivity"
+            android:label="application/async task">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.HandlerActivity"
+            android:label="application/handler">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.SoftInputManagerActivity"
             android:label="application/soft input manager">
             <intent-filter>
@@ -155,6 +168,38 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".image.AnimationInterpolatorActivity"
+            android:label="image/animation interpolator">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.FrameAnimationActivity"
+            android:label="image/animation frame">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.LayoutAnimationActivity"
+            android:label="image/animation layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.PropertyAnimationActivity"
+            android:label="image/animation property">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.TweenAnimationActivity"
+            android:label="image/tween animation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".system.json.FastJsonActivity"
             android:label="system/json/fastjson">
             <intent-filter>
