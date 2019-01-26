@@ -294,6 +294,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".system.FontMetricsActivity"
+            android:label="system/font metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".system.MemoryInfoActivity"
             android:label="system/memory info">
             <intent-filter>
