@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.Transition">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:windowEnterTransition">@transition/transition_enter_from_right</item>
+        <item name="android:windowExitTransition">@transition/transition_exit_explode</item>
+    </style>
+
 </resources>

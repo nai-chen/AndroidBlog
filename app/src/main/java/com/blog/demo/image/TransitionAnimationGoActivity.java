@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.blog.demo.R;
 
-public class TransitionGoActivity extends Activity implements View.OnClickListener {
+public class TransitionAnimationGoActivity extends Activity implements View.OnClickListener {
 
     private ViewGroup mContainer;
     private boolean mChange;

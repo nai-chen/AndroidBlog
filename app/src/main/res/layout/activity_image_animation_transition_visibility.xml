@@ -17,11 +17,10 @@
         android:text="visibility xml"/>
 
     <RelativeLayout
-        android:id="@+id/layout_container"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="15dp">
+        android:layout_height="150dp">
         <include
+            android:id="@+id/layout_container"
             layout="@layout/layout_scene_init" />
     </RelativeLayout>
 </LinearLayout>

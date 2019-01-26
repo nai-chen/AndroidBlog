@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 import com.blog.demo.R;
 
-public class TransitionDelayActivity extends Activity implements View.OnClickListener {
+public class TransitionAnimationDelayActivity extends Activity implements View.OnClickListener {
     private ViewGroup mContainer;
     private ImageView mImageView;
     private boolean mChange;

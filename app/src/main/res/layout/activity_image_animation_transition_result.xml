@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/iv_link"
         android:layout_width="50dp"
@@ -9,29 +11,29 @@
         android:layout_margin="15dp"
         android:src="@drawable/icon_link"
         android:transitionName="sharedView1"/>
+
     <ImageView
         android:id="@+id/iv_qq"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="15dp"
-        android:layout_alignParentRight="true"
         android:src="@drawable/icon_qq"
         android:transitionName="sharedView2"/>
+
     <ImageView
         android:id="@+id/iv_pyq"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="15dp"
-        android:layout_alignParentBottom="true"
         android:src="@drawable/icon_pyq"
         android:transitionName="sharedView3"/>
+
     <ImageView
         android:id="@+id/iv_wx"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="15dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
         android:src="@drawable/icon_wx"
-        android:transitionName="sharedView3"/>
-</RelativeLayout>
+        android:transitionName="sharedView4"/>
+
+</LinearLayout>

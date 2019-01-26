@@ -193,18 +193,34 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.TransitionGoActivity"
+        <activity android:name=".image.TransitionAnimationActivity"
+            android:label="image/animation transition/animation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.TransitionAnimationResultActivity" />
+        <activity android:name=".image.TransitionAnimationGoActivity"
             android:label="image/animation transition/go">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.TransitionDelayActivity"
+        <activity android:name=".image.TransitionAnimationDelayActivity"
             android:label="image/animation transition/delay">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.TransitionAnimationThemeActivity"
+            android:theme="@style/AppTheme.Transition"
+            android:label="image/animation transition/theme">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.TransitionAnimationThemeResultActivity"
+            android:theme="@style/AppTheme.Transition"/>
         <activity android:name=".image.TransitionVisibilityActivity"
             android:label="image/animation transition/visibility">
             <intent-filter>

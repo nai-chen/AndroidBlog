@@ -6,23 +6,27 @@
         android:id="@+id/iv_wx"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_margin="15dp"
         android:src="@drawable/icon_wx"/>
     <ImageView
         android:id="@+id/iv_pyq"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_margin="15dp"
         android:layout_alignParentRight="true"
         android:src="@drawable/icon_pyq"/>
     <ImageView
         android:id="@+id/iv_qq"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_margin="15dp"
         android:layout_alignParentBottom="true"
         android:src="@drawable/icon_qq"/>
     <ImageView
         android:id="@+id/iv_link"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_margin="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:src="@drawable/icon_link"/>
