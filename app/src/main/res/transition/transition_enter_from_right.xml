@@ -4,6 +4,7 @@
     android:duration="1000">
     <fade>
         <targets>
+            <!-- excludeId 表示我们不需要该 id 的 view 进行过渡转场 -->
             <target android:excludeId="@android:id/statusBarBackground" />
             <target android:excludeId="@android:id/navigationBarBackground" />
         </targets>

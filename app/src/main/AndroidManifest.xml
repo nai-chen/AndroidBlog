@@ -199,19 +199,19 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.TransitionAnimationResultActivity" />
-        <activity android:name=".image.TransitionAnimationGoActivity"
-            android:label="image/animation transition/go">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
         <activity android:name=".image.TransitionAnimationDelayActivity"
             android:label="image/animation transition/delay">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.TransitionAnimationGoActivity"
+            android:label="image/animation transition/go">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.TransitionAnimationResultActivity" />
         <activity android:name=".image.TransitionAnimationThemeActivity"
             android:theme="@style/AppTheme.Transition"
             android:label="image/animation transition/theme">

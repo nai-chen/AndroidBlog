@@ -6,12 +6,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- 添加支持Transations -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- 前后两个页面是同步执行还是顺序执行, true为同步 -->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
     </style>
 
     <style name="AppTheme.Transition">
-        <item name="android:windowActivityTransitions">true</item>
-        <item name="android:windowAllowEnterTransitionOverlap">false</item>
-        <item name="android:windowAllowReturnTransitionOverlap">false</item>
         <item name="android:windowEnterTransition">@transition/transition_enter_from_right</item>
         <item name="android:windowExitTransition">@transition/transition_exit_explode</item>
     </style>
