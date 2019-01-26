@@ -181,6 +181,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.ImageViewActivity"
+            android:label="image/image view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.LayoutAnimationActivity"
             android:label="image/animation layout">
             <intent-filter>
