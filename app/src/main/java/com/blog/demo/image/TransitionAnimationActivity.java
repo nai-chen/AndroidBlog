@@ -21,7 +21,6 @@ public class TransitionAnimationActivity extends Activity implements View.OnClic
         setContentView(R.layout.activity_image_animation_transition);
 
         findViewById(R.id.iv_link).setOnClickListener(this);
-        findViewById(R.id.iv_qq).setOnClickListener(this);
     }
 
     @Override
