@@ -1,7 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#FFF5F5F5">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:background="@drawable/shape_rect" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_oval" />
+		<TextView
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_ring" />
+		<TextView
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_line" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:background="@drawable/shape_rect_line" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_rect_dash_line" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:background="@drawable/shape_rect_corner" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_rect_corner_sep" />
+	</LinearLayout>
+
+	<LinearLayout
+        android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_gradient" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_gradient_radial" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_gradient_sweep" />
+
+    </LinearLayout>
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:background="@drawable/shape_gradient_radial30" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_radial" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_angle" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_angle90" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_angle180" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_oval" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_ring" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_oval_sweep" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_gradient_ring_sweep" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_ring" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_ring_thickness10" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_ring_inner_radius15" />
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/shape_ring_thickness_ratio" />
+	</LinearLayout>
 
 </LinearLayout>

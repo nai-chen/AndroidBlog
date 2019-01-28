@@ -199,6 +199,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.ShapeActivity"
+            android:label="image/shape">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.TransitionAnimationActivity"
             android:label="image/animation transition/animation">
             <intent-filter>
