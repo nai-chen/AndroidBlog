@@ -169,14 +169,66 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".image.AnimationInterpolatorActivity"
-            android:label="image/animation interpolator">
+        <activity android:name=".image.animation.AnimationInterpolatorActivity"
+            android:label="image/animation/interpolator">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.FrameAnimationActivity"
-            android:label="image/animation frame">
+        <activity android:name=".image.animation.FrameAnimationActivity"
+            android:label="image/animation/frame">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.LayoutAnimationActivity"
+            android:label="image/animation/layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.PropertyAnimationActivity"
+            android:label="image/animation/property">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TransitionAnimationActivity"
+            android:label="image/animation/transition/animation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TransitionAnimationDelayActivity"
+            android:label="image/animation/transition/delay">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TransitionAnimationGoActivity"
+            android:label="image/animation/transition/go">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TransitionAnimationResultActivity" />
+        <activity android:name=".image.animation.TransitionAnimationThemeActivity"
+            android:theme="@style/AppTheme.Transition"
+            android:label="image/animation/transition/theme">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TransitionAnimationThemeResultActivity"
+            android:theme="@style/AppTheme.Transition"/>
+        <activity android:name=".image.animation.TransitionVisibilityActivity"
+            android:label="image/animation/transition/visibility">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.animation.TweenAnimationActivity"
+            android:label="image/animation/tween">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -187,14 +239,14 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.LayoutAnimationActivity"
-            android:label="image/animation layout">
+        <activity android:name=".image.MediaPlayerAudioActivity"
+            android:label="image/media player/audio">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.PropertyAnimationActivity"
-            android:label="image/animation property">
+        <activity android:name=".image.MediaPlayerVideoActivity"
+            android:label="image/media player/video">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -207,46 +259,6 @@
         </activity>
         <activity android:name=".image.ShapeActivity"
             android:label="image/shape">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TransitionAnimationActivity"
-            android:label="image/animation transition/animation">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TransitionAnimationDelayActivity"
-            android:label="image/animation transition/delay">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TransitionAnimationGoActivity"
-            android:label="image/animation transition/go">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TransitionAnimationResultActivity" />
-        <activity android:name=".image.TransitionAnimationThemeActivity"
-            android:theme="@style/AppTheme.Transition"
-            android:label="image/animation transition/theme">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TransitionAnimationThemeResultActivity"
-            android:theme="@style/AppTheme.Transition"/>
-        <activity android:name=".image.TransitionVisibilityActivity"
-            android:label="image/animation transition/visibility">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.TweenAnimationActivity"
-            android:label="image/tween animation">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

@@ -1,4 +1,4 @@
-package com.blog.demo.image;
+package com.blog.demo.image.animation;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -44,7 +44,7 @@ public class AnimationInterpolatorActivity extends Activity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_translate_down);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_translate);
         if (v.getId() == R.id.btn_accelerate_decelerate) {
             animation.setInterpolator(new AccelerateDecelerateInterpolator());
         } else if (v.getId() == R.id.btn_accelerate) {

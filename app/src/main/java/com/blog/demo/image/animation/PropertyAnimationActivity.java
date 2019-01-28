@@ -1,4 +1,4 @@
-package com.blog.demo.image;
+package com.blog.demo.image.animation;
 
 import android.animation.AnimatorSet;
 import android.animation.FloatEvaluator;
