@@ -1,8 +1,8 @@
 package com.blog.demo.image;
 
 import android.app.Activity;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -16,20 +16,19 @@ import java.io.IOException;
 public class MediaPlayerVideoActivity extends Activity implements View.OnClickListener {
     private MediaPlayer mMediaPlayer;
     private SurfaceView mSurfaceView;
-    private String mFilePath = "video.3gp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_media_player_video);
+        setContentView(R.layout.activity_image_media_player_video);
         mSurfaceView = findViewById(R.id.surface_view);
         SurfaceHolder holder = mSurfaceView.getHolder();
 
         holder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
-                createMediaPlayer();
+//                createMediaPlayer();
             }
 
             @Override
@@ -79,11 +78,10 @@ public class MediaPlayerVideoActivity extends Activity implements View.OnClickLi
 
     private void createMediaPlayer() {
         mMediaPlayer.reset();
-//        String filePath = Util.copyFromAsset(this, mFilePath);
-        Uri uri = Uri.parse("file:///android_asset/video.3gp");
 
         try {
-            mMediaPlayer.setDataSource(this, uri);
+            AssetFileDescriptor fd = getAssets().openFd("video.3gp");
+            mMediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
             mMediaPlayer.prepare();
             mMediaPlayer.setDisplay(mSurfaceView.getHolder());
             mMediaPlayer.start();
@@ -117,12 +115,14 @@ public class MediaPlayerVideoActivity extends Activity implements View.OnClickLi
 
         @Override
         public void onPrepared(MediaPlayer mp) {
-            Toast.makeText(MediaPlayerVideoActivity.this, "onPrepared", Toast.LENGTH_LONG).show();
+            Toast.makeText(MediaPlayerVideoActivity.this, "onPrepared",
+                    Toast.LENGTH_LONG).show();
         }
 
         @Override
         public void onCompletion(MediaPlayer mp) {
-            Toast.makeText(MediaPlayerVideoActivity.this, "onCompletion", Toast.LENGTH_LONG).show();
+            Toast.makeText(MediaPlayerVideoActivity.this, "onCompletion",
+                    Toast.LENGTH_LONG).show();
         }
     }
 

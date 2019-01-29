@@ -1,23 +1,28 @@
 package com.blog.demo.image;
 
 import android.app.Activity;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.blog.demo.LogTool;
 import com.blog.demo.R;
 
+import java.io.FileDescriptor;
 import java.io.IOException;
 
 public class MediaPlayerAudioActivity extends Activity implements View.OnClickListener {
+    private static final String LOG_TAG = "MediaPlayerAudioActivity";
     private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_media_player_audio);
+        setContentView(R.layout.activity_image_media_player_audio);
 
         findViewById(R.id.btn_create).setOnClickListener(this);
         findViewById(R.id.btn_start).setOnClickListener(this);
@@ -56,13 +61,14 @@ public class MediaPlayerAudioActivity extends Activity implements View.OnClickLi
 
     private void createMediaPlayer() {
         mMediaPlayer.reset();
-        String filePath = "/sdcard/demo.mp3";
 
         try {
-            mMediaPlayer.setDataSource(filePath);
+            AssetFileDescriptor fd = getAssets().openFd("demo.mp3");
+            mMediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
             mMediaPlayer.prepare();
             mMediaPlayer.start();
         } catch (IOException e) {
+            LogTool.loge(LOG_TAG, e);
         }
     }
 
@@ -70,6 +76,7 @@ public class MediaPlayerAudioActivity extends Activity implements View.OnClickLi
         try {
             mMediaPlayer.start();
         } catch (IllegalStateException e) {
+            LogTool.loge(LOG_TAG, e);
         }
     }
 
@@ -77,6 +84,7 @@ public class MediaPlayerAudioActivity extends Activity implements View.OnClickLi
         try  {
             mMediaPlayer.pause();
         } catch (IllegalStateException e) {
+            LogTool.loge(LOG_TAG, e);
         }
     }
 
@@ -84,6 +92,7 @@ public class MediaPlayerAudioActivity extends Activity implements View.OnClickLi
         try {
             mMediaPlayer.stop();
         } catch (IllegalStateException e) {
+            LogTool.loge(LOG_TAG, e);
         }
     }
 

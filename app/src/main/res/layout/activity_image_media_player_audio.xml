@@ -24,16 +24,4 @@
         android:layout_height="wrap_content"
         android:text="stop"/>
 
-    <Button
-        android:id="@+id/btn_get_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="get_position"/>
-
-    <Button
-        android:id="@+id/btn_seek_to"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="seek_to"/>
-
 </LinearLayout>
