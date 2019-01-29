@@ -27,13 +27,13 @@
             android:id="@+id/btn_start_video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="start audio"/>
+            android:text="start video"/>
 
         <Button
             android:id="@+id/btn_stop_video"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="stop audio"/>
+            android:text="stop video"/>
     </LinearLayout>
 
     <RelativeLayout

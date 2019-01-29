@@ -56,12 +56,22 @@ public class MediaCodecActivity extends Activity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_start_audio) {
-            startAudio("demo.mp3");
+            new Thread() {
+                @Override
+                public void run() {
+                    startAudio("demo.mp3");
+                }
+            }.start();
         } else if (v.getId() == R.id.btn_stop_audio) {
             mStopAudio = true;
-        } else if (v.getId() == R.id.btn_start_audio) {
-            startVideo("video.mp3");
-        } else if (v.getId() == R.id.btn_stop_audio) {
+        } else if (v.getId() == R.id.btn_start_video) {
+            new Thread() {
+                @Override
+                public void run() {
+                    startVideo("video.3gp");
+                }
+            }.start();
+        } else if (v.getId() == R.id.btn_stop_video) {
             mStopVideo = true;
         }
     }

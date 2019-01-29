@@ -245,6 +245,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.MediaMetadataRetrieverActivity"
+            android:label="image/media metadata retriever">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.MediaPlayerAudioActivity"
             android:label="image/media player/audio">
             <intent-filter>
