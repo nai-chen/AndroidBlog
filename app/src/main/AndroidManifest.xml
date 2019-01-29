@@ -163,6 +163,30 @@
         </activity>
 
 
+        <activity android:name=".control.button.CheckBoxActivity"
+            android:label="control/button/check box">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.button.RadioButtonActivity"
+            android:label="control/button/radio button">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.button.SwitchActivity"
+            android:label="control/button/switch">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.button.ToggleButtonActivity"
+            android:label="control/button/toggle button">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.edit.EditTextImeOptionsActivity"
             android:label="control/edit text/ime options">
             <intent-filter>
