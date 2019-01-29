@@ -36,7 +36,7 @@ public class MediaMetadataRetrieverActivity extends Activity implements View.OnC
             try {
                 AssetFileDescriptor fd = getAssets().openFd("video.3gp");
                 retriever.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
-                Bitmap bitmap = retriever.getFrameAtTime();
+                Bitmap bitmap = retriever.getFrameAtTime(); // 视频第一帧图像
                 if (bitmap != null) {
                     imageView.setImageBitmap(bitmap);
                     LogTool.logi(LOG_TAG, bitmap.getWidth() + "");
@@ -52,13 +52,13 @@ public class MediaMetadataRetrieverActivity extends Activity implements View.OnC
             try {
                 AssetFileDescriptor fd = getAssets().openFd("demo.mp3");
                 retriever.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ALBUM));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_MIMETYPE));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ARTIST));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_BITRATE));
-                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DATE));
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ALBUM) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_MIMETYPE) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ARTIST) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_BITRATE) + "");
+                LogTool.logi(LOG_TAG, retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DATE) + "");
             } catch (IOException e) {
                 LogTool.loge(LOG_TAG, e);
             }
