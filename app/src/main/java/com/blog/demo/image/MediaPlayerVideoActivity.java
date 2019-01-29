@@ -28,7 +28,8 @@ public class MediaPlayerVideoActivity extends Activity implements View.OnClickLi
         holder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
-//                createMediaPlayer();
+                // createMediaPlayer方法必须要等待Surface被创建以后调用
+                createMediaPlayer();
             }
 
             @Override
@@ -37,7 +38,6 @@ public class MediaPlayerVideoActivity extends Activity implements View.OnClickLi
 
             @Override
             public void surfaceDestroyed(SurfaceHolder holder) {
-                stopMediaPlayer();
             }
         });
 
@@ -81,7 +81,8 @@ public class MediaPlayerVideoActivity extends Activity implements View.OnClickLi
 
         try {
             AssetFileDescriptor fd = getAssets().openFd("video.3gp");
-            mMediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
+            mMediaPlayer.setDataSource(fd.getFileDescriptor(),
+                    fd.getStartOffset(), fd.getLength());
             mMediaPlayer.prepare();
             mMediaPlayer.setDisplay(mSurfaceView.getHolder());
             mMediaPlayer.start();

@@ -239,6 +239,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.MediaCodecActivity"
+            android:label="image/media codec">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.MediaPlayerAudioActivity"
             android:label="image/media player/audio">
             <intent-filter>

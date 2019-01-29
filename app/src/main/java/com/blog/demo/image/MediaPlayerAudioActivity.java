@@ -64,7 +64,8 @@ public class MediaPlayerAudioActivity extends Activity implements View.OnClickLi
 
         try {
             AssetFileDescriptor fd = getAssets().openFd("demo.mp3");
-            mMediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
+            mMediaPlayer.setDataSource(fd.getFileDescriptor(),
+                    fd.getStartOffset(), fd.getLength());
             mMediaPlayer.prepare();
             mMediaPlayer.start();
         } catch (IOException e) {
