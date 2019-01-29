@@ -162,6 +162,63 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".control.edit.EditTextImeOptionsActivity"
+            android:label="control/edit text/ime options">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.edit.EditTextInputTypeActivity"
+            android:label="control/edit text/input type">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.edit.EditTextPasswordActivity"
+            android:label="control/edit text/password">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewAutoLinkActivity"
+            android:label="control/text view/auto link">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewEllipseActivity"
+            android:label="control/text view/ellipse">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewFontActivity"
+            android:label="control/text view/font">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewLineSpacingActivity"
+            android:label="control/text view/line spacing">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewRichTextActivity"
+            android:label="control/text view/rich text">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.text.TextViewSpannableActivity"
+            android:label="control/text view/spannable">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".custom.FlowLayoutActivity"
             android:label="custom/flow layout">
             <intent-filter>
@@ -372,5 +429,6 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>

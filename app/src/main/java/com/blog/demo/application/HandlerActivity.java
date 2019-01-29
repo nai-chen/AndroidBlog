@@ -34,7 +34,7 @@ public class HandlerActivity extends Activity implements View.OnClickListener {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_handler);
+        setContentView(R.layout.activity_application_handler);
 
         findViewById(R.id.btn_send_empty_message).setOnClickListener(this);
         findViewById(R.id.btn_post_runnable).setOnClickListener(this);
