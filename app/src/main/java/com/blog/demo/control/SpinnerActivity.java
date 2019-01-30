@@ -25,4 +25,5 @@ public class SpinnerActivity extends Activity {
                 new People("Jack", "GuangZhou"),
                 new People("Mike", "ShengZhen")})) );
     }
+
 }

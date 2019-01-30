@@ -17,6 +17,7 @@
             android:id="@+id/seek_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxHeight="2dp"
             android:max="100"
             android:progress="30"/>
     </LinearLayout>
@@ -24,6 +25,7 @@
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxHeight="2dp"
         android:layout_margin="10dp"
         android:max="100"
         android:progress="30"
@@ -32,6 +34,7 @@
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxHeight="2dp"
         android:layout_margin="10dp"
         android:max="100"
         android:progress="30"

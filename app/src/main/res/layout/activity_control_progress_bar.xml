@@ -15,14 +15,13 @@
             style="?android:attr/progressBarStyleHorizontal"
             android:max="100"
             android:progress="30"/>
-
         <ProgressBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="?android:attr/progressBarStyleHorizontal"
             android:max="100"
-            android:progress="30"
-            android:secondaryProgress="60"/>
+            android:progress="40"
+            android:secondaryProgress="70"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,8 +43,8 @@
             android:layout_marginTop="5dp"
             style="?android:attr/progressBarStyleHorizontal"
             android:max="100"
-            android:progress="30"
-            android:secondaryProgress="60"
+            android:progress="40"
+            android:secondaryProgress="70"
             android:progressDrawable="@drawable/progress_bar_bg"/>
     </LinearLayout>
 

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:background="#FFA6A5AA">
+    android:background="#ffa6a5aa">
 
     <TextView
         android:id="@+id/tv_name"
@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="15dp"
         android:textSize="16sp"
-        android:textColor="#FFFFFFFF" />
+        android:textColor="#ffffffff" />
 
     <TextView
         android:id="@+id/tv_address"
@@ -22,6 +22,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="15dp"
         android:textSize="16sp"
-        android:textColor="#FFCCCCCC" />
+        android:textColor="#ffcccccc" />
 
 </RelativeLayout>

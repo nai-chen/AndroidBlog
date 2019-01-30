@@ -27,7 +27,6 @@ public class ListViewHeaderViewActivity extends Activity {
         listView.setAdapter(new ArrayAdapter<>(this,
                 R.layout.list_view_item, R.id.tv_name, data));
 
-
         headerView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

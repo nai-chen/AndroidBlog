@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.blog.demo.R;
 
-public class    SeekBarActivity extends Activity {
+public class SeekBarActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

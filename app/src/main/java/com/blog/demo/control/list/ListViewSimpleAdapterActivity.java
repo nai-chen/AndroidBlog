@@ -43,7 +43,7 @@ public class ListViewSimpleAdapterActivity extends Activity {
 
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(new SimpleAdapter(this, data, R.layout.list_view_item,
-                new String[]{"name", "address"}, new int[]{R.id.tv_name, R.id.tv_address}));
+            new String[]{"name", "address"}, new int[]{R.id.tv_name, R.id.tv_address}));
     }
 
 }
