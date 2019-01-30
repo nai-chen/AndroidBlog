@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/red" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/red"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/green"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/red"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/green"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/red"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/green"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+</LinearLayout>

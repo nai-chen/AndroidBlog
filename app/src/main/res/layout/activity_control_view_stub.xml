@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_inflate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inflate"/>
+
+    <Button
+        android:id="@+id/btn_set_visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set visibility"/>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/tv_inflate"
+        android:layout="@layout/view_stub_inflate"/>
+</LinearLayout>

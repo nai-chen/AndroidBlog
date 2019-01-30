@@ -205,6 +205,42 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.layout.RelativeLayoutAlignActivity"
+            android:label="control/layout/relative layout/align">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.RelativeLayoutAlignParentActivity"
+            android:label="control/layout/relative layout/align parent">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.RelativeLayoutCenterActivity"
+            android:label="control/layout/relative layout/center">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.RelativeLayoutRelativeActivity"
+            android:label="control/layout/relative layout/relative">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.LinearLayoutGravityActivity"
+            android:label="control/layout/linear layout/gravity">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.LinearLayoutOrientationActivity"
+            android:label="control/layout/linear layout/orientation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.list.ListViewArrayAdapterActivity"
             android:label="control/list view/array adapter">
             <intent-filter>
@@ -219,6 +255,36 @@
         </activity>
         <activity android:name=".control.list.ListViewHeaderViewActivity"
             android:label="control/list view/header view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.list.ListViewScrollBarSizeActivity"
+            android:label="control/list view/scroll bar/size">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.list.ListViewScrollBarStyleInsideActivity"
+            android:label="control/list view/scroll bar/style inside">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.list.ListViewScrollBarStyleOutsideActivity"
+            android:label="control/list view/scroll bar/style outside">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.list.ListViewScrollBarThumbVerticalActivity"
+            android:label="control/list view/scroll bar/thumb vertical">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.list.ListViewScrollBarTrackVerticalActivity"
+            android:label="control/list view/scroll bar/track vertical">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -285,6 +351,18 @@
         </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.ViewStubActivity"
+            android:label="control/view stub">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.WebViewActivity"
+            android:label="control/web view">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
