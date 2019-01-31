@@ -8,6 +8,7 @@ import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -30,7 +31,13 @@ public class WebViewActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.btn_call_javascript).setOnClickListener(this);
 
         webView = findViewById(R.id.web_view);
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                webView.loadUrl(url);
+                return true;
+            }
+        });
         webView.setWebChromeClient(new WebChromeClient(){
             // For Android 3.0+
             public void openFileChooser(ValueCallback<Uri> uploadFile, String acceptType) {
@@ -58,6 +65,7 @@ public class WebViewActivity extends Activity implements View.OnClickListener {
             }
         });
 
+        webView.loadUrl("http://www.baidu.com");
     }
 
     private void showFile() {
@@ -66,7 +74,7 @@ public class WebViewActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_load) {
-            webView.loadUrl("http://www.baidu.com");
+            webView.loadUrl("http://www.sohu.com");
         } else if (v.getId() == R.id.btn_load_asset) {
             WebSettings settings = webView.getSettings();
             settings.setJavaScriptEnabled(true);
@@ -84,4 +92,5 @@ public class WebViewActivity extends Activity implements View.OnClickListener {
             Toast.makeText(WebViewActivity.this, "Hello World", Toast.LENGTH_LONG).show();
         }
     }
+
 }

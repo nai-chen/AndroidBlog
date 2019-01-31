@@ -295,6 +295,24 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.picker.DatePickerActivity"
+            android:label="control/picker/date picker">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.picker.NumberPickerActivity"
+            android:label="control/picker/number picker">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.picker.TimePickerActivity"
+            android:label="control/picker/time picker">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.progressbar.ProgressBarActivity"
             android:label="control/progress bar/progress bar">
             <intent-filter>
@@ -349,6 +367,31 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.viewpager.ViewPagerAdapterActivity"
+            android:label="control/view pager/adapter">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.viewpager.ViewPagerAdvertisementActivity"
+            android:label="control/view pager/advertisement">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.viewpager.ViewPagerCycleActivity"
+            android:label="control/view pager/cycle">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.viewpager.ViewPagerTransformerActivity"
+            android:label="control/view pager/transformer">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
             <intent-filter>
