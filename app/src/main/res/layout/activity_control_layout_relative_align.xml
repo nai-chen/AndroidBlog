@@ -14,7 +14,7 @@
         android:gravity="center" />
 
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="100dp"
         android:layout_height="20dp"
         android:text="alignTop"
         android:gravity="center"
@@ -22,7 +22,7 @@
         android:layout_alignTop="@id/tv_center"/>
 
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="100dp"
         android:layout_height="20dp"
         android:text="alignBottom"
         android:gravity="center"
@@ -30,7 +30,7 @@
         android:layout_alignBottom="@id/tv_center"/>
 
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="20dp"
         android:text="alignLeft"
         android:gravity="center"
@@ -38,7 +38,7 @@
         android:layout_alignLeft="@id/tv_center"/>
 
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="20dp"
         android:text="alignRight"
         android:gravity="center"
@@ -46,7 +46,7 @@
         android:layout_alignRight="@id/tv_center"/>
 
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="100dp"
         android:layout_height="20dp"
         android:text="alignBaseline"
         android:gravity="center"

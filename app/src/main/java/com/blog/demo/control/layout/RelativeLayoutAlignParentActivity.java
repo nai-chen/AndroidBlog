@@ -13,4 +13,5 @@ public class RelativeLayoutAlignParentActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control_layout_relative_align_parent);
     }
+
 }
