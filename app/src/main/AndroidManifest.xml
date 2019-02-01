@@ -187,6 +187,24 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.clock.AnalogClockActivity"
+            android:label="control/clock/analog clock">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.clock.DigitalClockActivity"
+            android:label="control/clock/digital clock">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.clock.TextClockActivity"
+            android:label="control/clock/text clock">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.edit.EditTextImeOptionsActivity"
             android:label="control/edit text/ime options">
             <intent-filter>
@@ -391,7 +409,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".control.ChronometerActivity"
+            android:label="control/Chronometer">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
             <intent-filter>

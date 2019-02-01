@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.NumberPicker;
 
+import com.blog.demo.LogTool;
 import com.blog.demo.R;
 
 public class NumberPickerActivity extends Activity {
@@ -21,7 +22,7 @@ public class NumberPickerActivity extends Activity {
         numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-
+                LogTool.logi("NumberPickerActivity", oldVal + ":" + newVal);
             }
         });
     }
