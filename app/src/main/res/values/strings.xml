@@ -4,4 +4,10 @@
 
     <string name="text_line_spacing">白日依山尽，\n黄河入海流。</string>
     <string name="text_ellipse">枯藤老树昏鸦，小桥流水人家，古道西风瘦马。夕阳西下，断肠人在天涯。</string>
+
+    <string name="title">标题</string>
+    <string name="subtitle">副标题</string>
+
+    <string name="left_menu">左侧菜单</string>
+    <string name="right_menu">右侧菜单</string>
 </resources>

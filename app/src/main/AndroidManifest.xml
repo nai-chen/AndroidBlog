@@ -443,13 +443,67 @@
         </activity>
 
 
+        <activity android:name=".design.AppBarLayoutActivity"
+            android:label="design/app bar layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.CardViewActivity"
+            android:label="design/card view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.CollapsingToolbarLayoutNormalActivity"
+            android:label="design/collapsing toolbar layout/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.CollapsingToolbarLayoutPictureActivity"
+            android:label="design/collapsing toolbar layout/picture">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.DrawerLayoutActivity"
+            android:label="design/drawer layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.FloatingActionButtonActivity"
+            android:label="design/floating action button">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.SlidingPaneLayoutActivity"
+            android:label="design/slide pane layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".design.SnackBarActivity"
             android:label="design/snack bar">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".design.TabLayoutActivity"
+            android:label="design/tab layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".design.ToolbarActivity"
+            android:theme="@style/AppTheme.ToolBar"
+            android:label="design/toolbar">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
             android:label="image/animation/interpolator">
