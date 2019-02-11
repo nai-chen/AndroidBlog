@@ -434,12 +434,22 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".custom.FlowLayoutActivity"
             android:label="custom/flow layout">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".design.SnackBarActivity"
+            android:label="design/snack bar">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
 
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
             android:label="image/animation/interpolator">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/container_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <Button
+            android:id="@+id/btn_in_coordinator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show snack bar"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:id="@+id/container_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <Button
+            android:id="@+id/btn_in_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show snack bar"/>
+    </RelativeLayout>
+</LinearLayout>
