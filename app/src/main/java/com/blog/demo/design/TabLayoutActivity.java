@@ -33,6 +33,9 @@ public class TabLayoutActivity extends Activity {
 
         TabLayout tabLayoutModeScrollable = findViewById(R.id.tab_layout_tab_mode_scrollable);
         newTabMode(tabLayoutModeScrollable);
+
+        TabLayout tabLayoutTabItem = findViewById(R.id.tab_layout_tab_item);
+        tabLayoutTabItem.addTab(tabLayoutTabItem.newTab().setCustomView(R.layout.layout_tab_item2));
     }
 
     private void newTab(TabLayout tabLayout) {

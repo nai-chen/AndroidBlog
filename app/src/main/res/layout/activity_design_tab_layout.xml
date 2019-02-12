@@ -60,4 +60,26 @@
         android:layout_marginTop="10dp"
         app:tabMode="scrollable"
         android:background="@color/white"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_tab_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab1"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab2"
+            android:icon="@mipmap/ic_launcher"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_tab_item1"/>
+    </android.support.design.widget.TabLayout>
 </LinearLayout>
