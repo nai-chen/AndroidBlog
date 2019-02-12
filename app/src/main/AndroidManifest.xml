@@ -53,6 +53,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".application.PopupWindowActivity"
+            android:label="application/popup window">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.SoftInputManagerActivity"
             android:label="application/soft input manager">
             <intent-filter>
@@ -72,6 +78,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".application.SystemUiVisibilitySampleActivity" />
+        <activity android:name=".application.ToastActivity"
+            android:label="application/toast">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
 
         <activity android:name=".component.activity.IntentFlagActivity"
             android:label="component/activity/flag">
@@ -453,8 +466,45 @@
         </activity>
 
 
+        <activity android:name=".custom.AttrAssignActivity"
+            android:theme="@style/AppTheme.AttrAssign"
+            android:label="custom/attr assign">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.AttrDeclareActivity"
+            android:label="custom/attr declare">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.AttrFormatActivity"
+            android:label="custom/attr format">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".custom.FlowLayoutActivity"
             android:label="custom/flow layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.GroupActivity"
+            android:label="custom/group">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.TouchEventActivity"
+            android:label="custom/touch event">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.VelocityTrackerActivity"
+            android:label="custom/velocity tracker">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

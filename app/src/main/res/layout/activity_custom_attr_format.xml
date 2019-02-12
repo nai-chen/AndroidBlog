@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.blog.demo.custom.widget.AttrFormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:attrReference="@string/app_name"
+        app:attrColor="#ffff0000"
+        app:attrBoolean="true"
+        app:attrDimension="15dp"
+        app:attrFloat="1.43"
+        app:attrInteger="36"
+        app:attrString="This is a String"
+        app:attrFraction="50%"
+        app:attrEnum="south"
+        app:attrFlag="top|left" />
+
+    <com.blog.demo.custom.widget.AttrFormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:attrFraction="50%p" />
+
+    <com.blog.demo.custom.widget.AttrFormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:attrEnum="east"
+        app:attrFlag="bottom|right"/>
+</LinearLayout>

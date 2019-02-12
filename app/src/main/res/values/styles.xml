@@ -39,4 +39,33 @@
     <style name="tabLayoutTextAppearance">
         <item name="android:textSize">25sp</item>
     </style>
+
+    <style name="attrAssignStyle">
+        <item name="attr1">attr1 value from Style</item>
+        <item name="attr2">attr2 value from Style</item>
+    </style>
+
+    <style name="attrAssignDefStyleAttr">
+        <item name="attr1">attr1 value from Style Attr</item>
+        <item name="attr2">attr2 value from Style Attr</item>
+        <item name="attr3">attr3 value from Style Attr</item>
+    </style>
+    
+    <style name="AppTheme.AttrAssign" parent="AppTheme">
+        <item name="attr1">attr1 value from Theme</item>
+        <item name="attr2">attr2 value from Theme</item>
+        <item name="attr3">attr3 value from Theme</item>
+        <item name="attr4">attr4 value from Theme</item>
+        
+        <item name="attrAssignStyle">@style/attrAssignDefStyleAttr</item>
+    </style>
+
+    <style name="attrAssignDefStyleRes">
+        <item name="attr1">attr1 value from Default Style</item>
+        <item name="attr2">attr2 value from Default Style</item>
+        <item name="attr3">attr3 value from Default Style</item>
+        <item name="attr4">attr4 value from Default Style</item>
+        <item name="attr5">attr5 value from Default Style</item>
+    </style>
+
 </resources>

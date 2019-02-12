@@ -8,5 +8,47 @@
             <enum name="bottom" value="2"/>
         </attr>
     </declare-styleable>
-    
+
+    <attr name="indicator_color" format="color" />
+    <declare-styleable name="AttrDeclareView">
+        <attr name="background_color" format="color" />
+        <attr name="indicator_color" />
+        <attr name="android:text" format="string" />
+        <attr name="android:textSize" format="dimension" />
+        <attr name="android:textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AttrFormatTextView">
+        <attr name="attrReference" format="reference" />
+        <attr name="attrColor" format="color" />
+        <attr name="attrBoolean" format="boolean" />
+        <attr name="attrDimension" format="dimension" />
+        <attr name="attrFloat" format="float" />
+        <attr name="attrInteger" format="integer" />
+        <attr name="attrString" format="string" />
+        <attr name="attrFraction" format="fraction" />
+        <attr name="attrEnum" >
+            <enum name="east" value="1" />
+            <enum name="west" value="2" />
+            <enum name="south" value="3" />
+            <enum name="north" value="4" />
+        </attr>
+        <attr name="attrFlag">
+            <flag name="top" value="0x01" />
+            <flag name="bottom" value="0x02" />
+            <flag name="left" value="0x10" />
+            <flag name="right" value="0x20" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AttrAssignTextView" >
+        <attr name="attr1" format="string" />
+        <attr name="attr2" format="string" />
+        <attr name="attr3" format="string" />
+        <attr name="attr4" format="string" />
+        <attr name="attr5" format="string" />
+    </declare-styleable>
+
+    <attr name="attrAssignStyle" />
+
 </resources>
