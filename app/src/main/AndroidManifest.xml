@@ -409,6 +409,18 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.viewswitcher.ViewSwitcherFactoryActivity"
+            android:label="control/view switcher/factory">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.viewswitcher.ViewSwitcherNormalActivity"
+            android:label="control/view switcher/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.ChronometerActivity"
             android:label="control/Chronometer">
             <intent-filter>
@@ -417,6 +429,12 @@
         </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.ViewFlipperActivity"
+            android:label="control/view flipper">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
