@@ -41,6 +41,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".application.AlertDialogActivity"
+            android:label="application/alert dialog">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.AsyncTaskActivity"
             android:label="application/async task">
             <intent-filter>

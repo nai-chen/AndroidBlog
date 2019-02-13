@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.PopupWindow;
 
@@ -31,34 +32,35 @@ public class PopupWindowActivity extends Activity implements View.OnClickListene
     }
 
     private PopupWindow createPopupWindow() {
-        mPopupWindow = new PopupWindow(this);
+        PopupWindow popupWindow = new PopupWindow(this);
         // 设置宽度
-        mPopupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+        popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         // 设置高度
-        mPopupWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
+        popupWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         // 设置背景
-        mPopupWindow.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorProduct)));
+        popupWindow.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorProduct)));
         View view = getLayoutInflater().inflate(R.layout.popup_window_picture, null, false);
         view.findViewById(R.id.tv_take_photo).setOnClickListener(this);
         view.findViewById(R.id.tv_take_picture).setOnClickListener(this);
         view.findViewById(R.id.tv_cancel).setOnClickListener(this);
         // 设置界面
-        mPopupWindow.setContentView(view);
+        popupWindow.setContentView(view);
         // true时界面可点
-        mPopupWindow.setTouchable(true);
+        popupWindow.setTouchable(true);
         // true时PopupWindow处理返回键
-        mPopupWindow.setFocusable(true);
+        popupWindow.setFocusable(true);
         // true时点击外部消失，如果touchable为false时，点击界面也消失
-        mPopupWindow.setOutsideTouchable(true);
+        popupWindow.setOutsideTouchable(true);
 
         // dismiss监听器
-        mPopupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+        popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
             @Override
             public void onDismiss() {
                 LogTool.logi(LOG_TAG, "onDismiss");
+                backgroundAlpha(1);
             }
         });
-        return mPopupWindow;
+        return popupWindow;
     }
 
     @Override
@@ -71,7 +73,11 @@ public class PopupWindowActivity extends Activity implements View.OnClickListene
             popupWindow.setFocusable(mCbFocusable.isChecked());
             // true时点击外部消失，如果touchable为false时，点击界面也消失
             popupWindow.setOutsideTouchable(mCbOutsideTouchable.isChecked());
+            popupWindow.setAnimationStyle(R.style.popup_window_animation_style);
+//            backgroundAlpha(0.5f);
             popupWindow.showAtLocation(v, Gravity.BOTTOM, 0, 0);
+
+            mPopupWindow = popupWindow;
         } else if (v.getId() == R.id.btn_show_drop_down) {
             PopupWindow popupWindow = createPopupWindow();
             // true时界面可点
@@ -81,6 +87,8 @@ public class PopupWindowActivity extends Activity implements View.OnClickListene
             // true时点击外部消失，如果touchable为false时，点击界面也消失
             popupWindow.setOutsideTouchable(mCbOutsideTouchable.isChecked());
             popupWindow.showAsDropDown(v);
+
+            mPopupWindow = popupWindow;
         } else if ((v.getId() == R.id.tv_take_photo)
                 || (v.getId() == R.id.tv_take_picture)
                 || (v.getId() == R.id.tv_cancel)) {
@@ -88,4 +96,12 @@ public class PopupWindowActivity extends Activity implements View.OnClickListene
             mPopupWindow.dismiss();
         }
     }
+
+    private void backgroundAlpha(float bgAlpha) {
+        WindowManager.LayoutParams lp = getWindow().getAttributes();
+        lp.alpha = bgAlpha; //0.0-1.0
+        getWindow().setAttributes(lp);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+    }
+
 }

@@ -7,4 +7,11 @@
         <item>Jack</item>
         <item>Mike</item>
     </string-array>
+
+    <string-array name="city_list">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
 </resources>
