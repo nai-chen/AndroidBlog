@@ -15,6 +15,28 @@
     <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
     <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
 
+    <!-- umeng -->
+    <!-- 必须的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> -->
+
+    <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+
+    <!-- ScreenOnActivity -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- WindowManagerActivity -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,6 +44,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+
+        <meta-data android:value="${channel_name}" android:name="UMENG_CHANNEL"/>
+        <meta-data android:value="@string/appkey" android:name="UMENG_APPKEY"/>
 
         <!-- authorities是标识，访问时需要 -->
         <!-- 设置export为true，对其他apk开放 -->
@@ -53,14 +78,33 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".application.FilterActivity"
+            android:label="application/filter">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.HandlerActivity"
             android:label="application/handler">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".application.ParcelableActivity" />
+        <activity android:name=".application.ParcelActivity"
+            android:label="application/parcel">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.PopupWindowActivity"
             android:label="application/popup window">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.ScreenOnActivity"
+            android:label="application/screen on">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -579,6 +623,21 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".fragment.NativeCalcActivity"
+            android:label="fragment/native calc">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.UmengActivity"
+            android:label="fragment/umeng">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
             android:label="image/animation/interpolator">
             <intent-filter>
@@ -772,6 +831,12 @@
         </activity>
         <activity android:name=".system.VibratorActivity"
             android:label="system/vibrator">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".system.WindowManagerActivity"
+            android:label="system/window manager">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

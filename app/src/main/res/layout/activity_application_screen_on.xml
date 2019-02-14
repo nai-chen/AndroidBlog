@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add_flags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add flags"/>
+        <Button
+            android:id="@+id/btn_clear_flags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear flags"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_keep_screen_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keep screen on"/>
+        <Button
+            android:id="@+id/btn_keep_screen_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keep screen off"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_new_wake_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new wake lock"/>
+        <Button
+            android:id="@+id/btn_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="release"/>
+    </LinearLayout>
+</LinearLayout>
