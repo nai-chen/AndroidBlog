@@ -13,8 +13,8 @@ import android.widget.ListView;
 
 import com.blog.demo.R;
 import com.blog.demo.People;
-import com.blog.demo.system.PeopleConstant;
-import com.blog.demo.system.PeopleConstant.PeopleColumns;
+import com.blog.demo.application.storage.PeopleConstant;
+import com.blog.demo.application.storage.PeopleConstant.PeopleColumns;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -10,7 +10,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.blog.demo.system.PeopleSQLiteOpenHelper;
+import com.blog.demo.application.storage.PeopleSQLiteOpenHelper;
 
 public class PeopleContentProvider extends ContentProvider {
     private static final String AUTHORITY   = "com.blog.demo.people";
