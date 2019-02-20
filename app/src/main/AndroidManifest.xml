@@ -812,6 +812,54 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.canvas.CanvasBitmapActivity"
+            android:label="image/canvas/bitmap">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.canvas.CanvasViewActivity"
+            android:label="image/canvas/view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.canvas.CanvasSurfaceViewActivity"
+            android:label="image/canvas/surface view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.paint.PaintNormalActivity"
+            android:label="image/paint/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.path.PathFillTypeActivity"
+            android:label="image/path/fill type">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.path.PathNormalActivity"
+            android:label="image/path/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.path.PathOpActivity"
+            android:label="image/path/op">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.path.PathTextActivity"
+            android:label="image/path/text">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.FontMetricsActivity"
             android:label="image/font metrics">
             <intent-filter>
@@ -844,12 +892,6 @@
         </activity>
         <activity android:name=".image.MediaPlayerVideoActivity"
             android:label="image/media player/video">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".image.PaintActivity"
-            android:label="image/paint">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
