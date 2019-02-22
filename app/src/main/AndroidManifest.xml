@@ -830,8 +830,20 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.paint.PaintNormalActivity"
-            android:label="image/paint/normal">
+        <activity android:name=".image.paint.PaintStrokeActivity"
+            android:label="image/paint/stroke">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.paint.PaintStyleActivity"
+            android:label="image/paint/style">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.paint.PaintTextActivity"
+            android:label="image/paint/text">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
