@@ -818,14 +818,32 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.canvas.CanvasSurfaceViewActivity"
+            android:label="image/canvas/surface view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.canvas.CanvasTranslationActivity"
+            android:label="image/canvas/translation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.canvas.CanvasViewActivity"
             android:label="image/canvas/view">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".image.canvas.CanvasSurfaceViewActivity"
-            android:label="image/canvas/surface view">
+        <activity android:name=".image.paint.PaintMaskFilterActivity"
+            android:label="image/paint/mask filter">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.paint.PaintPathActivity"
+            android:label="image/paint/path">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

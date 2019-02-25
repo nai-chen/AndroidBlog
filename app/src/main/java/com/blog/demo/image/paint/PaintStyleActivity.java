@@ -50,10 +50,10 @@ public class PaintStyleActivity extends Activity {
             canvas.drawCircle(150, 300, 75, mRedPaint);
 
             mRedPaint.setStyle(Paint.Style.FILL);
-            canvas.drawCircle(150, 500, 75, mRedPaint);
+            canvas.drawCircle(350, 300, 75, mRedPaint);
 
             mRedPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-            canvas.drawCircle(150, 700, 75, mRedPaint);
+            canvas.drawCircle(550, 300, 75, mRedPaint);
         }
 
     }

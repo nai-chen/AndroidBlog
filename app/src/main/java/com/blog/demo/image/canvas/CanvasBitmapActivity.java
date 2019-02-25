@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Region;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
@@ -41,36 +42,13 @@ public class CanvasBitmapActivity extends Activity {
         canvas.drawText(text, 2, 14, 50, 55, redPaint);
 
         Paint paint = new Paint(redPaint);
-        paint.setTextSize(30);
-        canvas.drawText(text, 50, 100, paint);
-
-        paint = new Paint(redPaint);
-        paint.setFakeBoldText(true);
-        canvas.drawText(text, 50, 130, paint);
-
-        paint = new Paint(redPaint);
-        paint.setUnderlineText(true);
-        canvas.drawText(text, 50, 160, paint);
-
-        paint = new Paint(redPaint);
-        paint.setTextSkewX(-0.25f);
-        canvas.drawText(text, 50, 190, paint);
-
-        paint = new Paint(redPaint);
-        paint.setStrikeThruText(true);
-        canvas.drawText(text, 50, 220, paint);
-
-        paint = new Paint(redPaint);
-        paint.setTextScaleX(2);
-        canvas.drawText(text, 50, 250, paint);
-
-        paint = new Paint(redPaint);
         paint.setStyle(Paint.Style.STROKE);
         Path path = new Path();
-        path.moveTo(50, 300);
-        path.lineTo(300, 400);
+        path.moveTo(50, 100);
+        path.lineTo(300, 200);
         canvas.drawPath(path, paint);
         canvas.drawTextOnPath(text, path, 80, 20, redPaint);
     }
+
 
 }

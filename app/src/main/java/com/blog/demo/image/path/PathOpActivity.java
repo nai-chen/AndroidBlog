@@ -41,10 +41,10 @@ public class PathOpActivity extends Activity {
         @Override
         protected void onDraw(Canvas canvas) {
             drawOp(canvas, 50, 50, Path.Op.DIFFERENCE);
-            drawOp(canvas, 50, 250, Path.Op.INTERSECT);
-            drawOp(canvas, 50, 450, Path.Op.UNION);
-            drawOp(canvas, 50, 650, Path.Op.XOR);
-            drawOp(canvas, 50, 850, Path.Op.REVERSE_DIFFERENCE);
+            drawOp(canvas, 350, 50, Path.Op.INTERSECT);
+            drawOp(canvas, 50, 250, Path.Op.UNION);
+            drawOp(canvas, 350, 250, Path.Op.XOR);
+            drawOp(canvas, 50, 450, Path.Op.REVERSE_DIFFERENCE);
         }
 
         private void drawOp(Canvas canvas, float dx, float dy, Path.Op op) {
