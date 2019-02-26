@@ -638,14 +638,32 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".custom.CListViewActivity"
+            android:label="custom/list view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".custom.FlowLayoutActivity"
             android:label="custom/flow layout">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".custom.GestureViewActivity"
+            android:label="custom/gesture view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".custom.GroupActivity"
             android:label="custom/group">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".custom.PhoneTextViewActivity"
+            android:label="custom/phone text view">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

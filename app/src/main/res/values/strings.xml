@@ -11,5 +11,24 @@
     <string name="left_menu">左侧菜单</string>
     <string name="right_menu">右侧菜单</string>
 
+    <string name="list_view_pull_to_refresh">下拉刷新</string>
+    <string name="list_view_release_to_refresh">松开刷新</string>
+    <string name="list_view_refreshing">正在刷新&#8230;</string>
+
     <string name="appkey">594346095312dd4625000fb0</string>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 </resources>

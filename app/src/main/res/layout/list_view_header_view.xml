@@ -7,8 +7,31 @@
     <LinearLayout
         android:id="@+id/header_view"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/head_view_height"
         android:orientation="horizontal"
-        android:gravity="center_vertical" />
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/list_arrow"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
 
+        <ProgressBar
+            android:id="@+id/progress_bar_refresh"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_refresh_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="#FF000000"/>
+    </LinearLayout>
 </LinearLayout>
