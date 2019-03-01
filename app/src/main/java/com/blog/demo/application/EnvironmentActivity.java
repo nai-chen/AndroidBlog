@@ -1,4 +1,4 @@
-package com.blog.demo.application.info;
+package com.blog.demo.application;
 
 import android.app.Activity;
 import android.os.Bundle;

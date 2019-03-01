@@ -1,4 +1,4 @@
-package com.blog.demo.application.manager;
+package com.blog.demo.manager;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;

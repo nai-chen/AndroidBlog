@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_show_memory_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show memory info"/>
+    <Button
+        android:id="@+id/btn_check_app_on_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check app on foreground"/>
+    <Button
+        android:id="@+id/btn_check_app_on_foreground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check app on foreground2"/>
+    <Button
+        android:id="@+id/btn_show_running_app_process_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show running app process info"/>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

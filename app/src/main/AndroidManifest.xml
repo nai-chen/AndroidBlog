@@ -37,6 +37,9 @@
     <!-- WindowManagerActivity -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
+    <!-- ActivityManagerActivity -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -72,67 +75,6 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".application.info.BuildActivity"
-            android:label="application/info/build">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.info.DisplayMetricsActivity"
-            android:label="application/info/display metrics">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.info.EnvironmentActivity"
-            android:label="application/info/environment">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.info.MemoryInfoActivity"
-            android:label="application/info/memory info">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.BatteryManagerActivity"
-            android:label="application/manager/battery manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.ConnectivityManagerActivity"
-            android:label="application/manager/connectivity manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.NotificationActivity"
-            android:label="application/manager/notification manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.TelephonyManagerActivity"
-            android:label="application/manager/telephony manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.VibratorActivity"
-            android:label="application/manager/vibrator">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.manager.WindowManagerActivity"
-            android:label="application/manager/window manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
         <activity android:name=".application.popup.AlertDialogActivity"
             android:label="application/popup/alert dialog">
             <intent-filter>
@@ -199,13 +141,36 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".application.BuildActivity"
+            android:label="application/build">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.DisplayMetricsActivity"
+            android:label="application/display metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.EnvironmentActivity"
+            android:label="application/environment">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.FilterActivity"
             android:label="application/filter">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".application.MemoryInfoActivity"
+            android:label="application/memory info">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.ScreenOnActivity"
             android:label="application/screen on">
             <intent-filter>
@@ -957,5 +922,48 @@
             </intent-filter>
         </activity>
 
+
+        <activity android:name=".manager.ActivityManagerActivity"
+            android:label="manager/activity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.BatteryManagerActivity"
+            android:label="manager/battery manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.ConnectivityManagerActivity"
+            android:label="manager/connectivity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.NotificationActivity"
+            android:label="manager/notification manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.TelephonyManagerActivity"
+            android:label="manager/telephony manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.VibratorActivity"
+            android:label="manager/vibrator">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.WindowManagerActivity"
+            android:label="manager/window manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

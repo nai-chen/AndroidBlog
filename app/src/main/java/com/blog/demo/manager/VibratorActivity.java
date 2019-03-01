@@ -1,4 +1,4 @@
-package com.blog.demo.application.manager;
+package com.blog.demo.manager;
 
 import android.app.Activity;
 import android.os.Build;
@@ -17,7 +17,7 @@ public class VibratorActivity extends Activity implements View.OnClickListener {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_application_manager_vibrator);
+        setContentView(R.layout.activity_manager_vibrator);
         findViewById(R.id.btn_vibrator).setOnClickListener(this);
         findViewById(R.id.btn_vibrator_wave).setOnClickListener(this);
         findViewById(R.id.btn_vibrator_effect).setOnClickListener(this);
