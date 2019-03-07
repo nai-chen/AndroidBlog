@@ -20,10 +20,10 @@
         android:layout_height="wrap_content"
         android:text="check app on foreground2"/>
     <Button
-        android:id="@+id/btn_show_running_app_process_info"
+        android:id="@+id/btn_check_debug_memory_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="show running app process info"/>
+        android:text="check debug memory info"/>
     <TextView
         android:id="@+id/text_view"
         android:layout_width="match_parent"

@@ -40,6 +40,11 @@
     <!-- ActivityManagerActivity -->
     <uses-permission android:name="android.permission.GET_TASKS" />
 
+    <!-- SmsManageActivity -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -165,8 +170,8 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".application.MemoryInfoActivity"
-            android:label="application/memory info">
+        <activity android:name=".application.RssActivity"
+            android:label="application/rss">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -943,6 +948,12 @@
         </activity>
         <activity android:name=".manager.NotificationActivity"
             android:label="manager/notification manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.SmsManageActivity"
+            android:label="manager/sms manager">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
