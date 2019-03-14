@@ -1,4 +1,4 @@
-package com.blog.demo.application;
+package com.blog.demo.control;
 
 import android.app.Activity;
 import android.graphics.Color;

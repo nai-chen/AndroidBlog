@@ -1,4 +1,4 @@
-package com.blog.demo.application.popup;
+package com.blog.demo.control.popup;
 
 import android.app.Activity;
 import android.app.AlertDialog;

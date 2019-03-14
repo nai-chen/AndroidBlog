@@ -80,24 +80,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".application.popup.AlertDialogActivity"
-            android:label="application/popup/alert dialog">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.popup.PopupWindowActivity"
-            android:label="application/popup/popup window">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.popup.ToastActivity"
-            android:label="application/popup/toast">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
         <activity android:name=".application.storage.json.FastJsonActivity"
             android:label="application/storage/json/fastjson">
             <intent-filter>
@@ -146,20 +128,8 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".application.BuildActivity"
-            android:label="application/build">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.DisplayMetricsActivity"
-            android:label="application/display metrics">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.EnvironmentActivity"
-            android:label="application/environment">
+        <activity android:name=".application.ClipChildrenActivity"
+            android:label="application/clip children">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -184,12 +154,6 @@
         </activity>
         <activity android:name=".application.SoftInputManagerActivity"
             android:label="application/soft input manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.SpannableActivity"
-            android:label="application/spannable">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -359,6 +323,18 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.layout.LinearLayoutGravityActivity"
+            android:label="control/layout/linear layout/gravity">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.LinearLayoutOrientationActivity"
+            android:label="control/layout/linear layout/orientation">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.layout.RelativeLayoutAlignActivity"
             android:label="control/layout/relative layout/align">
             <intent-filter>
@@ -379,18 +355,6 @@
         </activity>
         <activity android:name=".control.layout.RelativeLayoutRelativeActivity"
             android:label="control/layout/relative layout/relative">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".control.layout.LinearLayoutGravityActivity"
-            android:label="control/layout/linear layout/gravity">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".control.layout.LinearLayoutOrientationActivity"
-            android:label="control/layout/linear layout/orientation">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -463,6 +427,24 @@
         </activity>
         <activity android:name=".control.picker.TimePickerActivity"
             android:label="control/picker/time picker">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.popup.AlertDialogActivity"
+            android:label="control/popup/alert dialog">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.popup.PopupWindowActivity"
+            android:label="control/popup/popup window">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.popup.ToastActivity"
+            android:label="control/popup/toast">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -565,6 +547,12 @@
         </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.SpannableActivity"
+            android:label="control/spannable">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -934,14 +922,44 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".manager.AlarmManagerActivity"
+            android:label="manager/alarm manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.AudioManagerActivity"
+            android:label="manager/audio manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".manager.BatteryManagerActivity"
             android:label="manager/battery manager">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".manager.BuildActivity"
+            android:label="manager/build">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".manager.ConnectivityManagerActivity"
             android:label="manager/connectivity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.DisplayMetricsActivity"
+            android:label="manager/display metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager.EnvironmentActivity"
+            android:label="manager/environment">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>

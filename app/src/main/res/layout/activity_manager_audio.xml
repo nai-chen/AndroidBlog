@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_adjust_stream_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adjust stream volume"/>
+
+    <RadioGroup
+        android:id="@+id/rg_stream_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_stream_voice_call">
+        <RadioButton
+            android:id="@+id/rb_stream_voice_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream voice call" />
+        <RadioButton
+            android:id="@+id/rb_stream_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream system" />
+        <RadioButton
+            android:id="@+id/rb_stream_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream ring" />
+        <RadioButton
+            android:id="@+id/rb_stream_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream music" />
+        <RadioButton
+            android:id="@+id/rb_stream_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream alarm" />
+        <RadioButton
+            android:id="@+id/rb_stream_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stream notification" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_adjust_raise">
+        <RadioButton
+            android:id="@+id/rb_adjust_raise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust raise" />
+        <RadioButton
+            android:id="@+id/rb_adjust_lower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust lower" />
+        <RadioButton
+            android:id="@+id/rb_adjust_same"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust same" />
+        <RadioButton
+            android:id="@+id/rb_adjust_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust mute" />
+        <RadioButton
+            android:id="@+id/rb_adjust_unmute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust unmute" />
+        <RadioButton
+            android:id="@+id/rb_adjust_toggle_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adjust toggle mute" />
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/cb_show_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show ui"/>
+    <CheckBox
+        android:id="@+id/cb_allow_ringer_modes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="allow ringer modes"/>
+    <CheckBox
+        android:id="@+id/cb_play_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play sound"/>
+    <CheckBox
+        android:id="@+id/cb_remove_sound_and_vibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove sound an vibrate"/>
+    <CheckBox
+        android:id="@+id/cb_vibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vibrate"/>
+
+</LinearLayout>

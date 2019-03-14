@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set alarm"/>
+
+    <Button
+        android:id="@+id/btn_set_repeat_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set repeat alarm"/>
+
+    <Button
+        android:id="@+id/btn_cancel_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel alarm"/>
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_elapsed_realtime">
+        <RadioButton
+            android:id="@+id/rb_elapsed_realtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELAPSED REALTIME"/>
+        <RadioButton
+            android:id="@+id/rb_elapsed_realtime_wakeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELAPSED REALTIME WAKEUP"/>
+        <RadioButton
+            android:id="@+id/rb_rtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RTC"/>
+        <RadioButton
+            android:id="@+id/rb_rtc_wakeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RTC WAKEUP"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:inputType="number"/>
+
+</LinearLayout>
