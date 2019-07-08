@@ -716,6 +716,8 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.PersonalInfoCollectionActivity" />
+        <activity android:name=".fragment.PersonalInfoDetailActivity" />
         <activity android:name=".fragment.UmengActivity"
             android:label="fragment/umeng">
             <intent-filter>
