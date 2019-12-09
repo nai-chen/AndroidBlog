@@ -1,18 +1,15 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Telephony;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.view.View;
@@ -64,7 +61,7 @@ public class SmsManageActivity extends Activity implements View.OnClickListener 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_manager_sms);
+        setContentView(R.layout.activity_component_sms_manager);
 
         findViewById(R.id.btn_goto_send_sms).setOnClickListener(this);
         findViewById(R.id.btn_send_sms).setOnClickListener(this);

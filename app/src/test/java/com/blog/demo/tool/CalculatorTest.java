@@ -1,5 +1,6 @@
 package com.blog.demo.tool;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -11,6 +12,8 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int sum = calculator.add(1, 2);
         assertEquals(3, sum);
+
+
     }
 
 }

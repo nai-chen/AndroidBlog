@@ -1,4 +1,4 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -19,7 +19,7 @@ import com.blog.demo.R;
 
 public class AlarmManagerActivity extends Activity implements View.OnClickListener {
 
-    private final static String ACTION_ALARM = "com.blog.demo.manager.ACTION_ALARM";
+    private final static String ACTION_ALARM = "com.blog.demo.component.ACTION_ALARM";
 
     private AlarmManager alarmManager;
     private RadioGroup mRgType;
@@ -38,7 +38,7 @@ public class AlarmManagerActivity extends Activity implements View.OnClickListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manager_alarm);
+        setContentView(R.layout.activity_component_alarm_manager);
 
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 

@@ -1,4 +1,4 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
 import android.app.Activity;
 import android.media.AudioManager;
@@ -21,7 +21,7 @@ public class AudioManagerActivity extends Activity implements View.OnClickListen
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_manager_audio);
+        setContentView(R.layout.activity_component_audio_manager);
         audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
 
         findViewById(R.id.btn_adjust_stream_volume).setOnClickListener(this);

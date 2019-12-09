@@ -160,6 +160,7 @@
         </activity>
 
 
+        <!-- 组件 -->
         <activity android:name=".component.activity.IntentFlagActivity"
             android:label="component/activity/flag">
             <intent-filter>
@@ -248,8 +249,62 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.ActivityManagerActivity"
+            android:label="component/activity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.AlarmManagerActivity"
+            android:label="component/alarm manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.AudioManagerActivity"
+            android:label="component/audio manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.BatteryManagerActivity"
+            android:label="component/battery manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.BuildActivity"
+            android:label="component/build">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.ConnectivityManagerActivity"
+            android:label="component/connectivity manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.DisplayMetricsActivity"
+            android:label="component/display metrics">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.EnvironmentActivity"
+            android:label="component/environment">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".component.HandlerActivity"
             android:label="component/handler">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.NotificationActivity"
+            android:label="component/notification manager">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -261,6 +316,32 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.SmsManageActivity"
+            android:label="component/sms manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.TelephonyManagerActivity"
+            android:label="component/telephony manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.VibratorActivity"
+            android:label="component/vibrator">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.WindowManagerActivity"
+            android:label="component/window manager">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
+
 
 
         <activity android:name=".control.button.CheckBoxActivity"
@@ -917,84 +998,5 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".manager.ActivityManagerActivity"
-            android:label="manager/activity manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.AlarmManagerActivity"
-            android:label="manager/alarm manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.AudioManagerActivity"
-            android:label="manager/audio manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.BatteryManagerActivity"
-            android:label="manager/battery manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.BuildActivity"
-            android:label="manager/build">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.ConnectivityManagerActivity"
-            android:label="manager/connectivity manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.DisplayMetricsActivity"
-            android:label="manager/display metrics">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.EnvironmentActivity"
-            android:label="manager/environment">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.NotificationActivity"
-            android:label="manager/notification manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.SmsManageActivity"
-            android:label="manager/sms manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.TelephonyManagerActivity"
-            android:label="manager/telephony manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.VibratorActivity"
-            android:label="manager/vibrator">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".manager.WindowManagerActivity"
-            android:label="manager/window manager">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>

@@ -1,4 +1,4 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
 import android.Manifest;
 import android.app.Activity;

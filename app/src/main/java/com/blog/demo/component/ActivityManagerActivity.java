@@ -1,4 +1,4 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -22,7 +22,7 @@ public class ActivityManagerActivity extends Activity implements View.OnClickLis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_manager_activity);
+        setContentView(R.layout.activity_component_activity_manager);
 
         findViewById(R.id.btn_show_memory_info).setOnClickListener(this);
         findViewById(R.id.btn_check_app_on_foreground).setOnClickListener(this);

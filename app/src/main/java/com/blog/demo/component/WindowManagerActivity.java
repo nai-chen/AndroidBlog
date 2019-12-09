@@ -1,4 +1,4 @@
-package com.blog.demo.manager;
+package com.blog.demo.component;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -25,7 +25,7 @@ public class WindowManagerActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manager_window);
+        setContentView(R.layout.activity_component_window_manager);
 
         findViewById(R.id.btn_show_suspension_window).setOnClickListener(new View.OnClickListener(){
             @Override
