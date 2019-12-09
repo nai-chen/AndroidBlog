@@ -1,4 +1,4 @@
-package com.blog.demo.design;
+package com.blog.demo.control;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ public class AppBarLayoutActivity extends Activity implements View.OnClickListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_design_app_bar_layout);
+        setContentView(R.layout.activity_control_app_bar_layout);
         toolbar = findViewById(R.id.toolbar);
 
         findViewById(R.id.btn_scroll).setOnClickListener(this);

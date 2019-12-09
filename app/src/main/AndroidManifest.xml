@@ -386,6 +386,18 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.collapsingtoolbar.CollapsingToolbarLayoutNormalActivity"
+            android:label="control/collapsing toolbar layout/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.collapsingtoolbar.CollapsingToolbarLayoutPictureActivity"
+            android:label="control/collapsing toolbar layout/picture">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.edit.EditTextImeOptionsActivity"
             android:label="control/edit text/ime options">
             <intent-filter>
@@ -548,6 +560,13 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.systemui.SystemUiVisibilityActivity"
+            android:label="control/system ui visibility">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.systemui.SystemUiVisibilitySampleActivity" />
         <activity android:name=".control.text.TextViewAutoLinkActivity"
             android:label="control/text view/auto link">
             <intent-filter>
@@ -620,8 +639,44 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.AppBarLayoutActivity"
+            android:label="control/app bar layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.CardViewActivity"
+            android:label="control/card view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.ChronometerActivity"
             android:label="control/Chronometer">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.DrawerLayoutActivity"
+            android:label="control/drawer layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.FloatingActionButtonActivity"
+            android:label="control/floating action button">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.SlidingPaneLayoutActivity"
+            android:label="control/slide pane layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.SnackBarActivity"
+            android:label="control/snack bar">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -634,6 +689,19 @@
         </activity>
         <activity android:name=".control.SpannableActivity"
             android:label="control/spannable">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.TabLayoutActivity"
+            android:label="control/tab layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.ToolbarActivity"
+            android:theme="@style/AppTheme.ToolBar"
+            android:label="control/toolbar">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -656,6 +724,7 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
 
 
         <activity android:name=".custom.AttrAssignActivity"
@@ -721,74 +790,8 @@
         </activity>
 
 
-        <activity android:name=".design.AppBarLayoutActivity"
-            android:label="design/app bar layout">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.CardViewActivity"
-            android:label="design/card view">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.CollapsingToolbarLayoutNormalActivity"
-            android:label="design/collapsing toolbar layout/normal">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.CollapsingToolbarLayoutPictureActivity"
-            android:label="design/collapsing toolbar layout/picture">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.DrawerLayoutActivity"
-            android:label="design/drawer layout">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.FloatingActionButtonActivity"
-            android:label="design/floating action button">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.SlidingPaneLayoutActivity"
-            android:label="design/slide pane layout">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.SnackBarActivity"
-            android:label="design/snack bar">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.SystemUiVisibilityActivity"
-            android:label="design/system ui visibility">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.SystemUiVisibilitySampleActivity" />
-        <activity android:name=".design.TabLayoutActivity"
-            android:label="design/tab layout">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".design.ToolbarActivity"
-            android:theme="@style/AppTheme.ToolBar"
-            android:label="design/toolbar">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
+
+
 
 
         <activity android:name=".fragment.NativeCalcActivity"

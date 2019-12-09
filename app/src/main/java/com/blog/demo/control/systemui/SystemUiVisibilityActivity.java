@@ -1,4 +1,4 @@
-package com.blog.demo.design;
+package com.blog.demo.control.systemui;
 
 import android.app.Activity;
 import android.content.Intent;

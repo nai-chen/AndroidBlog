@@ -1,4 +1,4 @@
-package com.blog.demo.design;
+package com.blog.demo.control;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,11 +6,12 @@ import android.support.annotation.Nullable;
 
 import com.blog.demo.R;
 
-public class CollapsingToolbarLayoutPictureActivity extends Activity {
+public class DrawerLayoutActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_design_collapsing_toolbar_layout_picture);
+
+        setContentView(R.layout.activity_control_drawer_layout);
     }
 }

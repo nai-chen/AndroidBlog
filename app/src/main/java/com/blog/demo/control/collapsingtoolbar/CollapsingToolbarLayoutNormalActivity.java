@@ -1,4 +1,4 @@
-package com.blog.demo.design;
+package com.blog.demo.control.collapsingtoolbar;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ public class CollapsingToolbarLayoutNormalActivity extends Activity implements V
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_design_collapsing_toolbar_layout_normal);
+        setContentView(R.layout.activity_control_collapsing_toolbar_layout_normal);
         collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
 
         findViewById(R.id.btn_scroll).setOnClickListener(this);

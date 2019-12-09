@@ -1,4 +1,4 @@
-package com.blog.demo.design;
+package com.blog.demo.control;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ public class FloatingActionButtonActivity extends Activity implements View.OnCli
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_design_floating_action_button);
+        setContentView(R.layout.activity_control_floating_action_button);
 
         findViewById(R.id.btn_in_coordinator).setOnClickListener(this);
         findViewById(R.id.btn_in_relative).setOnClickListener(this);
