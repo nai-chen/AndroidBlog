@@ -80,6 +80,7 @@
             </intent-filter>
         </activity>
 
+        <!-- 应用 -->
         <activity android:name=".application.storage.json.FastJsonActivity"
             android:label="application/storage/json/fastjson">
             <intent-filter>
@@ -342,8 +343,7 @@
         </activity>
 
 
-
-
+        <!-- 控件 -->
         <activity android:name=".control.button.CheckBoxActivity"
             android:label="control/button/check box">
             <intent-filter>
@@ -726,7 +726,7 @@
         </activity>
 
 
-
+        <!-- 自定义 -->
         <activity android:name=".custom.AttrAssignActivity"
             android:theme="@style/AppTheme.AttrAssign"
             android:label="custom/attr assign">
@@ -790,10 +790,7 @@
         </activity>
 
 
-
-
-
-
+        <!-- 杂项 -->
         <activity android:name=".fragment.NativeCalcActivity"
             android:label="fragment/native calc">
             <intent-filter>
@@ -810,6 +807,7 @@
         </activity>
 
 
+        <!-- 图像动画 -->
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
             android:label="image/animation/interpolator">
             <intent-filter>

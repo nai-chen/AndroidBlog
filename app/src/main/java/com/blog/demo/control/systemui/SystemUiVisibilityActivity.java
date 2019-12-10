@@ -17,7 +17,7 @@ public class SystemUiVisibilityActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_design_system_ui_visibility);
+        setContentView(R.layout.activity_control_system_ui_visibility);
 
         final CheckBox cbProfile = findViewById(R.id.cb_profile);
         final CheckBox cbHideNavigation = findViewById(R.id.cb_hide_navigation);

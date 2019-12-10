@@ -29,7 +29,7 @@ public class SystemUiVisibilitySampleActivity extends Activity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
 
-        setContentView(R.layout.activity_design_system_ui_visibility_sample);
+        setContentView(R.layout.activity_control_system_ui_visibility_sample);
         findViewById(R.id.layout_system_ui_visibility).setFitsSystemWindows(fitsSystemWindows);
 
     }
