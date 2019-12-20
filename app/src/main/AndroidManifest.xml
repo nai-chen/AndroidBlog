@@ -422,8 +422,26 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.layout.ConstraintLayoutChainActivity"
+            android:label="control/layout/constraint layout/chain">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.layout.ConstraintLayoutCircleActivity"
             android:label="control/layout/constraint layout/circle">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.ConstraintLayoutDimensionActivity"
+            android:label="control/layout/constraint layout/dimension">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.ConstraintLayoutGuideLineActivity"
+            android:label="control/layout/constraint layout/guide line">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
