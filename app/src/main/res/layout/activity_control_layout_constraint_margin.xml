@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="text_left"
+        android:gravity="center"
+        android:background="#ffa6a5aa"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="@dimen/margin_dpi_10"
+        android:text="text_right"
+        android:gravity="center"
+        android:background="#ffa6a5aa"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="setVisibility" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp">
+       <TextView
+           android:id="@+id/tv_left1"
+           android:layout_width="80dp"
+           android:layout_height="30dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toLeftOf="@+id/tv_center1"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintHorizontal_chainStyle="spread"
+           android:text="text left"
+           android:gravity="center"
+           android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_center1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_left1"
+            app:layout_constraintRight_toLeftOf="@+id/tv_right1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text center"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_right1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_center1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text right"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_left2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_center2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="text left"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_center2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_left2"
+            app:layout_constraintRight_toLeftOf="@+id/tv_right2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            android:text="text center"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_right2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_center2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            android:text="text right"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_left3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_center3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:text="text left"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_center3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_left3"
+            app:layout_constraintRight_toLeftOf="@+id/tv_right3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text center"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_right3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_center3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text right"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_left4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_center4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:text="text left"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_center4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_left4"
+            app:layout_constraintRight_toLeftOf="@+id/tv_right4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text center"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_right4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_center4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text right"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_left5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_center5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0.3"
+            android:text="text left"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_center5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/tv_left5"
+            app:layout_constraintRight_toLeftOf="@+id/tv_right5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text center"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+        <TextView
+            android:id="@+id/tv_right5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_center5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="text right"
+            android:gravity="center"
+            android:background="#ffa6a5aa"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

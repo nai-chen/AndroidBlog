@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 
         Layer layer = getIntent().getParcelableExtra(EXTRA_DATA);
         if (layer == null) {
-            layer = new Layer("");
+            layer = new Layer("Demo");
 
             Intent intent = new Intent(ACTION);
             List<ResolveInfo> infoList = getPackageManager().queryIntentActivities(intent,
@@ -41,7 +41,19 @@ public class MainActivity extends Activity {
                     layer.addItem(info.loadLabel(getPackageManager()).toString(), info.activityInfo.name);
                 }
             }
+            findViewById(R.id.iv_back).setVisibility(View.GONE);
+        } else {
+            findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
         }
+
+        TextView tvTitle = findViewById(R.id.tv_title);
+        tvTitle.setText(layer.getName());
+
 
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(new MainAdapter(layer));

@@ -416,6 +416,30 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.layout.ConstraintLayoutBiasActivity"
+            android:label="control/layout/constraint layout/bias">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.ConstraintLayoutCircleActivity"
+            android:label="control/layout/constraint layout/circle">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.ConstraintLayoutMarginActivity"
+            android:label="control/layout/constraint layout/margin">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.ConstraintLayoutPositionActivity"
+            android:label="control/layout/constraint layout/position">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.layout.LinearLayoutGravityActivity"
             android:label="control/layout/linear layout/gravity">
             <intent-filter>
