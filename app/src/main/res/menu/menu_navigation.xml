@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_address"
+            android:icon="@drawable/menu_address"
+            android:title="地址" />
+        <item
+            android:id="@+id/menu_more"
+            android:icon="@drawable/menu_more"
+            android:title="更多" />
+    </group>
+    <item
+        android:title="操作" >
+        <menu>
+            <item
+                android:id="@+id/menu_add"
+                android:icon="@drawable/menu_add"
+                android:title="添加" />
+            <item
+                android:id="@+id/menu_edit"
+                android:icon="@drawable/menu_edit"
+                android:title="编辑" />
+        </menu>
+    </item>
+</menu>

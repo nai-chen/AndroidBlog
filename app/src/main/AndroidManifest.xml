@@ -1025,6 +1025,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".md.NavigationViewActivity"
+            android:label="material design/navigation view">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".md.SlidingPaneLayoutActivity"
             android:label="material design/slide pane layout">
             <intent-filter>
