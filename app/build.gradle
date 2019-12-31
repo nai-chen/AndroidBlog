@@ -42,6 +42,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.alibaba:fastjson:1.2.54'
+    implementation 'com.android.support:support-annotations:28.0.0'
     implementation 'com.umeng.analytics:umeng-analytics:5.4.1'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'

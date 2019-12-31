@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
     <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <!-- umeng -->
     <!-- 必须的权限 -->
@@ -137,6 +138,12 @@
         </activity>
         <activity android:name=".application.FilterActivity"
             android:label="application/filter">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.PermissionActivity"
+            android:label="application/permission">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
