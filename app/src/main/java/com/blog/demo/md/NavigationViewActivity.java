@@ -1,4 +1,4 @@
-package com.blog.demo.control;
+package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,12 +6,13 @@ import android.support.annotation.Nullable;
 
 import com.blog.demo.R;
 
-public class DrawerLayoutActivity extends Activity {
+public class NavigationViewActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_control_drawer_layout);
+        setContentView(R.layout.activity_material_design_navigation_view);
     }
+
 }

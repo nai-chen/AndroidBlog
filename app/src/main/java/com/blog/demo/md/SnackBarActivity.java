@@ -1,4 +1,4 @@
-package com.blog.demo.control;
+package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ public class SnackBarActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_control_snack_bar);
+        setContentView(R.layout.activity_material_design_snack_bar);
 
         findViewById(R.id.btn_cancel).setOnClickListener(this);
         findViewById(R.id.btn_in_coordinator).setOnClickListener(this);

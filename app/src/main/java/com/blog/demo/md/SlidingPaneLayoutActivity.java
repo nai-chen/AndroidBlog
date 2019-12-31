@@ -1,4 +1,4 @@
-package com.blog.demo.control;
+package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ public class SlidingPaneLayoutActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_control_sliding_pane_layout);
+        setContentView(R.layout.activity_material_design_sliding_pane_layout);
 
         SlidingPaneLayout slidingPaneLayout = findViewById(R.id.sliding_pane_layout);
         final View viewMenu = findViewById(R.id.layout_menu);

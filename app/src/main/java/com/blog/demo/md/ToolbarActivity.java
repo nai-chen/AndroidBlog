@@ -1,4 +1,4 @@
-package com.blog.demo.control;
+package com.blog.demo.md;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,7 +17,7 @@ public class ToolbarActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_control_toolbar);
+        setContentView(R.layout.activity_material_design_toolbar);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

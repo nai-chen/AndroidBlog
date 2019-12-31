@@ -1,4 +1,4 @@
-package com.blog.demo.control;
+package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ public class TabLayoutActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_control_tab_layout);
+        setContentView(R.layout.activity_material_design_tab_layout);
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         newTab(tabLayout);

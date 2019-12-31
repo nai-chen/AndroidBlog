@@ -1,4 +1,4 @@
-package com.blog.demo.control.systemui;
+package com.blog.demo.application.systemui;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -29,7 +29,7 @@ public class SystemUiVisibilitySampleActivity extends Activity {
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
 
-        setContentView(R.layout.activity_control_system_ui_visibility_sample);
+        setContentView(R.layout.activity_application_system_ui_visibility_sample);
         findViewById(R.id.layout_system_ui_visibility).setFitsSystemWindows(fitsSystemWindows);
 
     }

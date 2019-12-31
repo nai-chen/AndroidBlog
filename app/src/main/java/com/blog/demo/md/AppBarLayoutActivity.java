@@ -1,24 +1,23 @@
-package com.blog.demo.control.collapsingtoolbar;
+package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.blog.demo.R;
 
-public class CollapsingToolbarLayoutNormalActivity extends Activity implements View.OnClickListener {
+public class AppBarLayoutActivity extends Activity implements View.OnClickListener {
 
-    private CollapsingToolbarLayout collapsingToolbarLayout;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_control_collapsing_toolbar_layout_normal);
-        collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
+        setContentView(R.layout.activity_material_design_app_bar_layout);
+        toolbar = findViewById(R.id.toolbar);
 
         findViewById(R.id.btn_scroll).setOnClickListener(this);
         findViewById(R.id.btn_enter_always).setOnClickListener(this);
@@ -29,7 +28,7 @@ public class CollapsingToolbarLayoutNormalActivity extends Activity implements V
 
     @Override
     public void onClick(View v) {
-        AppBarLayout.LayoutParams lp = (AppBarLayout.LayoutParams) collapsingToolbarLayout.getLayoutParams();
+        AppBarLayout.LayoutParams lp = (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
         if (v.getId() == R.id.btn_scroll) {
             lp.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL);
         } else if (v.getId() == R.id.btn_enter_always) {
@@ -46,6 +45,6 @@ public class CollapsingToolbarLayoutNormalActivity extends Activity implements V
             lp.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL
                     | AppBarLayout.LayoutParams.SCROLL_FLAG_SNAP);
         }
-        collapsingToolbarLayout.setLayoutParams(lp);
+        toolbar.setLayoutParams(lp);
     }
 }
