@@ -82,6 +82,13 @@
         </activity>
 
         <!-- 应用 -->
+        <activity android:name=".application.eventbus.EventBusActivity"
+            android:label="application/eventbus">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.eventbus.EventBusPublisherActivity" />
         <activity android:name=".application.storage.json.FastJsonActivity"
             android:label="application/storage/json/fastjson">
             <intent-filter>
