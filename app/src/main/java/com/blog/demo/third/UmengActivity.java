@@ -1,4 +1,4 @@
-package com.blog.demo.fragment;
+package com.blog.demo.third;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ public class UmengActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_fragment_umeng);
+        setContentView(R.layout.activity_third_umeng);
 
         findViewById(R.id.btn_click).setOnClickListener(new View.OnClickListener() {
             @Override

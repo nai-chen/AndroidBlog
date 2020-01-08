@@ -82,13 +82,6 @@
         </activity>
 
         <!-- 应用 -->
-        <activity android:name=".application.eventbus.EventBusActivity"
-            android:label="application/eventbus">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.eventbus.EventBusPublisherActivity" />
         <activity android:name=".application.storage.json.FastJsonActivity"
             android:label="application/storage/json/fastjson">
             <intent-filter>
@@ -792,14 +785,6 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragment.PersonalInfoCollectionActivity" />
-        <activity android:name=".fragment.PersonalInfoDetailActivity" />
-        <activity android:name=".fragment.UmengActivity"
-            android:label="fragment/umeng">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
 
 
         <!-- 图像动画 -->
@@ -1063,5 +1048,23 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+
+
+        <!-- 第三方应用 -->
+        <activity android:name=".third.eventbus.EventBusActivity"
+            android:label="third/eventbus">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.eventbus.EventBusPublisherActivity" />
+        <activity android:name=".third.UmengActivity"
+            android:label="third/umeng">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 </manifest>

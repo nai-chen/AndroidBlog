@@ -1,4 +1,4 @@
-package com.blog.demo.application.eventbus;
+package com.blog.demo.third.eventbus;
 
 public class MessageEvent {
 

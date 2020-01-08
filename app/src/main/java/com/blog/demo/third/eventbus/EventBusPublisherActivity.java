@@ -1,4 +1,4 @@
-package com.blog.demo.application.eventbus;
+package com.blog.demo.third.eventbus;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ public class EventBusPublisherActivity extends Activity implements View.OnClickL
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_application_event_bus_publisher);
+        setContentView(R.layout.activity_third_event_bus_publisher);
 
         findViewById(R.id.btn_publisher).setOnClickListener(this);
         findViewById(R.id.btn_publisher_sticky).setOnClickListener(this);

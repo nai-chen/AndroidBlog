@@ -1,4 +1,4 @@
-package com.blog.demo.application.eventbus;
+package com.blog.demo.third.eventbus;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,7 +21,7 @@ public class EventBusActivity extends Activity implements View.OnClickListener {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_application_event_bus);
+        setContentView(R.layout.activity_third_event_bus);
 
         findViewById(R.id.btn_register).setOnClickListener(this);
         findViewById(R.id.btn_goto_publisher).setOnClickListener(this);
