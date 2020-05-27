@@ -683,6 +683,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.ParagraphStyleActivity"
+            android:label="control/ParagraphStyle">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner">
             <intent-filter>
