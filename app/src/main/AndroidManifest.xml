@@ -783,7 +783,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".custom.ViewDragHelperActivity"
+            android:label="custom/view drag helper">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
 
         <!-- 杂项 -->
         <activity android:name=".fragment.NativeCalcActivity"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blog.demo.custom.widget.ViewDragHelperView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/margin_dpi_50"
+        android:layout_height="@dimen/margin_dpi_50"
+        android:layout_margin="@dimen/margin_dpi_50"
+        android:src="@drawable/icon_pyq"/>
+
+    <ImageView
+        android:layout_width="@dimen/margin_dpi_50"
+        android:layout_height="@dimen/margin_dpi_50"
+        android:layout_margin="100dp"
+        android:src="@drawable/icon_link"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_dpi_50"
+        android:layout_gravity="right"
+        android:text="click me" />
+
+</com.blog.demo.custom.widget.ViewDragHelperView>
+
