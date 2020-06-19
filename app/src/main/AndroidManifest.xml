@@ -1011,6 +1011,30 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".md.recyclerview.RecyclerViewHeaderFooterViewActivity"
+            android:label="material design/recycler view/Header Footer View">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".md.recyclerview.RecyclerViewNormalActivity"
+            android:label="material design/recycler view/normal">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".md.recyclerview.RecyclerViewLayoutActivity"
+            android:label="material design/recycler view/layout">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".md.recyclerview.RecyclerViewRefreshActivity"
+            android:label="material design/recycler view/refresh">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".md.AppBarLayoutActivity"
             android:label="material design/app bar layout">
             <intent-filter>
