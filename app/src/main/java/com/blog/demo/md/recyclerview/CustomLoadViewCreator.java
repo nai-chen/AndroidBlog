@@ -69,12 +69,13 @@ public class CustomLoadViewCreator extends LoadViewCreator {
             } else {
                 mHeadState = PULL_TO_LOAD;
             }
-            changeHeaderViewByState();
 
             if (mHeadState == PULL_TO_LOAD || mHeadState == RELEASE_TO_LOAD) {
                 int padding = mDistance - mContentHeight;
                 mLoadView.setPadding(0, 0, 0, padding > 0 ? 0 : padding);
             }
+
+            changeHeaderViewByState();
         }
         return mDistance;
     }

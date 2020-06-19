@@ -66,21 +66,18 @@ public class CustomRefreshViewCreator extends RefreshViewCreator {
                 mHeadState = DONE;
             } else if (mDistance >= mContentHeight) {
                 mHeadState = RELEASE_TO_REFRESH;
+                mIvArrow.setRotation(180);
             } else {
                 mHeadState = PULL_TO_REFRESH;
+                mIvArrow.setRotation(0);
             }
-            changeHeaderViewByState();
 
             if (mHeadState == PULL_TO_REFRESH || mHeadState == RELEASE_TO_REFRESH) {
                 int padding = mDistance - mContentHeight;
                 mRefreshView.setPadding(0, padding > 0 ? 0 : padding, 0, 0);
-
-                if (mDistance >= mContentHeight){
-                    mIvArrow.setRotation(180);
-                } else {
-                    mIvArrow.setRotation(0);
-                }
             }
+
+            changeHeaderViewByState();
         }
         return mDistance;
     }
