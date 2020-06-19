@@ -57,37 +57,23 @@ public class CustomLoadViewCreator extends LoadViewCreator {
             LogTool.logi("CustomLoadViewCreator", "distance = " + mDistance);
             if (mDistance < 0) {
                 mDistance = 0;
-            } else if (mDistance > mContentHeight) {
-                mDistance = mContentHeight;
+            } else if (mDistance > mContentHeight + 10) {
+                mDistance = mContentHeight + 10;
             }
 
-            if (mHeadState == DONE) {
-                if (mDistance > 0) {
-                    mHeadState = PULL_TO_LOAD;
-                    changeHeaderViewByState();
-                }
+            if (mDistance <= 0) {
+                mHeadState = DONE;
+            } else if (mDistance >= mContentHeight) {
+                mHeadState = RELEASE_TO_LOAD;
+
+            } else {
+                mHeadState = PULL_TO_LOAD;
             }
-            if (mHeadState == PULL_TO_LOAD) {
-                if (mDistance >= mContentHeight) {
-                    mHeadState = RELEASE_TO_LOAD;
-                    changeHeaderViewByState();
-                } else if (mDistance <= 0) {
-                    mHeadState = DONE;
-                    changeHeaderViewByState();
-                }
-            }
-            if (mHeadState == RELEASE_TO_LOAD) {
-                if (mDistance <= 0) {
-                    mHeadState = DONE;
-                    changeHeaderViewByState();
-                } else if (mDistance < mContentHeight) {
-                    mHeadState = PULL_TO_LOAD;
-                    changeHeaderViewByState();
-                }
-            }
+            changeHeaderViewByState();
+
             if (mHeadState == PULL_TO_LOAD || mHeadState == RELEASE_TO_LOAD) {
                 int padding = mDistance - mContentHeight;
-                mLoadView.setPadding(0, 0, 0, padding);
+                mLoadView.setPadding(0, 0, 0, padding > 0 ? 0 : padding);
             }
         }
         return mDistance;

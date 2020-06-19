@@ -58,37 +58,22 @@ public class CustomRefreshViewCreator extends RefreshViewCreator {
             LogTool.logi("CustomRefreshViewCreator", "distance = " + mDistance);
             if (mDistance < 0) {
                 mDistance = 0;
-            } else if (mDistance > mContentHeight) {
-                mDistance = mContentHeight;
+            } else if (mDistance > mContentHeight + 10) {
+                mDistance = mContentHeight + 10;
             }
 
-            if (mHeadState == DONE) {
-                if (mDistance > 0) {
-                    mHeadState = PULL_TO_REFRESH;
-                    changeHeaderViewByState();
-                }
+            if (mDistance <= 0) {
+                mHeadState = DONE;
+            } else if (mDistance >= mContentHeight) {
+                mHeadState = RELEASE_TO_REFRESH;
+            } else {
+                mHeadState = PULL_TO_REFRESH;
             }
-            if (mHeadState == PULL_TO_REFRESH) {
-                if (mDistance >= mContentHeight) {
-                    mHeadState = RELEASE_TO_REFRESH;
-                    changeHeaderViewByState();
-                } else if (mDistance <= 0) {
-                    mHeadState = DONE;
-                    changeHeaderViewByState();
-                }
-            }
-            if (mHeadState == RELEASE_TO_REFRESH) {
-                if (mDistance <= 0) {
-                    mHeadState = DONE;
-                    changeHeaderViewByState();
-                } else if (mDistance < mContentHeight) {
-                    mHeadState = PULL_TO_REFRESH;
-                    changeHeaderViewByState();
-                }
-            }
+            changeHeaderViewByState();
+
             if (mHeadState == PULL_TO_REFRESH || mHeadState == RELEASE_TO_REFRESH) {
                 int padding = mDistance - mContentHeight;
-                mRefreshView.setPadding(0, padding, 0, 0);
+                mRefreshView.setPadding(0, padding > 0 ? 0 : padding, 0, 0);
 
                 if (mDistance >= mContentHeight){
                     mIvArrow.setRotation(180);
