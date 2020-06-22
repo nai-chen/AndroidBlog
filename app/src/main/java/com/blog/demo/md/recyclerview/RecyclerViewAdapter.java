@@ -84,6 +84,14 @@ public final class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
         return mFooterViewList.size();
     }
 
+    public void addContent() {
+        int size = mContent.size();
+        for (int position = 1; position <= 20; position++) {
+            mContent.add("This is " + (size + position) + " item");
+        }
+        notifyDataSetChanged();
+    }
+
     public void setItemClickListener(IOnItemClickListener listener) {
         this.mItemClickListener = listener;
     }

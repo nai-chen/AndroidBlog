@@ -65,7 +65,6 @@ public class CustomLoadViewCreator extends LoadViewCreator {
                 mHeadState = DONE;
             } else if (mDistance >= mContentHeight) {
                 mHeadState = RELEASE_TO_LOAD;
-
             } else {
                 mHeadState = PULL_TO_LOAD;
             }

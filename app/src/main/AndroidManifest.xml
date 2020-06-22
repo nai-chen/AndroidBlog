@@ -1029,6 +1029,12 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".md.recyclerview.RecyclerViewLoadMoreActivity"
+            android:label="material design/recycler view/load more">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".md.recyclerview.RecyclerViewRefreshActivity"
             android:label="material design/recycler view/refresh">
             <intent-filter>
