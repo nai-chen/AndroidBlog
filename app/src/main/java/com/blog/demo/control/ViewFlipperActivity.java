@@ -2,9 +2,10 @@ package com.blog.demo.control;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ViewFlipper;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

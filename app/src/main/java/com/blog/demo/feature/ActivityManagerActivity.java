@@ -4,10 +4,11 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.os.Bundle;
 import android.os.Debug;
-import android.support.annotation.Nullable;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

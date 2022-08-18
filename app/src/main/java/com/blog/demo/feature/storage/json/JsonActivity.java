@@ -2,10 +2,11 @@ package com.blog.demo.feature.storage.json;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.People;

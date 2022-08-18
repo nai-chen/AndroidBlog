@@ -7,9 +7,10 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Region;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

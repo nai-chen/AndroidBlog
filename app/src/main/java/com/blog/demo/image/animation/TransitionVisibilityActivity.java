@@ -2,7 +2,6 @@ package com.blog.demo.image.animation;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
@@ -14,6 +13,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

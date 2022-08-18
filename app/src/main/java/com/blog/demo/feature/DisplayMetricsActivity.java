@@ -2,11 +2,11 @@ package com.blog.demo.feature;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.widget.TextView;
 
-import com.blog.demo.LogTool;
+import androidx.annotation.Nullable;
+
 import com.blog.demo.R;
 
 public class DisplayMetricsActivity extends Activity {

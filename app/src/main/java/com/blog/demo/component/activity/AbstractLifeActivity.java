@@ -1,10 +1,10 @@
 package com.blog.demo.component.activity;
 
-import com.blog.demo.LogTool;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.blog.demo.LogTool;
 
 public class AbstractLifeActivity extends Activity {
 	

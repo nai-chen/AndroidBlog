@@ -2,12 +2,13 @@ package com.blog.demo.feature.storage;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.People;
 import com.blog.demo.R;

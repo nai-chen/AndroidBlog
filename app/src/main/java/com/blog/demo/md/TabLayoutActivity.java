@@ -2,12 +2,14 @@ package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
+import com.google.android.material.tabs.TabLayout;
 
 public class TabLayoutActivity extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

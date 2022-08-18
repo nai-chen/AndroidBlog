@@ -11,8 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.blog.demo.R;
 import com.blog.demo.People;
+import com.blog.demo.R;
 import com.blog.demo.feature.storage.PeopleConstant;
 import com.blog.demo.feature.storage.PeopleConstant.PeopleColumns;
 

@@ -2,12 +2,13 @@ package com.blog.demo.md.collapsingtoolbar;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+
 import com.blog.demo.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class CollapsingToolbarLayoutNormalActivity extends Activity implements View.OnClickListener {
 

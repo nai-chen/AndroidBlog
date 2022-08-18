@@ -3,8 +3,9 @@ package com.blog.demo.component;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Parcel;
-import android.support.annotation.Nullable;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

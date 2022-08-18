@@ -2,13 +2,13 @@ package com.blog.demo.custom.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 
-public class AttrFormatTextView extends TextView {
+public class AttrFormatTextView extends androidx.appcompat.widget.AppCompatTextView {
     public AttrFormatTextView(Context context) {
         this(context, null);
     }

@@ -2,11 +2,12 @@ package com.blog.demo.feature.storage;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

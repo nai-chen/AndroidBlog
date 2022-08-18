@@ -10,11 +10,12 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.RemoteViews;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

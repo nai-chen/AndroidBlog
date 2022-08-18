@@ -1,13 +1,14 @@
 package com.blog.demo.custom.widget;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 import android.widget.Scroller;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 public class VelocityTrackerView extends TextView {
 

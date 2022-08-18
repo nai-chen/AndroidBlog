@@ -2,13 +2,14 @@ package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+
 import com.blog.demo.LogTool;
 import com.blog.demo.R;
+import com.google.android.material.snackbar.Snackbar;
 
 public class SnackBarActivity extends Activity implements View.OnClickListener {
     private static final String LOG_TAG = "SnackBarActivity";

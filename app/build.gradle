@@ -1,12 +1,15 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.0'
+    compileSdk 32
+
     defaultConfig {
-        applicationId "com.blog.demo"
-        minSdkVersion 21
-        targetSdkVersion 28
+        applicationId "com.example.myapplication"
+        minSdk 21
+        targetSdk 32
         versionCode 1
         versionName "1.0"
         flavorDimensions "1"
@@ -36,17 +39,26 @@ android {
             manifestPlaceholders = [channel_name: "xiaomi"]
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.alibaba:fastjson:1.2.54'
-    implementation 'com.android.support:support-annotations:28.0.0'
     implementation 'com.umeng.analytics:umeng-analytics:5.4.1'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.slidingpanelayout:slidingpanelayout:1.1.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     testImplementation 'junit:junit:4.13-beta-3'
     testImplementation 'org.mockito:mockito-core:2.28.2'

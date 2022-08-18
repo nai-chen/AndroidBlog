@@ -2,12 +2,13 @@ package com.blog.demo.image.animation;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

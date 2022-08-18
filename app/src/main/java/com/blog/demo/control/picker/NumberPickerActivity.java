@@ -2,8 +2,9 @@ package com.blog.demo.control.picker;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.widget.NumberPicker;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;

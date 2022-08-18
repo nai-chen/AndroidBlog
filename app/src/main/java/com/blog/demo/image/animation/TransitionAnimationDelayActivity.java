@@ -3,7 +3,6 @@ package com.blog.demo.image.animation;
 import android.app.Activity;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.transition.ChangeClipBounds;
 import android.transition.ChangeImageTransform;
 import android.transition.ChangeTransform;
@@ -11,6 +10,8 @@ import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

@@ -3,9 +3,10 @@ package com.blog.demo.application.systemui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.CheckBox;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;

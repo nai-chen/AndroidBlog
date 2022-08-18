@@ -14,7 +14,6 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.blog.demo.READ_PEOPLE"/>
     <uses-permission android:name="com.blog.demo.WRITE_PEOPLE"/>
-    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <!-- umeng -->
     <!-- 必须的权限 -->
@@ -66,7 +65,8 @@
             android:readPermission="com.blog.demo.READ_PEOPLE"
             android:writePermission="com.blog.demo.WRITE_PEOPLE" />
 
-        <receiver android:name=".component.receiver.DemoBroadcastReceiver">
+        <receiver android:name=".component.receiver.DemoBroadcastReceiver"
+            android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="com.blog.demo.action.receiver" />
             </intent-filter>
@@ -75,7 +75,8 @@
         <service android:name=".component.service.DemoService" />
         <service android:name=".component.service.AidlService" android:process=":remote" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -85,7 +86,8 @@
         <!-- 应用 -->
 
         <activity android:name=".application.systemui.SystemUiVisibilityActivity"
-            android:label="application/system ui visibility">
+            android:label="application/system ui visibility"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -93,31 +95,36 @@
         <activity android:name=".application.systemui.SystemUiVisibilitySampleActivity" />
 
         <activity android:name=".application.ClipChildrenActivity"
-            android:label="application/clip children">
+            android:label="application/clip children"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".application.PermissionActivity"
-            android:label="application/permission">
+            android:label="application/permission"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".application.RssActivity"
-            android:label="application/rss">
+            android:label="application/rss"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".application.ScreenOnActivity"
-            android:label="application/screen on">
+            android:label="application/screen on"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".application.SoftInputManagerActivity"
-            android:label="application/soft input manager">
+            android:label="application/soft input manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -126,20 +133,23 @@
 
         <!-- 组件 -->
         <activity android:name=".component.activity.IntentFlagActivity"
-            android:label="component/activity/flag">
+            android:label="component/activity/flag"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.activity.IntentFlagOtherActivity" />
         <activity android:name=".component.activity.LifeActivity"
-            android:label="component/activity/life">
+            android:label="component/activity/life"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.activity.LifeComplexActivity"
-            android:label="component/activity/complex">
+            android:label="component/activity/complex"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -152,31 +162,36 @@
         <activity android:name=".component.activity.SingleTopActivity"
             android:launchMode="singleTop" />
         <activity android:name=".component.activity.StandardActivity"
-            android:label="component/activity/launchMode">
+            android:label="component/activity/launchMode"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.fragment.LifeFragmentActivity"
-            android:label="component/fragment">
+            android:label="component/fragment"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.intent.IntentActivity"
-            android:label="component/intent">
+            android:label="component/intent"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".component.intent.IntentCategoryActivity">
+        <activity android:name=".component.intent.IntentCategoryActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.action.sample" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.blog.demo.MY_CATREORY" />
             </intent-filter>
         </activity>
-        <activity android:name=".component.intent.IntentSampleActivity">
+        <activity android:name=".component.intent.IntentSampleActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.action.intent" />
                 <action android:name="com.blog.demo.action.sample" />
@@ -184,50 +199,58 @@
             </intent-filter>
         </activity>
         <activity android:name=".component.provider.ProviderContractActivity"
-            android:label="component/provider/contract">
+            android:label="component/provider/contract"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.provider.ProviderCustomActivity"
-            android:label="component/provider/custom">
+            android:label="component/provider/custom"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.receiver.BroadcastReceiverActivity"
-            android:label="component/broadcast receiver">
+            android:label="component/broadcast receiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.service.AidlActivity"
-            android:label="component/service/aidl">
+            android:label="component/service/aidl"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.service.ServiceActivity"
-            android:label="component/service/service">
+            android:label="component/service/service"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.HandlerActivity"
-            android:label="component/handler">
+            android:label="component/handler"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.NotificationActivity"
-            android:label="component/notification manager">
+            android:label="component/notification manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".component.ParcelableActivity" />
         <activity android:name=".component.ParcelActivity"
-            android:label="component/parcel">
+            android:label="component/parcel"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -236,332 +259,387 @@
 
         <!-- 控件 -->
         <activity android:name=".control.button.CheckBoxActivity"
-            android:label="control/button/check box">
+            android:label="control/button/check box"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.button.RadioButtonActivity"
-            android:label="control/button/radio button">
+            android:label="control/button/radio button"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.button.SwitchActivity"
-            android:label="control/button/switch">
+            android:label="control/button/switch"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.button.ToggleButtonActivity"
-            android:label="control/button/toggle button">
+            android:label="control/button/toggle button"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.clock.AnalogClockActivity"
-            android:label="control/clock/analog clock">
+            android:label="control/clock/analog clock"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.clock.DigitalClockActivity"
-            android:label="control/clock/digital clock">
+            android:label="control/clock/digital clock"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.clock.TextClockActivity"
-            android:label="control/clock/text clock">
+            android:label="control/clock/text clock"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.edit.EditTextImeOptionsActivity"
-            android:label="control/edit text/ime options">
+            android:label="control/edit text/ime options"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.edit.EditTextInputTypeActivity"
-            android:label="control/edit text/input type">
+            android:label="control/edit text/input type"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.edit.EditTextPasswordActivity"
-            android:label="control/edit text/password">
+            android:label="control/edit text/password"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutBiasActivity"
-            android:label="control/layout/constraint layout/bias">
+            android:label="control/layout/constraint layout/bias"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutChainActivity"
-            android:label="control/layout/constraint layout/chain">
+            android:label="control/layout/constraint layout/chain"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutCircleActivity"
-            android:label="control/layout/constraint layout/circle">
+            android:label="control/layout/constraint layout/circle"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutDimensionActivity"
-            android:label="control/layout/constraint layout/dimension">
+            android:label="control/layout/constraint layout/dimension"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutGuideLineActivity"
-            android:label="control/layout/constraint layout/guide line">
+            android:label="control/layout/constraint layout/guide line"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutMarginActivity"
-            android:label="control/layout/constraint layout/margin">
+            android:label="control/layout/constraint layout/margin"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.ConstraintLayoutPositionActivity"
-            android:label="control/layout/constraint layout/position">
+            android:label="control/layout/constraint layout/position"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.LinearLayoutGravityActivity"
-            android:label="control/layout/linear layout/gravity">
+            android:label="control/layout/linear layout/gravity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.LinearLayoutOrientationActivity"
-            android:label="control/layout/linear layout/orientation">
+            android:label="control/layout/linear layout/orientation"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.RelativeLayoutAlignActivity"
-            android:label="control/layout/relative layout/align">
+            android:label="control/layout/relative layout/align"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.RelativeLayoutAlignParentActivity"
-            android:label="control/layout/relative layout/align parent">
+            android:label="control/layout/relative layout/align parent"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.RelativeLayoutCenterActivity"
-            android:label="control/layout/relative layout/center">
+            android:label="control/layout/relative layout/center"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.layout.RelativeLayoutRelativeActivity"
-            android:label="control/layout/relative layout/relative">
+            android:label="control/layout/relative layout/relative"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewArrayAdapterActivity"
-            android:label="control/list view/array adapter">
+            android:label="control/list view/array adapter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewCustomAdapterActivity"
-            android:label="control/list view/custom adapter">
+            android:label="control/list view/custom adapter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewHeaderViewActivity"
-            android:label="control/list view/header view">
+            android:label="control/list view/header view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewScrollBarSizeActivity"
-            android:label="control/list view/scroll bar/size">
+            android:label="control/list view/scroll bar/size"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewScrollBarStyleInsideActivity"
-            android:label="control/list view/scroll bar/style inside">
+            android:label="control/list view/scroll bar/style inside"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewScrollBarStyleOutsideActivity"
-            android:label="control/list view/scroll bar/style outside">
+            android:label="control/list view/scroll bar/style outside"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewScrollBarThumbVerticalActivity"
-            android:label="control/list view/scroll bar/thumb vertical">
+            android:label="control/list view/scroll bar/thumb vertical"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewScrollBarTrackVerticalActivity"
-            android:label="control/list view/scroll bar/track vertical">
+            android:label="control/list view/scroll bar/track vertical"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.list.ListViewSimpleAdapterActivity"
-            android:label="control/list view/simple adapter">
+            android:label="control/list view/simple adapter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.picker.DatePickerActivity"
-            android:label="control/picker/date picker">
+            android:label="control/picker/date picker"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.picker.NumberPickerActivity"
-            android:label="control/picker/number picker">
+            android:label="control/picker/number picker"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.picker.TimePickerActivity"
-            android:label="control/picker/time picker">
+            android:label="control/picker/time picker"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.progressbar.ProgressBarActivity"
-            android:label="control/progress bar/progress bar">
+            android:label="control/progress bar/progress bar"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.progressbar.RatingBarActivity"
-            android:label="control/progress bar/rating bar">
+            android:label="control/progress bar/rating bar"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.progressbar.SeekBarActivity"
-            android:label="control/progress bar/seek bar">
+            android:label="control/progress bar/seek bar"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewAutoLinkActivity"
-            android:label="control/text view/auto link">
+            android:label="control/text view/auto link"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewEllipseActivity"
-            android:label="control/text view/ellipse">
+            android:label="control/text view/ellipse"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewFontActivity"
-            android:label="control/text view/font">
+            android:label="control/text view/font"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewLineSpacingActivity"
-            android:label="control/text view/line spacing">
+            android:label="control/text view/line spacing"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewRichTextActivity"
-            android:label="control/text view/rich text">
+            android:label="control/text view/rich text"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.text.TextViewSpannableActivity"
-            android:label="control/text view/spannable">
+            android:label="control/text view/spannable"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewpager.ViewPagerAdapterActivity"
-            android:label="control/view pager/adapter">
+            android:label="control/view pager/adapter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewpager.ViewPagerAdvertisementActivity"
-            android:label="control/view pager/advertisement">
+            android:label="control/view pager/advertisement"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewpager.ViewPagerCycleActivity"
-            android:label="control/view pager/cycle">
+            android:label="control/view pager/cycle"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewpager.ViewPagerTransformerActivity"
-            android:label="control/view pager/transformer">
+            android:label="control/view pager/transformer"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewswitcher.ViewSwitcherFactoryActivity"
-            android:label="control/view switcher/factory">
+            android:label="control/view switcher/factory"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.viewswitcher.ViewSwitcherNormalActivity"
-            android:label="control/view switcher/normal">
+            android:label="control/view switcher/normal"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.ChronometerActivity"
-            android:label="control/Chronometer">
+            android:label="control/Chronometer"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
 
         <activity android:name=".control.SpinnerActivity"
-            android:label="control/spinner">
+            android:label="control/spinner"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.ViewFlipperActivity"
-            android:label="control/view flipper">
+            android:label="control/view flipper"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.ViewStubActivity"
-            android:label="control/view stub">
+            android:label="control/view stub"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".control.WebViewActivity"
-            android:label="control/web view">
+            android:label="control/web view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -571,67 +649,78 @@
         <!-- 自定义 -->
         <activity android:name=".custom.AttrAssignActivity"
             android:theme="@style/AppTheme.AttrAssign"
-            android:label="custom/attr assign">
+            android:label="custom/attr assign"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.AttrDeclareActivity"
-            android:label="custom/attr declare">
+            android:label="custom/attr declare"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.AttrFormatActivity"
-            android:label="custom/attr format">
+            android:label="custom/attr format"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.CListViewActivity"
-            android:label="custom/list view">
+            android:label="custom/list view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.FlowLayoutActivity"
-            android:label="custom/flow layout">
+            android:label="custom/flow layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.GestureViewActivity"
-            android:label="custom/gesture view">
+            android:label="custom/gesture view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.GroupActivity"
-            android:label="custom/group">
+            android:label="custom/group"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.PhoneTextViewActivity"
-            android:label="custom/phone text view">
+            android:label="custom/phone text view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.TouchEventActivity"
-            android:label="custom/touch event">
+            android:label="custom/touch event"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.VelocityTrackerActivity"
-            android:label="custom/velocity tracker">
+            android:label="custom/velocity tracker"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".custom.ViewDragHelperActivity"
-            android:label="custom/view drag helper">
+            android:label="custom/view drag helper"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -640,157 +729,183 @@
 
         <!-- 特性 -->
         <activity android:name=".feature.popup.AlertDialogActivity"
-            android:label="feature/popup/alert dialog">
+            android:label="feature/popup/alert dialog"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.popup.PopupWindowActivity"
-            android:label="feature/popup/popup window">
+            android:label="feature/popup/popup window"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.popup.ToastActivity"
-            android:label="feature/popup/toast">
+            android:label="feature/popup/toast"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.json.FastJsonActivity"
-            android:label="feature/storage/json/fastjson">
+            android:label="feature/storage/json/fastjson"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.json.JsonActivity"
-            android:label="feature/storage/json/json">
+            android:label="feature/storage/json/json"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.json.GsonActivity"
-            android:label="feature/storage/json/gson">
+            android:label="feature/storage/json/gson"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.FileActivity"
-            android:label="feature/storage/file">
+            android:label="feature/storage/file"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.SharedPreferencesActivity"
-            android:label="feature/storage/shared preferences">
+            android:label="feature/storage/shared preferences"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.SQLiteActivity"
-            android:label="feature/storage/sqlite">
+            android:label="feature/storage/sqlite"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.storage.XmlActivity"
-            android:label="feature/storage/xml">
+            android:label="feature/storage/xml"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.ActivityManagerActivity"
-            android:label="feature/activity manager">
+            android:label="feature/activity manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.AlarmManagerActivity"
-            android:label="feature/alarm manager">
+            android:label="feature/alarm manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.AsyncTaskActivity"
-            android:label="feature/async task">
+            android:label="feature/async task"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.AudioManagerActivity"
-            android:label="feature/audio manager">
+            android:label="feature/audio manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.BatteryManagerActivity"
-            android:label="feature/battery manager">
+            android:label="feature/battery manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.BuildActivity"
-            android:label="feature/build">
+            android:label="feature/build"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.ConnectivityManagerActivity"
-            android:label="feature/connectivity manager">
+            android:label="feature/connectivity manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.DisplayMetricsActivity"
-            android:label="feature/display metrics">
+            android:label="feature/display metrics"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.EnvironmentActivity"
-            android:label="feature/environment">
+            android:label="feature/environment"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.FilterActivity"
-            android:label="feature/filter">
+            android:label="feature/filter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.ParagraphStyleActivity"
-            android:label="feature/ParagraphStyle">
+            android:label="feature/ParagraphStyle"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.SmsManageActivity"
-            android:label="feature/sms manager">
+            android:label="feature/sms manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.SpannableActivity"
-            android:label="feature/spannable">
+            android:label="feature/spannable"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.TelephonyManagerActivity"
-            android:label="feature/telephony manager">
+            android:label="feature/telephony manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.VibratorActivity"
-            android:label="feature/vibrator">
+            android:label="feature/vibrator"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".feature.WindowManagerActivity"
-            android:label="feature/window manager">
+            android:label="feature/window manager"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -798,7 +913,8 @@
 
         <!-- 杂项 -->
         <activity android:name=".fragment.NativeCalcActivity"
-            android:label="fragment/native calc">
+            android:label="fragment/native calc"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -807,43 +923,50 @@
 
         <!-- 图像动画 -->
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
-            android:label="image/animation/interpolator">
+            android:label="image/animation/interpolator"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.FrameAnimationActivity"
-            android:label="image/animation/frame">
+            android:label="image/animation/frame"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.LayoutAnimationActivity"
-            android:label="image/animation/layout">
+            android:label="image/animation/layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.PropertyAnimationActivity"
-            android:label="image/animation/property">
+            android:label="image/animation/property"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.TransitionAnimationActivity"
-            android:label="image/animation/transition/animation">
+            android:label="image/animation/transition/animation"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.TransitionAnimationDelayActivity"
-            android:label="image/animation/transition/delay">
+            android:label="image/animation/transition/delay"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.TransitionAnimationGoActivity"
-            android:label="image/animation/transition/go">
+            android:label="image/animation/transition/go"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -851,7 +974,8 @@
         <activity android:name=".image.animation.TransitionAnimationResultActivity" />
         <activity android:name=".image.animation.TransitionAnimationThemeActivity"
             android:theme="@style/AppTheme.Transition"
-            android:label="image/animation/transition/theme">
+            android:label="image/animation/transition/theme"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -859,139 +983,162 @@
         <activity android:name=".image.animation.TransitionAnimationThemeResultActivity"
             android:theme="@style/AppTheme.Transition"/>
         <activity android:name=".image.animation.TransitionVisibilityActivity"
-            android:label="image/animation/transition/visibility">
+            android:label="image/animation/transition/visibility"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.animation.TweenAnimationActivity"
-            android:label="image/animation/tween">
+            android:label="image/animation/tween"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.canvas.CanvasBitmapActivity"
-            android:label="image/canvas/bitmap">
+            android:label="image/canvas/bitmap"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.canvas.CanvasSurfaceViewActivity"
-            android:label="image/canvas/surface view">
+            android:label="image/canvas/surface view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.canvas.CanvasTranslationActivity"
-            android:label="image/canvas/translation">
+            android:label="image/canvas/translation"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.canvas.CanvasViewActivity"
-            android:label="image/canvas/view">
+            android:label="image/canvas/view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.paint.PaintMaskFilterActivity"
-            android:label="image/paint/mask filter">
+            android:label="image/paint/mask filter"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.paint.PaintPathActivity"
-            android:label="image/paint/path">
+            android:label="image/paint/path"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.paint.PaintStrokeActivity"
-            android:label="image/paint/stroke">
+            android:label="image/paint/stroke"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.paint.PaintStyleActivity"
-            android:label="image/paint/style">
+            android:label="image/paint/style"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.paint.PaintTextActivity"
-            android:label="image/paint/text">
+            android:label="image/paint/text"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.path.PathFillTypeActivity"
-            android:label="image/path/fill type">
+            android:label="image/path/fill type"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.path.PathNormalActivity"
-            android:label="image/path/normal">
+            android:label="image/path/normal"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.path.PathOpActivity"
-            android:label="image/path/op">
+            android:label="image/path/op"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.path.PathTextActivity"
-            android:label="image/path/text">
+            android:label="image/path/text"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.FontMetricsActivity"
-            android:label="image/font metrics">
+            android:label="image/font metrics"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.ImageViewActivity"
-            android:label="image/image view">
+            android:label="image/image view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.MediaCodecActivity"
-            android:label="image/media codec">
+            android:label="image/media codec"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.MediaMetadataRetrieverActivity"
-            android:label="image/media metadata retriever">
+            android:label="image/media metadata retriever"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.MediaPlayerAudioActivity"
-            android:label="image/media player/audio">
+            android:label="image/media player/audio"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.MediaPlayerVideoActivity"
-            android:label="image/media player/video">
+            android:label="image/media player/video"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.SelectorActivity"
-            android:label="image/selector">
+            android:label="image/selector"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".image.ShapeActivity"
-            android:label="image/shape">
+            android:label="image/shape"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -1000,110 +1147,128 @@
 
         <!-- Material Design -->
         <activity android:name=".md.collapsingtoolbar.CollapsingToolbarLayoutNormalActivity"
-            android:label="material design/collapsing toolbar layout/normal">
+            android:label="material design/collapsing toolbar layout/normal"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.collapsingtoolbar.CollapsingToolbarLayoutPictureActivity"
-            android:label="material design/collapsing toolbar layout/picture">
+            android:label="material design/collapsing toolbar layout/picture"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewHeaderFooterViewActivity"
-            android:label="material design/recycler view/Header Footer View">
+            android:label="material design/recycler view/Header Footer View"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewNormalActivity"
-            android:label="material design/recycler view/normal">
+            android:label="material design/recycler view/normal"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewLayoutActivity"
-            android:label="material design/recycler view/layout">
+            android:label="material design/recycler view/layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewLayoutSpanActivity"
-            android:label="material design/recycler view/layout span">
+            android:label="material design/recycler view/layout span"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewLoadMoreActivity"
-            android:label="material design/recycler view/load more">
+            android:label="material design/recycler view/load more"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.recyclerview.RecyclerViewRefreshActivity"
-            android:label="material design/recycler view/refresh">
+            android:label="material design/recycler view/refresh"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.AppBarLayoutActivity"
-            android:label="material design/app bar layout">
+            android:label="material design/app bar layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.CardViewActivity"
-            android:label="material design/card view">
+            android:label="material design/card view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.DrawerLayoutActivity"
-            android:label="material design/drawer layout">
+            android:label="material design/drawer layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.FloatingActionButtonActivity"
-            android:label="material design/floating action button">
+            android:label="material design/floating action button"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.NavigationViewActivity"
-            android:label="material design/navigation view">
+            android:label="material design/navigation view"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.SlidingPaneLayoutActivity"
-            android:label="material design/slide pane layout">
+            android:label="material design/slide pane layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.SnackBarActivity"
-            android:label="material design/snack bar">
+            android:label="material design/snack bar"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.SwipeRefreshLayoutActivity"
-            android:label="material design/swipe refresh layout">
+            android:label="material design/swipe refresh layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.TabLayoutActivity"
-            android:label="material design/tab layout">
+            android:label="material design/tab layout"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
         <activity android:name=".md.ToolbarActivity"
             android:theme="@style/AppTheme.ToolBar"
-            android:label="material design/toolbar">
+            android:label="material design/toolbar"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
@@ -1111,19 +1276,6 @@
 
 
         <!-- 第三方应用 -->
-        <activity android:name=".third.eventbus.EventBusActivity"
-            android:label="third/eventbus">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.eventbus.EventBusPublisherActivity" />
-        <activity android:name=".third.UmengActivity"
-            android:label="third/umeng">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
 
 
     </application>

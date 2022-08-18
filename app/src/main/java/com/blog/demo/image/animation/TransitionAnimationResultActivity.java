@@ -2,11 +2,12 @@ package com.blog.demo.image.animation;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Transition;
 import android.transition.TransitionSet;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

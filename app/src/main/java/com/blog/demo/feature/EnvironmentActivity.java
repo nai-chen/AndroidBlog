@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
-import android.support.annotation.Nullable;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;

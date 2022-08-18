@@ -3,10 +3,11 @@ package com.blog.demo.application;
 import android.app.Activity;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;

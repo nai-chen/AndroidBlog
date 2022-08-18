@@ -2,7 +2,8 @@ package com.blog.demo.image;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.image.widget.FontMetricsView;
 

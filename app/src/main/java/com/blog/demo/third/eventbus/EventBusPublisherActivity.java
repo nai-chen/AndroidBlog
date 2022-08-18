@@ -2,8 +2,9 @@ package com.blog.demo.third.eventbus;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

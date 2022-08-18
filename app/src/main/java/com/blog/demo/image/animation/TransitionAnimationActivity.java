@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionSet;
 import android.view.Gravity;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

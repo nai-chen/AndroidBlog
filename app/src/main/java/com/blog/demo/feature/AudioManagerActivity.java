@@ -3,10 +3,11 @@ package com.blog.demo.feature;
 import android.app.Activity;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
+
+import androidx.annotation.Nullable;
 
 import com.blog.demo.R;
 

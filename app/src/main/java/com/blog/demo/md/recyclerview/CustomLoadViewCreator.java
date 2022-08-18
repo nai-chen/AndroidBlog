@@ -1,12 +1,13 @@
 package com.blog.demo.md.recyclerview;
 
 import android.content.Context;
-import android.support.annotation.LayoutRes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.LayoutRes;
 
 import com.blog.demo.LogTool;
 import com.blog.demo.R;

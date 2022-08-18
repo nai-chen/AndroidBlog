@@ -2,14 +2,15 @@ package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.blog.demo.R;
+import com.google.android.material.navigation.NavigationView;
 
 public class NavigationViewActivity extends Activity {
 

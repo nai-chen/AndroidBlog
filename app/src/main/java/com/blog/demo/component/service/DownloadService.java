@@ -2,7 +2,8 @@ package com.blog.demo.component.service;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 public class DownloadService extends IntentService {
 

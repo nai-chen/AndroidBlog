@@ -2,9 +2,10 @@ package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.SlidingPaneLayout;
 import android.view.View;
+
+import androidx.annotation.Nullable;
+import androidx.slidingpanelayout.widget.SlidingPaneLayout;
 
 import com.blog.demo.R;
 

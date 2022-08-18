@@ -3,7 +3,6 @@ package com.blog.demo.image;
 import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -11,7 +10,6 @@ import android.widget.Toast;
 import com.blog.demo.LogTool;
 import com.blog.demo.R;
 
-import java.io.FileDescriptor;
 import java.io.IOException;
 
 public class MediaPlayerAudioActivity extends Activity implements View.OnClickListener {

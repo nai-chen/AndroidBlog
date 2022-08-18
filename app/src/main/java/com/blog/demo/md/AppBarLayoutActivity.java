@@ -2,12 +2,13 @@ package com.blog.demo.md;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+
 import com.blog.demo.R;
+import com.google.android.material.appbar.AppBarLayout;
 
 public class AppBarLayoutActivity extends Activity implements View.OnClickListener {
 
