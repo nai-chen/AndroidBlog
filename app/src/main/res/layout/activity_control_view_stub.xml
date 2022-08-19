@@ -22,4 +22,5 @@
         android:layout_height="wrap_content"
         android:inflatedId="@+id/tv_inflate"
         android:layout="@layout/view_stub_inflate"/>
+
 </LinearLayout>

@@ -42,7 +42,7 @@ class ProviderCustomActivity : Activity(), View.OnClickListener {
         mListView = findViewById(R.id.list_view)
         mAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1)
         mListView.adapter = mAdapter
-        mListView.setOnItemClickListener {parent, view, position, id ->
+        mListView.setOnItemClickListener {_, _, position, _ ->
             mId = peopleList[position].id
             query(mId)
         }
@@ -119,7 +119,7 @@ class ProviderCustomActivity : Activity(), View.OnClickListener {
         }
     }
 
-    open fun queryList() {
+    fun queryList() {
         mAdapter.clear()
         peopleList = query()
 

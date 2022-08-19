@@ -66,7 +66,7 @@ class ProviderContractActivity : Activity() {
         cursor.close()
 
         mListView.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, list)
-        mListView.setOnItemClickListener { parent, view, position, id ->
+        mListView.setOnItemClickListener { _, _, position, _ ->
             showContact(position)
         }
     }

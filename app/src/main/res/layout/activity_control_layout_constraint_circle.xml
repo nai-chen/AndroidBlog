@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
@@ -15,19 +16,23 @@
         android:text="center"
         android:background="#ffffcc00"/>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         app:layout_constraintCircle="@id/tv_center"
         app:layout_constraintCircleRadius="100dp"
         app:layout_constraintCircleAngle="0"
         android:text="circle 0"
-        android:background="#ffa6a5aa"/>
+        android:gravity="center"
+        android:background="#ffa6a5aa"
+        tools:ignore="MissingConstraints" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
         app:layout_constraintCircle="@id/tv_center"
         app:layout_constraintCircleRadius="60dp"
         app:layout_constraintCircleAngle="135"
         android:text="circle 135"
-        android:background="#ffa6a5aa"/>
-</android.support.constraint.ConstraintLayout>
+        android:gravity="center"
+        android:background="#ffa6a5aa"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

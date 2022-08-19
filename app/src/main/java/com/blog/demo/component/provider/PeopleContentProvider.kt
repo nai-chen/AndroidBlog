@@ -57,8 +57,8 @@ class PeopleContentProvider : ContentProvider() {
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
-        if (uriMatcher!!.match(uri) == PEOPLE) {
-            val db = helper!!.writableDatabase
+        if (uriMatcher.match(uri) == PEOPLE) {
+            val db = helper.writableDatabase
             try {
                 db.beginTransaction()
                 val id = db.insert(TABLE_NAME, null, values)

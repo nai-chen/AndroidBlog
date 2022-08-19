@@ -35,4 +35,5 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:layout_margin="10dp"/>
+
 </LinearLayout>

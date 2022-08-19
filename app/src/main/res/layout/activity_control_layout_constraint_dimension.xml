@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="20dp">
@@ -27,9 +27,9 @@
             app:layout_constraintTop_toBottomOf="@id/tv_specific"
             android:text="text wrap"
             android:background="#ffa6a5aa"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
         <TextView
@@ -53,9 +53,9 @@
             android:text="percent"
             android:gravity="center"
             android:background="#ffa6a5aa"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
         <ImageView
@@ -65,5 +65,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintDimensionRatio="w,4:5"
             android:background="@drawable/scenery"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
