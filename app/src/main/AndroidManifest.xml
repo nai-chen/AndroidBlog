@@ -132,14 +132,6 @@
 
 
         <!-- 组件 -->
-        <activity android:name=".component.activity.IntentFlagActivity"
-            android:label="component/activity/flag"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".component.activity.IntentFlagOtherActivity" />
         <activity android:name=".component.activity.LifeActivity"
             android:label="component/activity/life"
             android:exported="false">
@@ -155,12 +147,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".component.activity.LifeComplexOtherActivity" />
-        <activity android:name=".component.activity.SingleInstanceActivity"
-            android:launchMode="singleInstance" />
-        <activity android:name=".component.activity.SingleTaskActivity"
-            android:launchMode="singleTask" />
-        <activity android:name=".component.activity.SingleTopActivity"
-            android:launchMode="singleTop" />
         <activity android:name=".component.activity.StandardActivity"
             android:label="component/activity/launchMode"
             android:exported="false">
@@ -168,6 +154,21 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.activity.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".component.activity.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".component.activity.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".component.activity.IntentFlagActivity"
+            android:label="component/activity/flag"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.activity.IntentFlagOtherActivity" />
+
         <activity android:name=".component.fragment.LifeFragmentActivity"
             android:label="component/fragment"
             android:exported="false">
@@ -183,7 +184,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".component.intent.IntentCategoryActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.blog.demo.action.sample" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -191,7 +192,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".component.intent.IntentSampleActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.blog.demo.action.intent" />
                 <action android:name="com.blog.demo.action.sample" />
