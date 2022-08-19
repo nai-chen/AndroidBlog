@@ -40,7 +40,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="percent"
             app:layout_constraintWidth_percent="0.3"
-            android:text="percent"
+            android:text="percent1"
             android:gravity="center"
             android:background="#ffa6a5aa"/>
         <TextView
@@ -50,7 +50,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHeight_default="percent"
             app:layout_constraintHeight_percent="0.5"
-            android:text="percent"
+            android:text="percent2"
             android:gravity="center"
             android:background="#ffa6a5aa"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
