@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SlidingPaneLayout
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/sliding_pane_layout"
     android:layout_width="match_parent"
@@ -24,4 +24,4 @@
         android:orientation="vertical"
         android:background="@drawable/bg"/>
 
-</android.support.v4.widget.SlidingPaneLayout>
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>

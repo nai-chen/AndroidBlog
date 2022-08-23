@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" >
@@ -14,19 +14,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="show snack bar"/>
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="20dp"
             android:src="@drawable/icon_qq"
             app:rippleColor="#ffe5e5e5"
             app:backgroundTint="#ffffffff"
             app:elevation="6dp"
             app:pressedTranslationZ="6dp"
             app:fabSize="mini"
-            app:borderWidth="0dp"
-            android:layout_gravity="right|bottom"
-            android:layout_margin="20dp" />
-    </android.support.design.widget.CoordinatorLayout>
+            app:borderWidth="0dp" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -36,19 +36,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="show snack bar"/>
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_qq"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
             app:rippleColor="#ffe5e5e5"
             app:backgroundTint="#ffffffff"
             app:elevation="6dp"
             app:pressedTranslationZ="6dp"
             app:fabSize="mini"
-            app:borderWidth="0dp"
-            android:layout_margin="20dp" />
+            app:borderWidth="0dp" />
     </RelativeLayout>
 
 </LinearLayout>

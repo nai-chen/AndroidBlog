@@ -140,6 +140,36 @@
                     android:text="item10"
                     android:layout_marginLeft="15dp"
                     android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="item11"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="item12"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="item13"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="item14"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="item15"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical" />
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
