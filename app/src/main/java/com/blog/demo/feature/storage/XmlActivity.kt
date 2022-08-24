@@ -105,10 +105,10 @@ class XmlActivity : Activity(), View.OnClickListener {
         xmlSerializer.startTag(null, TAG_ROOT)
         for (people in peopleList) {
             xmlSerializer.startTag(null, TAG_PEOPLE)
-            xmlSerializer.attribute(null, TAG_ID, Integer.toString(people.id))
+            xmlSerializer.attribute(null, TAG_ID, people.id.toString())
             writeTextTag(xmlSerializer, TAG_NAME, people.name)
             writeTextTag(xmlSerializer, TAG_ADDR, people.addr)
-            writeTextTag(xmlSerializer, TAG_AGE, Integer.toString(people.age))
+            writeTextTag(xmlSerializer, TAG_AGE, people.age.toString())
             xmlSerializer.endTag(null, TAG_PEOPLE)
         }
         xmlSerializer.endTag(null, TAG_ROOT)
@@ -121,7 +121,6 @@ class XmlActivity : Activity(), View.OnClickListener {
         xmlSerializer.text(text)
         xmlSerializer.endTag(null, tag)
     }
-
 
     @Throws(Exception::class)
     private fun readXmlByDom(input: InputStream): List<People> {
@@ -174,7 +173,9 @@ class XmlActivity : Activity(), View.OnClickListener {
         @Throws(SAXException::class)
         override fun endElement(uri: String, localName: String, qName: String) {
             if (TAG_PEOPLE == localName) {
-                peopleList.add(people!!)
+                if (people != null) {
+                    peopleList.add(people!!)
+                }
             } else if (TAG_NAME == localName) {
                 people?.name = text
             } else if (TAG_ADDR == localName) {
@@ -201,9 +202,11 @@ class XmlActivity : Activity(), View.OnClickListener {
         val factory = XmlPullParserFactory.newInstance()
         val parser = factory.newPullParser()
         parser.setInput(InputStreamReader(input))
+
         var eventType = parser.eventType
         var people: People? = null
         var text: String? = null
+
         while (eventType != XmlPullParser.END_DOCUMENT) {
             if (eventType == XmlPullParser.START_TAG) {
                 if (TAG_PEOPLE == parser.name) {
@@ -212,13 +215,15 @@ class XmlActivity : Activity(), View.OnClickListener {
                 }
             } else if (eventType == XmlPullParser.END_TAG) {
                 if (TAG_PEOPLE == parser.name) {
-                    peopleList.add(people!!)
+                    if (people != null) {
+                        peopleList.add(people!!)
+                    }
                 } else if (TAG_NAME == parser.name) {
-                    people!!.name = text
+                    people?.name = text
                 } else if (TAG_ADDR == parser.name) {
-                    people!!.addr = text
+                    people?.addr = text
                 } else if (TAG_AGE == parser.name) {
-                    people!!.age = text!!.toInt()
+                    people?.age = text?.toInt() ?: 0
                 }
             } else if (eventType == XmlPullParser.TEXT) {
                 text = parser.text

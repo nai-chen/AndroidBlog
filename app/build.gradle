@@ -70,4 +70,5 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.1.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.4.32'
 }

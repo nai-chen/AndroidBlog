@@ -33,10 +33,8 @@ class PeopleSQLiteOpenHelper(context: Context?) : SQLiteOpenHelper(context, DB_N
 
     fun query(): List<People> {
         val list: MutableList<People> = ArrayList()
-        val cursor = readableDatabase.query(
-            TABLE_NAME,
-            null, null, null, null, null, null
-        )
+        val cursor = readableDatabase.query(TABLE_NAME,
+            null, null, null, null, null, null)
         while (cursor.moveToNext()) {
             val people = People(cursor.getInt(cursor.getColumnIndexOrThrow(COL_ID)),
                 cursor.getString(cursor.getColumnIndexOrThrow(COL_NAME)),
@@ -50,10 +48,8 @@ class PeopleSQLiteOpenHelper(context: Context?) : SQLiteOpenHelper(context, DB_N
 
     fun query(id: Int): People? {
         var people: People? = null
-        val cursor = readableDatabase.query(
-            TABLE_NAME, null,
-            "$COL_ID=?", arrayOf(Integer.toString(id)), null, null, null, null
-        )
+        val cursor = readableDatabase.query(TABLE_NAME, null,
+            "$COL_ID=?", arrayOf(id.toString()), null, null, null, null)
         if (cursor.moveToNext()) {
             people = People(cursor.getInt(cursor.getColumnIndexOrThrow(COL_ID)),
                 cursor.getString(cursor.getColumnIndexOrThrow(COL_NAME)),
@@ -83,7 +79,7 @@ class PeopleSQLiteOpenHelper(context: Context?) : SQLiteOpenHelper(context, DB_N
         val db = writableDatabase
         try {
             db.beginTransaction()
-            db.delete(TABLE_NAME, "$COL_ID=?", arrayOf(Integer.toString(id)))
+            db.delete(TABLE_NAME, "$COL_ID=?", arrayOf(id.toString()))
             db.setTransactionSuccessful()
         } finally {
             db.endTransaction()
