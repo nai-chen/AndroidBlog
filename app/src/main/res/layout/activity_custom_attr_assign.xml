@@ -5,6 +5,7 @@
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <com.blog.demo.custom.widget.AttrAssignTextView
         style="@style/attrAssignStyle"
         android:layout_width="match_parent"

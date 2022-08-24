@@ -698,6 +698,13 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".custom.MobileVerifyViewActivity"
+            android:label="custom/mobile verify view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".custom.PhoneTextViewActivity"
             android:label="custom/phone text view"
             android:exported="false">

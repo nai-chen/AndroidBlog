@@ -4,23 +4,28 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <com.blog.demo.custom.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="#ff00ff00"/>
+
     <com.blog.demo.custom.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="#ffff8800" />
+
     <com.blog.demo.custom.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="@color/red" />
+
     <com.blog.demo.custom.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="This is a string"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textColor="#FF000000"
         app:background_color="#ff0000ff"/>
+
 </LinearLayout>
