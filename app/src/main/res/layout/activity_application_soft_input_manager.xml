@@ -9,25 +9,22 @@
     <EditText
         android:id="@+id/et1"
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="50dp" />
 
     <EditText
         android:id="@+id/et2"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="50dp"/>
 
     <EditText
         android:id="@+id/et3"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="50dp"/>
 
     <EditText
         android:id="@+id/et4"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="50dp"/>
 
     <Button
         android:id="@+id/btn"

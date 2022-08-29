@@ -65,6 +65,16 @@
             android:readPermission="com.blog.demo.READ_PEOPLE"
             android:writePermission="com.blog.demo.WRITE_PEOPLE" />
 
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.blog.demo.file_provider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <receiver android:name=".component.receiver.DemoBroadcastReceiver"
             android:exported="false">
             <intent-filter android:priority="1000">
@@ -96,6 +106,13 @@
 
         <activity android:name=".application.ClipChildrenActivity"
             android:label="application/clip children"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.FileProviderActivity"
+            android:label="application/file provider"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />

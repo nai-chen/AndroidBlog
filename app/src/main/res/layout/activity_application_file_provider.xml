@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="write" />
+            <RadioButton
+                android:id="@+id/rb_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="read" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_files_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="files-path" />
+
+        <Button
+            android:id="@+id/btn_cache_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cache-path" />
+
+        <Button
+            android:id="@+id/btn_external_files_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="external-files-path" />
+
+        <Button
+            android:id="@+id/btn_external_cache_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="external-cache-path" />
+
+        <Button
+            android:id="@+id/btn_external_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="external-path" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
