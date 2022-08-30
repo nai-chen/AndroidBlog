@@ -1,35 +1,30 @@
 package com.blog.demo.application
 
 import android.app.Activity
+import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.provider.MediaStore
 import android.view.View
 import android.widget.Button
-import android.widget.RadioGroup
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.core.content.FileProvider
-import androidx.core.net.toFile
 import com.blog.demo.LogTool
 import com.blog.demo.R
-import java.io.ByteArrayOutputStream
 import java.io.File
-import java.io.FileInputStream
-import java.io.FileOutputStream
 
 class FileProviderActivity : Activity(), View.OnClickListener {
 
-    private lateinit var mRadioGroup: RadioGroup
-    private lateinit var mTextView: TextView
+    private val REQUEST_CODE_PHOTO		            = 100
+
+    private var mFileUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_application_file_provider)
-
-        mRadioGroup = findViewById(R.id.radio_group)
-        mTextView = findViewById(R.id.text_view)
 
         findViewById<Button>(R.id.btn_files_path).setOnClickListener(this)
         findViewById<Button>(R.id.btn_cache_path).setOnClickListener(this)
@@ -39,42 +34,59 @@ class FileProviderActivity : Activity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        var fileUri: Uri? = null
+
         when(v?.id) {
             R.id.btn_files_path -> {
-                fileUri = getFileUri(filesDir)
+                mFileUri = getFileUri(filesDir)
             }
             R.id.btn_cache_path -> {
-                fileUri = getFileUri(cacheDir)
+                mFileUri = getFileUri(cacheDir)
             }
             R.id.btn_external_files_path -> {
-                fileUri = getFileUri(getExternalFilesDir(null))
+                mFileUri = getFileUri(getExternalFilesDir(null))
             }
             R.id.btn_external_cache_path -> {
-                fileUri = getFileUri(externalCacheDir)
+                mFileUri = getFileUri(externalCacheDir)
             }
             R.id.btn_external_path -> {
-                fileUri = getFileUri(Environment.getExternalStorageDirectory())
+                mFileUri = getFileUri(Environment.getExternalStorageDirectory())
             }
         }
+        var fileUri = mFileUri
         if (fileUri != null) {
             LogTool.logi("FileProvider", fileUri.toString())
+
+            var intent = Intent()
+            intent.action = MediaStore.ACTION_IMAGE_CAPTURE
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            startActivityForResult(intent, REQUEST_CODE_PHOTO)
         }
     }
 
     private fun getFileUri(file: File?): Uri {
-        var txtFile = File(file?.absolutePath + "/txt")
-        if (!txtFile.exists()) {
-            txtFile.mkdirs()
+        if (file != null && !file.exists()) {
+            file.mkdirs()
         }
 
-        var file = File(txtFile, "hello.txt")
-        LogTool.logi("FileProvider", file.absolutePath)
+        var imageFile = File(file, "tmp_${System.currentTimeMillis()}.jpg")
+        if (imageFile.exists()) {
+            imageFile.delete()
+        }
+        LogTool.logi("FileProvider", imageFile.absolutePath)
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return FileProvider.getUriForFile(this, "com.blog.demo.file_provider", file)
+            return FileProvider.getUriForFile(this, "com.blog.demo.file_provider", imageFile)
         } else {
-            return Uri.fromFile(file)
+            return Uri.fromFile(imageFile)
         }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == REQUEST_CODE_PHOTO) {
+            if (resultCode == RESULT_OK) {
+                findViewById<ImageView>(R.id.image_view).setImageURI(mFileUri)
+            }
+        }
+    }
 }

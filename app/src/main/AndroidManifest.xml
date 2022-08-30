@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.blog"
     package="com.blog.demo">
 
     <!-- 定义读取权限 -->

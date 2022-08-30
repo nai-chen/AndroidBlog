@@ -1,9 +1,12 @@
 package com.blog.demo.application
 
 import android.app.Activity
+import android.content.Context
 import android.graphics.Rect
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
+import android.widget.EditText
 import com.blog.demo.LogTool.logi
 import com.blog.demo.R
 
@@ -30,6 +33,20 @@ class SoftInputManagerActivity : Activity() {
                 logi(LOG_TAG, "onGlobalLayout")
                 onLayout()
             }
+
+        var editText: EditText = findViewById(R.id.et)
+        findViewById<Button>(R.id.btn_show_soft).setOnClickListener {
+            val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            editText.requestFocus()
+            inputMethodManager.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
+        }
+
+        findViewById<Button>(R.id.btn_hide_soft).setOnClickListener {
+            val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(it.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
+        }
+
+        findViewById<EditText>(R.id.et1).requestFocus()
     }
 
     private fun onLayout() {
