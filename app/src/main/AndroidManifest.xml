@@ -1302,7 +1302,35 @@
 
 
         <!-- 第三方应用 -->
+        <activity android:name=".third.eventbus.EventBusActivity"
+            android:label="third/event bus"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.eventbus.EventBusPublisherActivity" />
 
-
+        <activity android:name=".third.glide.GlideActivity"
+            android:label="third/glide"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.pdf.PdfViewActivity"
+            android:label="third/pdf/pdf view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.UmengActivity"
+            android:label="third/Umeng"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
