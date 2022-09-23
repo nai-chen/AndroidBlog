@@ -11,8 +11,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 
-        maven { url 'https://jcenter.bintray.com' }
-        maven { url 'https://maven.ghostscript.com/' }
+        maven { url 'https://jcenter.bintray.com' } // android-pdf-viewer
+        maven { url 'https://maven.ghostscript.com/' } // mupdf
+        maven { url 'https://www.jitpack.io' } // PhotoView
     }
 }
 rootProject.name = "AndroidBlog"

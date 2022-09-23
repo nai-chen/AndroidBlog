@@ -1318,8 +1318,43 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".third.imageview.SubsamplingScaleImageViewNormalActivity"
+            android:label="third/subsampling scale image view/large pic"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.imageview.SubsamplingScaleImageViewLongActivity"
+            android:label="third/subsampling scale image view/long pic"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".third.pdf.PdfViewActivity"
             android:label="third/pdf/pdf view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.pdf.MuPdfViewActivity"
+            android:label="third/pdf/mupdf"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.photoview.PhotoViewNormalActivity"
+            android:label="third/photo view/normal"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.photoview.PhotoViewViewPagerActivity"
+            android:label="third/photo view/view pager"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
