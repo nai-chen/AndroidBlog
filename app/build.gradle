@@ -75,5 +75,5 @@ dependencies {
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
     implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
     implementation 'com.artifex.mupdf:fitz:1.20.2'
-
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
 }
