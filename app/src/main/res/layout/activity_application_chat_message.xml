@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F8FA">
+
+    <com.blog.demo.md.recyclerview.CustomRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/margin_dpi_10"
+            android:paddingRight="@dimen/margin_dpi_10"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:hint="请输入内容"
+            android:background="@color/white" />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_dpi_10"
+            android:layout_marginRight="@dimen/margin_dpi_10"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="发送"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/background_chat_message_mine" />
+    </LinearLayout>
+</LinearLayout>

@@ -105,6 +105,13 @@
         </activity>
         <activity android:name=".application.systemui.SystemUiVisibilitySampleActivity" />
 
+        <activity android:name=".application.ChatMessageActivity"
+            android:label="application/chat message"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.ClipChildrenActivity"
             android:label="application/clip children"
             android:exported="false">
