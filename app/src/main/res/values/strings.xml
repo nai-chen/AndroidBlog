@@ -33,4 +33,7 @@
     </string-array>
 
     <string name="poetry">天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。寒来暑往，秋收冬藏。闰余成岁，律吕调阳。云腾致雨，露结为霜。金生丽水，玉出昆冈。剑号巨阙，珠称夜光。果珍李柰，菜重芥姜。</string>
+
+    <string name="long_text">We have started your app\'s review, but we were unable to successfully access all or part of your app. In order for us to continue the review, we need to have a way to verify all app features and functionality. Typically this is done by providing a demo account that has access to all features and functionality in your app.</string>
+
 </resources>

@@ -14,4 +14,6 @@
 
     <color name="gesture_normal_line">#FFEED400</color>
     <color name="gesture_error_line">#FFFF7088</color>
+
+    <color name="item_background">#FFA2A2A4</color>
 </resources>

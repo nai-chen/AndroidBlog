@@ -6,4 +6,6 @@
     <dimen name="margin_dpi_50">50dp</dimen>
     <dimen name="margin_dpi_200">200dp</dimen>
     <dimen name="head_view_height">50dp</dimen>
+
+    <dimen name="font_size_20">20sp</dimen>
 </resources>

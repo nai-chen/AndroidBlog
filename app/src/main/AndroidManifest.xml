@@ -417,6 +417,34 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.layout.StaticLayoutAlignmentActivity"
+            android:label="control/layout/static layout/align"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.StaticLayoutBreakStrategyActivity"
+            android:label="control/layout/static layout/break strategy"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.StaticLayoutEllipsizeActivity"
+            android:label="control/layout/static layout/ellipsize"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.layout.StaticLayoutLineSpacingActivity"
+            android:label="control/layout/static layout/line spacing"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.layout.RelativeLayoutAlignActivity"
             android:label="control/layout/relative layout/align"
             android:exported="false">
