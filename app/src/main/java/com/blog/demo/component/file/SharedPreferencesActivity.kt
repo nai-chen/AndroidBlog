@@ -1,4 +1,4 @@
-package com.blog.demo.feature.storage
+package com.blog.demo.component.file
 
 import android.app.Activity
 import android.os.Bundle
@@ -16,7 +16,7 @@ class SharedPreferencesActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_storage_shared_preferences)
+        setContentView(R.layout.activity_component_file_shared_preferences)
 
         findViewById<Button>(R.id.btn_write_shared_preferences).setOnClickListener(this)
         findViewById<Button>(R.id.btn_read_shared_preferences).setOnClickListener(this)

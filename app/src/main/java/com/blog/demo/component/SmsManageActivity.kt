@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -61,7 +61,7 @@ class SmsManageActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_sms_manager)
+        setContentView(R.layout.activity_component_sms_manager)
 
         findViewById<Button>(R.id.btn_goto_send_sms).setOnClickListener(this)
         findViewById<Button>(R.id.btn_send_sms).setOnClickListener(this)

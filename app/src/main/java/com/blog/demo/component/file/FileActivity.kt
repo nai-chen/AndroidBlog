@@ -1,4 +1,4 @@
-package com.blog.demo.feature.storage
+package com.blog.demo.component.file
 
 import android.app.Activity
 import android.os.Bundle
@@ -14,7 +14,7 @@ class FileActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_storage_file)
+        setContentView(R.layout.activity_component_file_file)
         val tvAsset: TextView = findViewById(R.id.tv_asset)
         try {
             assets.open("config.properties").use { inputStream ->

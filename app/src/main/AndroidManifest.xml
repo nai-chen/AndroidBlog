@@ -194,6 +194,28 @@
         </activity>
         <activity android:name=".component.activity.IntentFlagOtherActivity" />
 
+        <activity android:name=".component.file.FileActivity"
+            android:label="component/file/file"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.file.SharedPreferencesActivity"
+            android:label="component/file/shared preferences"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.file.SQLiteActivity"
+            android:label="component/file/sqlite"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".component.fragment.LifeFragmentActivity"
             android:label="component/fragment"
             android:exported="false">
@@ -259,6 +281,69 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.ActivityManagerActivity"
+            android:label="component/activity manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.AlarmManagerActivity"
+            android:label="component/alarm manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.AsyncTaskActivity"
+            android:label="component/async task"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.AudioManagerActivity"
+            android:label="component/audio manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.BatteryManagerActivity"
+            android:label="component/battery manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.BuildActivity"
+            android:label="component/build"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.ConnectivityManagerActivity"
+            android:label="component/connectivity manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.DisplayMetricsActivity"
+            android:label="component/display metrics"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.EnvironmentActivity"
+            android:label="component/environment"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".component.HandlerActivity"
             android:label="component/handler"
             android:exported="false">
@@ -281,7 +366,34 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".component.SmsManageActivity"
+            android:label="component/sms manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.TelephonyManagerActivity"
+            android:label="component/telephony manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.VibratorActivity"
+            android:label="component/vibrator"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.WindowManagerActivity"
+            android:label="component/window manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
 
         <!-- 控件 -->
         <activity android:name=".control.button.CheckBoxActivity"
@@ -831,27 +943,7 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".feature.storage.FileActivity"
-            android:label="feature/storage/file"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.storage.SharedPreferencesActivity"
-            android:label="feature/storage/shared preferences"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.storage.SQLiteActivity"
-            android:label="feature/storage/sqlite"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".feature.storage.XmlActivity"
             android:label="feature/storage/xml"
             android:exported="false">
@@ -859,69 +951,7 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".feature.ActivityManagerActivity"
-            android:label="feature/activity manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.AlarmManagerActivity"
-            android:label="feature/alarm manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.AsyncTaskActivity"
-            android:label="feature/async task"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.AudioManagerActivity"
-            android:label="feature/audio manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.BatteryManagerActivity"
-            android:label="feature/battery manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.BuildActivity"
-            android:label="feature/build"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.ConnectivityManagerActivity"
-            android:label="feature/connectivity manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.DisplayMetricsActivity"
-            android:label="feature/display metrics"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.EnvironmentActivity"
-            android:label="feature/environment"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".feature.FilterActivity"
             android:label="feature/filter"
             android:exported="false">
@@ -936,13 +966,6 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".feature.SmsManageActivity"
-            android:label="feature/sms manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
         <activity android:name=".feature.SpannableActivity"
             android:label="feature/spannable"
             android:exported="false">
@@ -950,27 +973,8 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".feature.TelephonyManagerActivity"
-            android:label="feature/telephony manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.VibratorActivity"
-            android:label="feature/vibrator"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.WindowManagerActivity"
-            android:label="feature/window manager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
+
+
 
         <!-- 杂项 -->
         <activity android:name=".fragment.NativeCalcActivity"

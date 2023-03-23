@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.os.Bundle

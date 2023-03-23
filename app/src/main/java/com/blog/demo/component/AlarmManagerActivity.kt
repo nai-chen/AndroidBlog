@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.app.AlarmManager
@@ -37,7 +37,7 @@ class AlarmManagerActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_alarm_manager)
+        setContentView(R.layout.activity_component_alarm_manager)
 
         findViewById<Button>(R.id.btn_set_alarm).setOnClickListener(this)
         findViewById<Button>(R.id.btn_set_repeat_alarm).setOnClickListener(this)

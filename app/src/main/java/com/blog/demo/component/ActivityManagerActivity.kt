@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.app.ActivityManager
@@ -17,7 +17,7 @@ class ActivityManagerActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_activity_manager)
+        setContentView(R.layout.activity_component_activity_manager)
 
         findViewById<Button>(R.id.btn_show_memory_info).setOnClickListener(this)
         findViewById<Button>(R.id.btn_check_app_on_foreground).setOnClickListener(this)

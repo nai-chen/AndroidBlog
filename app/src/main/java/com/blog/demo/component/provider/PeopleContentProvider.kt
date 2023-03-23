@@ -6,7 +6,7 @@ import android.content.ContentValues
 import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
-import com.blog.demo.feature.storage.PeopleSQLiteOpenHelper
+import com.blog.demo.component.file.PeopleSQLiteOpenHelper
 
 class PeopleContentProvider : ContentProvider() {
 

@@ -1,4 +1,4 @@
-package com.blog.demo.feature.storage
+package com.blog.demo.component.file
 
 import android.net.Uri
 

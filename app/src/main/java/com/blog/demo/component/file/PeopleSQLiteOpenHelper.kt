@@ -1,4 +1,4 @@
-package com.blog.demo.feature.storage
+package com.blog.demo.component.file
 
 import android.content.ContentValues
 import android.content.Context
@@ -33,7 +33,8 @@ class PeopleSQLiteOpenHelper(context: Context?) : SQLiteOpenHelper(context, DB_N
 
     fun query(): List<People> {
         val list: MutableList<People> = ArrayList()
-        val cursor = readableDatabase.query(TABLE_NAME,
+        val cursor = readableDatabase.query(
+            TABLE_NAME,
             null, null, null, null, null, null)
         while (cursor.moveToNext()) {
             val people = People(cursor.getInt(cursor.getColumnIndexOrThrow(COL_ID)),
@@ -48,7 +49,8 @@ class PeopleSQLiteOpenHelper(context: Context?) : SQLiteOpenHelper(context, DB_N
 
     fun query(id: Int): People? {
         var people: People? = null
-        val cursor = readableDatabase.query(TABLE_NAME, null,
+        val cursor = readableDatabase.query(
+            TABLE_NAME, null,
             "$COL_ID=?", arrayOf(id.toString()), null, null, null, null)
         if (cursor.moveToNext()) {
             people = People(cursor.getInt(cursor.getColumnIndexOrThrow(COL_ID)),

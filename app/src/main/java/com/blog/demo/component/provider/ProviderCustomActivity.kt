@@ -12,7 +12,7 @@ import android.widget.EditText
 import android.widget.ListView
 import com.blog.demo.People
 import com.blog.demo.R
-import com.blog.demo.feature.storage.PeopleConstant
+import com.blog.demo.component.file.PeopleConstant
 
 class ProviderCustomActivity : Activity(), View.OnClickListener {
 

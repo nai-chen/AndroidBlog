@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.content.Intent
@@ -26,7 +26,7 @@ class WindowManagerActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_window_manager)
+        setContentView(R.layout.activity_component_window_manager)
 
         findViewById<Button>(R.id.btn_show_suspension_window).setOnClickListener {
             requestPermission()

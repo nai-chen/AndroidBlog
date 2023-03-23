@@ -1,4 +1,4 @@
-package com.blog.demo.feature.storage
+package com.blog.demo.component.file
 
 import android.app.Activity
 import android.os.Bundle
@@ -25,7 +25,7 @@ class SQLiteActivity : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_storage_sqlite)
+        setContentView(R.layout.activity_component_file_sqlite)
         mEtName = findViewById(R.id.et_name)
         mEtAddr = findViewById(R.id.et_addr)
         mEtAge = findViewById(R.id.et_age)

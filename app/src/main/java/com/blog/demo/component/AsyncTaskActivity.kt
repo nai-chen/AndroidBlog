@@ -1,4 +1,4 @@
-package com.blog.demo.feature
+package com.blog.demo.component
 
 import android.app.Activity
 import android.graphics.Bitmap
@@ -22,7 +22,7 @@ class AsyncTaskActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_feature_async_task)
+        setContentView(R.layout.activity_component_async_task)
 
         mProgressBar = findViewById(R.id.progress_bar_download)
         mImageView = findViewById(R.id.iv_down_load)
