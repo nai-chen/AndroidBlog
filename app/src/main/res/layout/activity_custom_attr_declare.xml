@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.blog.demo.custom.widget.AttrDeclareView
+    <com.blog.demo.control.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="#ff00ff00"/>
 
-    <com.blog.demo.custom.widget.AttrDeclareView
+    <com.blog.demo.control.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="#ffff8800" />
 
-    <com.blog.demo.custom.widget.AttrDeclareView
+    <com.blog.demo.control.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:background_color="@color/red" />
 
-    <com.blog.demo.custom.widget.AttrDeclareView
+    <com.blog.demo.control.widget.AttrDeclareView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="This is a string"

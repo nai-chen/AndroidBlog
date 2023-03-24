@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.blog.demo.custom.widget.FlowLayout
+    <com.blog.demo.control.widget.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
@@ -59,6 +59,6 @@
             android:layout_height="75dp"
             android:src="@drawable/flow_4"
             android:scaleType="fitXY" />
-    </com.blog.demo.custom.widget.FlowLayout>
+    </com.blog.demo.control.widget.FlowLayout>
 
 </LinearLayout>

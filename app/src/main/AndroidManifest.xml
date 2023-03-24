@@ -96,6 +96,34 @@
 
         <!-- 应用 -->
 
+        <activity android:name=".application.storage.json.FastJsonActivity"
+            android:label="application/storage/json/fastjson"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.storage.json.JsonActivity"
+            android:label="application/storage/json/json"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.storage.json.GsonActivity"
+            android:label="application/storage/json/gson"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.storage.XmlActivity"
+            android:label="application/storage/xml"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.systemui.SystemUiVisibilityActivity"
             android:label="application/system ui visibility"
             android:exported="false">
@@ -112,22 +140,15 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".application.ClipChildrenActivity"
-            android:label="application/clip children"
+        <activity android:name=".application.FilterActivity"
+            android:label="application/filter"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-        <activity android:name=".application.FileProviderActivity"
-            android:label="application/file provider"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".application.PermissionActivity"
-            android:label="application/permission"
+        <activity android:name=".application.NativeCalcActivity"
+            android:label="application/native calc"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -344,6 +365,14 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.FileProviderActivity"
+            android:label="component/file provider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".component.HandlerActivity"
             android:label="component/handler"
             android:exported="false">
@@ -361,6 +390,13 @@
         <activity android:name=".component.ParcelableActivity" />
         <activity android:name=".component.ParcelActivity"
             android:label="component/parcel"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".component.PermissionActivity"
+            android:label="component/permission"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -669,6 +705,27 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name="com.blog.demo.control.popup.AlertDialogActivity"
+            android:label="control/popup/alert dialog"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.blog.demo.control.popup.PopupWindowActivity"
+            android:label="control/popup/popup window"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.blog.demo.control.popup.ToastActivity"
+            android:label="control/popup/toast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.progressbar.ProgressBarActivity"
             android:label="control/progress bar/progress bar"
             android:exported="false">
@@ -774,6 +831,28 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.AttrAssignActivity"
+            android:theme="@style/AppTheme.AttrAssign"
+            android:label="control/attr assign"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.AttrDeclareActivity"
+            android:label="control/attr declare"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.AttrFormatActivity"
+            android:label="control/attr format"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.ChronometerActivity"
             android:label="control/Chronometer"
             android:exported="false">
@@ -781,9 +860,78 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".control.ClipChildrenActivity"
+            android:label="control/clip children"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.CListViewActivity"
+            android:label="control/list view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.FlowLayoutActivity"
+            android:label="control/flow layout"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.GestureViewActivity"
+            android:label="control/gesture view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.GroupActivity"
+            android:label="control/group"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.MobileVerifyViewActivity"
+            android:label="control/mobile verify view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.PhoneTextViewActivity"
+            android:label="control/phone text view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.ParagraphStyleActivity"
+            android:label="control/ParagraphStyle"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".control.SpinnerActivity"
             android:label="control/spinner"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.SpannableActivity"
+            android:label="control/spannable"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.TouchEventActivity"
+            android:label="control/touch event"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -810,181 +958,6 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
-
-
-        <!-- 自定义 -->
-        <activity android:name=".custom.AttrAssignActivity"
-            android:theme="@style/AppTheme.AttrAssign"
-            android:label="custom/attr assign"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.AttrDeclareActivity"
-            android:label="custom/attr declare"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.AttrFormatActivity"
-            android:label="custom/attr format"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.CListViewActivity"
-            android:label="custom/list view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.FlowLayoutActivity"
-            android:label="custom/flow layout"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.GestureViewActivity"
-            android:label="custom/gesture view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.GroupActivity"
-            android:label="custom/group"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.MobileVerifyViewActivity"
-            android:label="custom/mobile verify view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.PhoneTextViewActivity"
-            android:label="custom/phone text view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.TouchEventActivity"
-            android:label="custom/touch event"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.VelocityTrackerActivity"
-            android:label="custom/velocity tracker"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".custom.ViewDragHelperActivity"
-            android:label="custom/view drag helper"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-
-
-        <!-- 特性 -->
-        <activity android:name=".feature.popup.AlertDialogActivity"
-            android:label="feature/popup/alert dialog"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.popup.PopupWindowActivity"
-            android:label="feature/popup/popup window"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.popup.ToastActivity"
-            android:label="feature/popup/toast"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.storage.json.FastJsonActivity"
-            android:label="feature/storage/json/fastjson"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.storage.json.JsonActivity"
-            android:label="feature/storage/json/json"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.storage.json.GsonActivity"
-            android:label="feature/storage/json/gson"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".feature.storage.XmlActivity"
-            android:label="feature/storage/xml"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".feature.FilterActivity"
-            android:label="feature/filter"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.ParagraphStyleActivity"
-            android:label="feature/ParagraphStyle"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".feature.SpannableActivity"
-            android:label="feature/spannable"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-
-
-
-        <!-- 杂项 -->
-        <activity android:name=".fragment.NativeCalcActivity"
-            android:label="fragment/native calc"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-
 
         <!-- 图像动画 -->
         <activity android:name=".image.animation.AnimationInterpolatorActivity"
@@ -1231,6 +1204,20 @@
         </activity>
         <activity android:name=".image.ShapeActivity"
             android:label="image/shape"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.VelocityTrackerActivity"
+            android:label="image/velocity tracker"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.ViewDragHelperActivity"
+            android:label="image/view drag helper"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />

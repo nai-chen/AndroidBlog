@@ -3,9 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.blog.demo.control.widget.GroupOneView
+
+    <com.blog.demo.image.widget.VelocityTrackerView
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
-    <include
-        layout="@layout/view_group_two"/>
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:text="This is velocity tracker view"
+        android:gravity="center"/>
 </LinearLayout>

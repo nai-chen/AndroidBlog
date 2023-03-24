@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
 
-    <com.blog.demo.custom.widget.MobileVerifyView
+    <com.blog.demo.control.widget.MobileVerifyView
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_margin="20dp"/>
