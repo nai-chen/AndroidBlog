@@ -1216,6 +1216,13 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.VideoViewActivity"
+            android:label="image/video view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.ViewDragHelperActivity"
             android:label="image/view drag helper"
             android:exported="false">

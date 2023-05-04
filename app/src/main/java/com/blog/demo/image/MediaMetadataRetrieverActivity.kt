@@ -30,7 +30,7 @@ class MediaMetadataRetrieverActivity : Activity(), View.OnClickListener {
         if (v.id == R.id.btn_get_video_info) {
             val retriever = MediaMetadataRetriever()
             try {
-                val fd = assets.openFd("video.3gp")
+                val fd = assets.openFd("video_demo.mp4")
                 retriever.setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
                 val bitmap = retriever.frameAtTime // 视频第一帧图像
                 if (bitmap != null) {

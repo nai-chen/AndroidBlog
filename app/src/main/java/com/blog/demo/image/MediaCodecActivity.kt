@@ -52,7 +52,7 @@ class MediaCodecActivity : Activity(), View.OnClickListener {
             mStopAudio = true
         } else if (v.id == R.id.btn_start_video) {
             Thread {
-                startVideo("video.3gp")
+                startVideo("video_demo.mp4")
             }.start()
         } else if (v.id == R.id.btn_stop_video) {
             mStopVideo = true

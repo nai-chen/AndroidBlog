@@ -23,7 +23,7 @@ class GifGlideActivity : Activity() {
 
         Glide.with(this)
             .asGif()
-            .load("file:///android_asset/sample.gif")
+            .load("file:///android_LOG_TAG/sample.gif")
             .into(object : SimpleTarget<GifDrawable>() {
                 override fun onResourceReady(
                         resource: GifDrawable,

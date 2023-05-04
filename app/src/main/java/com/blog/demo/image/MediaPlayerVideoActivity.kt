@@ -77,7 +77,7 @@ class MediaPlayerVideoActivity : Activity(), View.OnClickListener {
         try {
             mMediaPlayer?.reset()
 
-            val fd = assets.openFd("video.3gp")
+            val fd = assets.openFd("video_demo.mp4")
             mMediaPlayer?.setDataSource(fd.fileDescriptor, fd.startOffset, fd.length)
             mMediaPlayer?.prepare()
             mMediaPlayer?.setDisplay(mSurfaceView.holder)
