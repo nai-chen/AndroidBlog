@@ -1,4 +1,4 @@
-package com.blog.demo.image.exoplayer
+package com.blog.demo.third.exoplayer
 
 import android.app.Activity
 import android.net.Uri
@@ -17,7 +17,7 @@ class ExoplayerNormalActivity  : Activity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_image_exoplayer_normal)
+        setContentView(R.layout.activity_third_exoplayer_normal)
 
         var playerView: StyledPlayerView = findViewById(R.id.styled_player_view)
         mExoPlayer = ExoPlayer.Builder(this).build()
