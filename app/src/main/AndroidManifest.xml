@@ -1062,6 +1062,27 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.exoplayer.ExoplayerControllerActivity"
+            android:label="image/exoplayer/Controller"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.exoplayer.ExoplayerNormalActivity"
+            android:label="image/exoplayer/Normal"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.exoplayer.ExoplayerMediaItemActivity"
+            android:label="image/exoplayer/Media Item"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.gif.GifDrawableActivity"
             android:label="image/gif/android-gif-drawable"
             android:exported="false">

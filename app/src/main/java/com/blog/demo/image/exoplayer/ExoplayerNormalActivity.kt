@@ -1,35 +1,32 @@
-package com.blog.demo.image
+package com.blog.demo.image.exoplayer
 
 import android.app.Activity
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.MediaController
-import android.widget.VideoView
 import com.blog.demo.R
+import com.google.android.exoplayer2.ExoPlayer
+import com.google.android.exoplayer2.MediaItem
+import com.google.android.exoplayer2.ui.StyledPlayerView
 
-class VideoViewActivity : Activity(), View.OnClickListener {
-    private lateinit var mVideoView: VideoView
+class ExoplayerNormalActivity  : Activity(), View.OnClickListener {
+
+    private lateinit var mExoPlayer: ExoPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_image_video_view)
+        setContentView(R.layout.activity_image_exoplayer_normal)
 
-        mVideoView = findViewById(R.id.video_view)
+        var playerView: StyledPlayerView = findViewById(R.id.styled_player_view)
+        mExoPlayer = ExoPlayer.Builder(this).build()
+        playerView.player = mExoPlayer
 
         var uri = "android.resource://com.blog.demo/${R.raw.video_demo}"
-        mVideoView.setVideoURI(Uri.parse(uri))
-        var mc = MediaController(this)
-        mc.setPrevNextListeners({
-            Log.i("VideoViewActivity", "Next")
-        }, {
-            Log.i("VideoViewActivity", "Prev")
-        })
-        mVideoView.setMediaController(mc)
-        mVideoView.start()
+        mExoPlayer.setMediaItem(MediaItem.fromUri(Uri.parse(uri)))
+        mExoPlayer.prepare()
+        mExoPlayer.play()
 
         findViewById<Button>(R.id.btn_resume).setOnClickListener(this)
         findViewById<Button>(R.id.btn_start).setOnClickListener(this)
@@ -39,7 +36,7 @@ class VideoViewActivity : Activity(), View.OnClickListener {
 
     override fun onDestroy() {
         super.onDestroy()
-        mVideoView.suspend()
+        mExoPlayer.release()
     }
 
     override fun onClick(v: View) {
@@ -60,19 +57,20 @@ class VideoViewActivity : Activity(), View.OnClickListener {
     }
 
     private fun resumeVideo() {
-        mVideoView.resume()
+        mExoPlayer.prepare()
+        mExoPlayer.play()
     }
 
     private fun startVideo() {
-        mVideoView.start()
+        mExoPlayer.play()
     }
 
     private fun pauseVideo() {
-        mVideoView.pause()
+        mExoPlayer.pause()
     }
 
     private fun stopVideo() {
-        mVideoView.stopPlayback()
+        mExoPlayer.stop()
     }
 
 }
