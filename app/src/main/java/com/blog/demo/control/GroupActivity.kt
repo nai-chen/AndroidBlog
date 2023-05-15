@@ -8,7 +8,7 @@ class GroupActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_group)
+        setContentView(R.layout.activity_control_group)
     }
 
 }

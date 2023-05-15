@@ -13,7 +13,7 @@ class TouchEventActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_custom_touch_event)
+        setContentView(R.layout.activity_control_touch_event)
     }
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {

@@ -8,7 +8,7 @@ class AttrAssignActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_attr_assign)
+        setContentView(R.layout.activity_control_attr_assign)
     }
     
 }

@@ -11,7 +11,7 @@ class SubsamplingScaleImageViewNormalActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_subsampling_scale_image_view)
+        setContentView(R.layout.activity_third_subsampling_scale_image_view)
 
         var imageView: SubsamplingScaleImageView = findViewById(R.id.image_view)
         imageView.setImage(ImageSource.resource(R.drawable.large_pic))

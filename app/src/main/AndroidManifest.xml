@@ -1442,6 +1442,20 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".third.pickerview.OptionsPickerViewActivity"
+            android:label="third/pick view/options picker view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".third.pickerview.TimePickerViewActivity"
+            android:label="third/pick view/time picker view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".third.UmengActivity"
             android:label="third/Umeng"
             android:exported="false">

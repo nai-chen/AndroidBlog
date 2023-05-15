@@ -8,7 +8,7 @@ class AttrDeclareActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_attr_declare)
+        setContentView(R.layout.activity_control_attr_declare)
     }
 
 }

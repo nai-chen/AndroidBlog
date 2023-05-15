@@ -25,7 +25,7 @@ class MobileVerifyItemView(context: Context, attrs: AttributeSet?, defStyleAttr:
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
 
     init {
-        inflate(context, R.layout.item_view_mobile_verify, this)
+        inflate(context, R.layout.layout_item_view_mobile_verify, this)
 
         tvNumber = findViewById(R.id.tv_number)
         cursorView = findViewById(R.id.view_cursor)

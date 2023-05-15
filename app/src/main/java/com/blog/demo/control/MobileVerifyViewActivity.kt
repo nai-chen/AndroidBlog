@@ -9,7 +9,7 @@ class MobileVerifyViewActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_custom_mobile_verify_view)
+        setContentView(R.layout.activity_control_mobile_verify_view)
     }
 
 }

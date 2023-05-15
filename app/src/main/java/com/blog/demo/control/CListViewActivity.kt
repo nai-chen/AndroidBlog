@@ -11,7 +11,7 @@ class CListViewActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_custom_list_view)
+        setContentView(R.layout.activity_control_custom_list_view)
 
         val listView: CListView = findViewById(R.id.list_view)
         listView.adapter = ArrayAdapter(this,
