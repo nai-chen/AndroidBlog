@@ -95,7 +95,28 @@
         </activity>
 
         <!-- 应用 -->
-
+        <activity android:name=".application.eventbus.EventBusActivity"
+            android:label="application/event bus"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.eventbus.EventBusPublisherActivity" />
+        <activity android:name=".application.pdf.PdfViewActivity"
+            android:label="application/pdf/pdf view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.blog.demo.application.pdf.MuPdfViewActivity"
+            android:label="application/pdf/mupdf"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".application.storage.json.FastJsonActivity"
             android:label="application/storage/json/fastjson"
             android:exported="false">
@@ -170,6 +191,13 @@
         </activity>
         <activity android:name=".application.SoftInputManagerActivity"
             android:label="application/soft input manager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".application.UmengActivity"
+            android:label="third/Umeng"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -705,6 +733,20 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".control.pickerview.OptionsPickerViewActivity"
+            android:label="control/pick view/options picker view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".control.pickerview.TimePickerViewActivity"
+            android:label="control/pick view/time picker view"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.blog.demo.control.popup.AlertDialogActivity"
             android:label="control/popup/alert dialog"
             android:exported="false">
@@ -1062,6 +1104,27 @@
                 <action android:name="com.blog.demo.content" />
             </intent-filter>
         </activity>
+        <activity android:name=".image.exoplayer.ExoplayerControllerActivity"
+            android:label="image/exoplayer/Controller"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.exoplayer.ExoplayerNormalActivity"
+            android:label="image/exoplayer/Normal"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.exoplayer.ExoplayerMediaItemActivity"
+            android:label="image/exoplayer/Media Item"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
         <activity android:name=".image.gif.GifDrawableActivity"
             android:label="image/gif/android-gif-drawable"
             android:exported="false">
@@ -1085,6 +1148,27 @@
         </activity>
         <activity android:name=".image.gif.GifSystemActivity"
             android:label="image/gif/system"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.glide.GlideActivity"
+            android:label="image/glide"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.imageview.SubsamplingScaleImageViewNormalActivity"
+            android:label="image/subsampling scale image view/large pic"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.imageview.SubsamplingScaleImageViewLongActivity"
+            android:label="image/subsampling scale image view/long pic"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -1148,6 +1232,20 @@
         </activity>
         <activity android:name=".image.path.PathTextActivity"
             android:label="image/path/text"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.photoview.PhotoViewNormalActivity"
+            android:label="image/photo view/normal"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.blog.demo.content" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image.photoview.PhotoViewViewPagerActivity"
+            android:label="image/photo view/view pager"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.blog.demo.content" />
@@ -1361,107 +1459,5 @@
             </intent-filter>
         </activity>
 
-
-        <!-- 第三方应用 -->
-        <activity android:name=".third.eventbus.EventBusActivity"
-            android:label="third/event bus"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.eventbus.EventBusPublisherActivity" />
-
-        <activity android:name=".third.glide.GlideActivity"
-            android:label="third/glide"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.blog.demo.third.exoplayer.ExoplayerControllerActivity"
-            android:label="third/exoplayer/Controller"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.blog.demo.third.exoplayer.ExoplayerNormalActivity"
-            android:label="third/exoplayer/Normal"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.blog.demo.third.exoplayer.ExoplayerMediaItemActivity"
-            android:label="third/exoplayer/Media Item"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.imageview.SubsamplingScaleImageViewNormalActivity"
-            android:label="third/subsampling scale image view/large pic"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.imageview.SubsamplingScaleImageViewLongActivity"
-            android:label="third/subsampling scale image view/long pic"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.pdf.PdfViewActivity"
-            android:label="third/pdf/pdf view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.pdf.MuPdfViewActivity"
-            android:label="third/pdf/mupdf"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.photoview.PhotoViewNormalActivity"
-            android:label="third/photo view/normal"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.photoview.PhotoViewViewPagerActivity"
-            android:label="third/photo view/view pager"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.pickerview.OptionsPickerViewActivity"
-            android:label="third/pick view/options picker view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.pickerview.TimePickerViewActivity"
-            android:label="third/pick view/time picker view"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".third.UmengActivity"
-            android:label="third/Umeng"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.blog.demo.content" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>
